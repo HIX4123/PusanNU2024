@@ -1,0 +1,3 @@
+C:/Users/rnjsa/OneDrive/Desktop/2024/CppProgrammingandPractice/2week/cmake-build-debug/CMakeFiles/2week.dir
+C:/Users/rnjsa/OneDrive/Desktop/2024/CppProgrammingandPractice/2week/cmake-build-debug/CMakeFiles/edit_cache.dir
+C:/Users/rnjsa/OneDrive/Desktop/2024/CppProgrammingandPractice/2week/cmake-build-debug/CMakeFiles/rebuild_cache.dir

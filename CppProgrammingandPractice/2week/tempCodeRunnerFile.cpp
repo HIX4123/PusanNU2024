@@ -1,1 +1,0 @@
-[](const Student& a, const Student& b) { return a.score < b.score; }

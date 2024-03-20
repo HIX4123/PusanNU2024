@@ -45,36 +45,61 @@
  * Arrived in Seoul with 50.00% battery remaining.
  */
 
+#include <cmath>
 #include <iomanip>
 #include <iostream>
 
-int main() {
-  double capacity, efficiency, battery_level, distance;
-  std::cin >> capacity >> efficiency >> battery_level >> distance;
+const double CHARGING_THRESHOLD = 20.0;
+const double CHARGING_UPTO = 80.0;
+const double MAXIMUM_BATTERY = 100.0;
 
-  const double km_per_kW = capacity / 100 * efficiency;
-  double now = 0;
+struct Car {
+  double capacity;
+  double efficiency;
+  double battery_level;
+  double distance;
+};
+
+void print_status(double battery_level, double distance) {
   std::cout << std::fixed << std::setprecision(2)
             << "Current battery level: " << battery_level
-            << "%, after traveling " << now << " km." << std::endl;
-  while (now + km_per_kW < distance) {
-    battery_level--;
+            << "%, after traveling " << distance << " km." << std::endl;
+}
+
+void charge_battery(Car &car, double &now) {
+  std::cout << "Battery at " << car.battery_level
+            << "%, stopping at Cheongju for charging." << std::endl;
+  car.battery_level = CHARGING_UPTO;
+  now = static_cast<int>(now / MAXIMUM_BATTERY + 1) * MAXIMUM_BATTERY;
+}
+
+void calculate_driving(Car &car) {
+  const double km_per_kW = car.capacity / 100 * car.efficiency;
+  double now = 0;
+
+  print_status(car.battery_level, now);
+
+  while (now + km_per_kW < car.distance) {
+    car.battery_level--;
     now += km_per_kW;
-    if (static_cast<int>(now) % 100 + km_per_kW > 100 &&
-        battery_level < 20 + 100 / km_per_kW) {
-      std::cout << "Current battery level: " << battery_level
-                << "%, after traveling " << now << " km." << std::endl;
-      std::cout << "Battery at " << battery_level
-                << "%, stopping at Cheongju for charging." << std::endl;
-      battery_level = 80;
-      now = static_cast<int>(now / 100 + 1) * 100;
+    if (fmod(now, MAXIMUM_BATTERY) + km_per_kW > MAXIMUM_BATTERY &&
+        car.battery_level < CHARGING_THRESHOLD + MAXIMUM_BATTERY / km_per_kW) {
+      print_status(car.battery_level, now);
+      charge_battery(car, now);
     }
-    if (static_cast<int>(battery_level) % 10 == 0) {
-      std::cout << "Current battery level: " << battery_level
-                << "%, after traveling " << now << " km." << std::endl;
+    if (static_cast<int>(car.battery_level) % 10 == 0) {
+      print_status(car.battery_level, now);
     }
   }
   std::cout << "Arrived in Seoul with "
-            << (distance - now != 0.0 ? battery_level - 1 : battery_level)
+            << (car.distance - now != 0.0 ? car.battery_level - 1
+                                          : car.battery_level)
             << "% battery remaining." << std::endl;
+}
+
+int main() {
+  Car car{};
+  std::cin >> car.capacity >> car.efficiency >> car.battery_level >>
+      car.distance;
+  calculate_driving(car);
 }

@@ -46,6 +46,12 @@ array(object, dtype=None, copy=True, order='K', subok=False, ndmin=0)
 - subok: 하위 클래스 여부
 - ndmin: 최소 차원
 
+```python
+Dataframe.apply(함수)
+```
+
+- 각 열에 함수 적용
+
 ## pandas 명령어 모음
 
 ```python
@@ -112,4 +118,6 @@ Dataframe.head(n=5)
 - 처음 n개 행 출력
 - n: 행 개수
 
-```python
+## plotly 라이브러리
+
+파이썬 인터랙티브 그래픽 라이브러리
