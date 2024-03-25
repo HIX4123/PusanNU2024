@@ -35,9 +35,9 @@
 
 ### 사전 정의
 
-- Complement: $\bar{A}, \bar{B}, \bar{C}, \cdots$
+- Complement: $\overline{A}, \overline{B}, \overline{C}, \cdots$
   - 보수
-- Literal: $A, \bar{A}, B, \bar{B}, C, \bar{C}, \cdots$
+- Literal: $A, \overline{A}, B, \overline{B}, C, \overline{C}, \cdots$
   - 변수나 변수의 보수
 - Implicit AND: $AB = A \cdot B$
   - 리터럴의 논리곱
@@ -57,3 +57,54 @@
 - 모든 불리언 방정식은 POS로 표현 가능
 - 각 줄은 maxterm
 - 각 줄의 maxterm은 해당 줄에서 거짓
+
+## 부울 대수: 공리
+
+- A1: 바이너리 필드
+  - $B \not= 1 \Rightarrow B = 0$
+- A2: NOT
+  - $\overline{0} = 1$
+- A3: AND/OR
+  - $0 \cdot 0 = 0$
+- A4: AND/OR
+  - $1 \cdot 0 = 0$
+- A5: AND/OR
+  - $0 \cdot 1 = 1 \cdot 0 = 0$
+
+## 부울 대수: 정리
+
+- T1: 항등
+  - $A \cdot 1 = A$
+  - $A + 0 = A$
+- T2: Null
+  - $A \cdot 0 = 0$
+  - $A + 1 = 1$
+- T3: 멱등성
+  - $A \cdot A = A$
+  - $A + A = A$
+- T4: 대합
+  - $\overline{\overline{A}} = A$
+- T5: 보수
+  - $A \cdot \overline{A} = 0$
+  - $A + \overline{A} = 1$
+- T6: 교환법칙
+  - $A \cdot B = B \cdot A$
+  - $A + B = B + A$
+- T7: 결합법칙
+  - $(A \cdot B) \cdot C = A \cdot (B \cdot C)$
+  - $(A + B) + C = A + (B + C)$
+- T8: 분배법칙
+  - $A \cdot (B + C) = A \cdot B + A \cdot C$
+  - $A + B \cdot C = (A + B) \cdot (A + C)$
+- T9: Covering
+  - $A + A \cdot B = A$
+  - $A \cdot (A + B) = A$
+- T10: Combining
+  - $(A \cdot B)g + (A \cdot \overline{B}) = A$
+  - $(A + B) \cdot (A + \overline{B}) = A$
+- T11: Consensus
+  - $(A + B) \cdot (\overline{A} + C) \cdot (B + C) = (A + B) \cdot (\overline{A} + C)$
+  - $(A \cdot B) + (\overline{A} \cdot C) + (B \cdot C) = (A \cdot B) + (\overline{A} \cdot C)$
+- T12: 드모르간의 정리
+  - $\overline{A \cdot B} = \overline{A} + \overline{B}$
+  - $\overline{A + B} = \overline{A} \cdot \overline{B}$
