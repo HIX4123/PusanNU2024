@@ -8,8 +8,8 @@
       "args": [],
       "stopAtEntry": false,
       "externalConsole": true,
-      "cwd": "c:/Users/rnjsa/OneDrive/Desktop/2024/CppProgrammingandPractice/4week/staticLocalVariable",
-      "program": "c:/Users/rnjsa/OneDrive/Desktop/2024/CppProgrammingandPractice/4week/staticLocalVariable/build/Debug/outDebug",
+      "cwd": "c:/Users/rnjsa/OneDrive/Desktop/2024",
+      "program": "c:/Users/rnjsa/OneDrive/Desktop/2024/build/Debug/outDebug",
       "MIMode": "gdb",
       "miDebuggerPath": "gdb",
       "setupCommands": [

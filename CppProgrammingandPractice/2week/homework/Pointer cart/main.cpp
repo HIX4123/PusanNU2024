@@ -22,10 +22,10 @@
  */
 
 struct Item {
-  int id;
+  int id{};
   std::string name;
-  int quantity;
-  int price;
+  int quantity{};
+  int price{};
 };
 
 enum class Menu {
@@ -36,62 +36,113 @@ enum class Menu {
   Exit
 };
 
+Item *cart = nullptr;
+
+void printMenu() {
+  std::cout << "1. Add item" << std::endl;
+  std::cout << "2. Delete item" << std::endl;
+  std::cout << "3. View item details" << std::endl;
+  std::cout << "4. View total cost" << std::endl;
+  std::cout << "5. Quit" << std::endl;
+  std::cout << "Enter your choice: ";
+}
+
+Item *addNewItem(Item *cart, int &item_count) {
+  Item *new_cart = new Item[item_count + 1];
+  for (int i = 0; i < item_count; i++) {
+    new_cart[i] = cart[i];
+  }
+  delete[] cart;
+  cart = new_cart;
+
+  cart[item_count].id = item_count;
+  std::cout << "Enter item name: ";
+  std::cin >> cart[item_count].name;
+  std::cout << "Enter item quantity: ";
+  std::cin >> cart[item_count].quantity;
+  std::cout << "Enter item price: ";
+  std::cin >> cart[item_count].price;
+
+  std::cout << "Item " << item_count << "added successfully." << std::endl;
+
+  item_count++;
+  return cart;
+}
+
+Item *removeItem(Item *cart, int &item_count) {
+  std::cout << "Enter item ID: ";
+  int id;
+  std::cin >> id;
+  for (int i = 0; i < item_count; i++) {
+    if (cart[i].id == id) {
+      cart[i].id = -1;
+      std::cout << "Item deleted successfully" << std::endl;
+      return cart;
+    }
+  }
+  std::cout << "Item not found" << std::endl;
+  return cart;
+}
+
+void printItemDetails(Item *cart, int item_count) {
+  std::cout << "Enter the item number: ";
+  int item_number;
+  std::cin >> item_number;
+  for (int i = 0; i <= item_number; i++) {
+    if (cart[i].id == item_number) {
+      std::cout << "Item " << cart[i].id << " " << std::endl;
+      std::cout << "Name: " << cart[i].name << std::endl;
+      std::cout << "Quantity: " << cart[i].quantity << std::endl;
+      std::cout << "Price: " << cart[i].price << std::endl;
+      return;
+    }
+  }
+  std::cout << "Item not found" << std::endl;
+}
+
+int getTotalCost(Item *cart, int item_count) {
+  int total_cost = 0;
+  for (int i = 0; i < item_count; i++) {
+    if (cart[i].id == -1) {
+      continue;
+    }
+    total_cost += cart[i].price * cart[i].quantity;
+  }
+  return total_cost;
+}
+
 int main() {
   int item_count = 0;
-  Item *cart = nullptr;
+
+  int tmp;
+  std::cin >> tmp;
+  cart = addNewItem(cart, item_count);
 
   while (true) {
-    std::cout << "1. Add new item" << std::endl;
-    std::cout << "2. Remove item" << std::endl;
-    std::cout << "3. View item details" << std::endl;
-    std::cout << "4. View total cost" << std::endl;
-    std::cout << "5. Exit" << std::endl;
-    std::cout << "Enter your choice: ";
+    printMenu();
 
     int choice;
     std::cin >> choice;
 
     switch (static_cast<Menu>(choice)) {
     case Menu::AddNewItem:
-      cart = new Item[++item_count];
-      cart[item_count - 1].id = item_count; // [1
-      std::cout << "Enter Item name: " << std::endl;
-      std::cin >> cart[item_count - 1].name;
-      std::cout << "Enter Item quantity: " << std::endl;
-      std::cin >> cart[item_count - 1].quantity;
-      std::cout << "Enter Item price: " << std::endl;
-      std::cin >> cart[item_count - 1].price;
+      cart = addNewItem(cart, item_count);
       break;
     case Menu::RemoveItem:
-      std::cout << "Enter item ID: ";
-      int id;
-      std::cin >> id;
-      for (int i = 0; i < item_count; i++) {
-        if (cart[i].id == id) {
-          for (int j = i; j < item_count - 1; j++) {
-            cart[j] = cart[j + 1];
-          }
-          item_count--;
-          break;
-        }
-      }
+      cart = removeItem(cart, item_count);
       break;
     case Menu::ViewItemDetails:
-      std::cout << "Enter the item number: ";
-      int item_number;
-      std::cin >> item_number;
-      for (Item)
-//      std::cout << "Item ID: " << cart[item_number - 1].id << std::endl;
-//      std::cout << "Name: " << cart[item_number - 1].name << std::endl;
-//      std::cout << "Quantity: " << cart[item_number - 1].quantity << std::endl;
-//      std::cout << "Price: " << cart[item_number - 1].price << std::endl;
+      printItemDetails(cart, item_count);
       break;
     case Menu::ViewTotalCost:
+      std::cout << "Total cost: " << getTotalCost(cart, item_count)
+                << std::endl;
       break;
     case Menu::Exit:
-      break;
+      delete[] cart;
+      return 0;
     default:
-      std::cout << "Invalid choice" << std::endl;
+      std::cout << "Invalid tmp" << std::endl;
       break;
     }
   }
