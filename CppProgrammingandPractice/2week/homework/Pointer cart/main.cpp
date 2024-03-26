@@ -1,3 +1,4 @@
+#include <iostream>
 /*
  * 결제 시스템 업그레이드를 진행 중인 오마존에서 근무하고 있습니다.
  * 여러분의 임무는 구매되는 품목을 추적하는 프로그램을 작성하는 것입니다.
@@ -20,80 +21,78 @@
  * 방식도 허용합니다.
  */
 
-#include <iostream>
-#include <vector>
-
 struct Item {
-  int id{};
+  int id;
   std::string name;
-  int quantity{};
-  int price{};
-
-  Item(int id) : id(id) {}
+  int quantity;
+  int price;
 };
 
-enum class Menu { ADD = 1, DELETE, VIEW, TOTAL, QUIT };
+enum class Menu {
+  AddNewItem = 1,
+  RemoveItem,
+  ViewItemDetails,
+  ViewTotalCost,
+  Exit
+};
 
 int main() {
-  std::vector<Item *> cart;
-  int response = static_cast<int>(Menu::ADD);
-  int total;
+  int item_count = 0;
+  Item *cart = nullptr;
 
   while (true) {
+    std::cout << "1. Add new item" << std::endl;
+    std::cout << "2. Remove item" << std::endl;
+    std::cout << "3. View item details" << std::endl;
+    std::cout << "4. View total cost" << std::endl;
+    std::cout << "5. Exit" << std::endl;
+    std::cout << "Enter your choice: ";
 
-    std::cout << "1. Add item\n2. Delete item\n3. View item details\n4. View "
-                 "total cost\n5. Quit\nEnter your choice: ";
-    std::cin >> response;
+    int choice;
+    std::cin >> choice;
 
-    switch (static_cast<Menu>(response)) {
-    case Menu::ADD:
-      cart.push_back(new Item(static_cast<int>(cart.size())));
-      std::cout << "Enter item name: ";
-      std::cin >> cart.back()->name;
-      std::cout << "Enter item quantity: ";
-      std::cin >> cart.back()->quantity;
-      std::cout << "Enter item price: ";
-      std::cin >> cart.back()->price;
-      std::cout << "Item " << cart.size() - 1 << " added successfully.\n";
+    switch (static_cast<Menu>(choice)) {
+    case Menu::AddNewItem:
+      cart = new Item[++item_count];
+      cart[item_count - 1].id = item_count; // [1
+      std::cout << "Enter Item name: " << std::endl;
+      std::cin >> cart[item_count - 1].name;
+      std::cout << "Enter Item quantity: " << std::endl;
+      std::cin >> cart[item_count - 1].quantity;
+      std::cout << "Enter Item price: " << std::endl;
+      std::cin >> cart[item_count - 1].price;
       break;
-
-    case Menu::DELETE:
+    case Menu::RemoveItem:
       std::cout << "Enter item ID: ";
-      std::cin >> response;
-      if (response < cart.size()) {
-        cart.erase(cart.begin() + response);
-        std::cout << "Item deleted successfully.\n";
+      int id;
+      std::cin >> id;
+      for (int i = 0; i < item_count; i++) {
+        if (cart[i].id == id) {
+          for (int j = i; j < item_count - 1; j++) {
+            cart[j] = cart[j + 1];
+          }
+          item_count--;
+          break;
+        }
       }
       break;
-
-    case Menu::VIEW:
+    case Menu::ViewItemDetails:
       std::cout << "Enter the item number: ";
-      std::cin >> response;
-      if (response < cart.size()) {
-        std::cout << "Item " << response << ": \nName: " << cart[response]->name
-                  << "\nQuantity: " << cart[response]->quantity
-                  << "\nPrice: " << cart[response]->price << std::endl;
-      } else {
-        std::cout << "Item not found\n";
-      }
+      int item_number;
+      std::cin >> item_number;
+      for (Item)
+//      std::cout << "Item ID: " << cart[item_number - 1].id << std::endl;
+//      std::cout << "Name: " << cart[item_number - 1].name << std::endl;
+//      std::cout << "Quantity: " << cart[item_number - 1].quantity << std::endl;
+//      std::cout << "Price: " << cart[item_number - 1].price << std::endl;
       break;
-
-    case Menu::TOTAL:
-      total = 0;
-      for (const auto &item : cart) {
-        total += item->price * item->quantity;
-      }
-      std::cout << "Total cost: " << total << std::endl;
+    case Menu::ViewTotalCost:
       break;
-
-    case Menu::QUIT:
-      for (auto &item : cart) {
-        delete item;
-      }
-      return 0;
-
+    case Menu::Exit:
+      break;
     default:
-      std::cerr << "Invalid choice. Please try again.\n";
+      std::cout << "Invalid choice" << std::endl;
+      break;
     }
   }
 }
