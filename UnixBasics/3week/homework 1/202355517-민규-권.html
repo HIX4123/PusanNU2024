@@ -369,9 +369,8 @@ code {
 <p>School ID: 202355517
 Name: 권민규</p>
 <p>Solutions from the following questions can be foun out by googling. Write down your own solutions. If your solutions looks like copying solutions available at the Internet, you will get zero point without any notification.</p>
-<ol>
-<li>Your friend comes to you with an odd request. All she wants you to do is make a simple text file containing the word <code>hello</code>. She asks that you name the file <code>hello.txt</code>. How would you do this using vi? (Remember to save and quit.)</li>
-</ol>
+<h2 id="1">1</h2>
+<p>Your friend comes to you with an odd request. All she wants you to do is make a simple text file containing the word <code>hello</code>. She asks that you name the file <code>hello.txt</code>. How would you do this using vi? (Remember to save and quit.)</p>
 <p>순서대로 입력해준다.</p>
 <pre class="hljs"><code><div>$ vi hello.txt <span class="hljs-comment"># vi로 hello.txt 파일을 열고, 없으면 새로 생성하여 연다.</span>
 i <span class="hljs-comment"># 삽입 모드로 전환한다.</span>
@@ -381,9 +380,8 @@ hello <span class="hljs-comment"># hello를 입력한다.</span>
 </div></code></pre>
 <p>실행 후 파일이 추가됨을 확인할 수 있다.</p>
 <p><img src="image-1.png" alt="1"></p>
-<ol start="2">
-<li>Bad move. Now your friend knows you can use vi, and she wants you to make a longer text file named <code>dummy.txt</code> which contains the sentence <code>&quot;vi is for dummies.&quot;</code> one per line for 23 lines. What is the most effecient way to do this with vi?</li>
-</ol>
+<h2 id="2">2</h2>
+<p>Bad move. Now your friend knows you can use vi, and she wants you to make a longer text file named <code>dummy.txt</code> which contains the sentence <code>&quot;vi is for dummies.&quot;</code> one per line for 23 lines. What is the most effecient way to do this with vi?</p>
 <p>순서대로 입력해준다.</p>
 <pre class="hljs"><code><div>$ vi dummy.txt <span class="hljs-comment"># vi로 dummy.txt 파일을 열고, 없으면 새로 생성하여 연다.</span>
 i <span class="hljs-comment"># 삽입 모드로 전환한다.</span>
@@ -394,9 +392,8 @@ yy22p <span class="hljs-comment"># 현재 줄을 복사(yy)하고, 22번(22) 붙
 </div></code></pre>
 <p>실행 후 파일이 추가됨을 확인할 수 있다.</p>
 <p><img src="image-2.png" alt="2"></p>
-<ol start="3">
-<li>Your annoying friend is back. She has seen how efficient vi is, and now wants you to replace all occurrences of the word <code>dummies</code> with the word <code>Smarties</code> in the file <code>dummy.txt</code>. How would you do this with vi?</li>
-</ol>
+<h2 id="3">3</h2>
+<p>Your annoying friend is back. She has seen how efficient vi is, and now wants you to replace all occurrences of the word <code>dummies</code> with the word <code>Smarties</code> in the file <code>dummy.txt</code>. How would you do this with vi?</p>
 <p>순서대로 입력해준다.</p>
 <pre class="hljs"><code><div>$ vi dummy.txt <span class="hljs-comment"># vi로 생성했던 dummy.txt 파일을 연다.</span>
 :1,<span class="hljs-variable">$s</span>/dummies/Smarties/g <span class="hljs-comment"># 명령모드를 실행한 뒤(:) 커서를 파일의 맨 처음부터(1,) 맨 끝까지($) dummies를 Smarties로 바꾼다(s/duumies/Smarties/g).</span>
@@ -404,6 +401,46 @@ yy22p <span class="hljs-comment"># 현재 줄을 복사(yy)하고, 22번(22) 붙
 </div></code></pre>
 <p>실행 후 파일이 수정됨을 확인할 수 있다. (화면에 담기 위해 줄 수를 조금 줄였다.)</p>
 <p><img src="image-3.png" alt="3"></p>
+<h2 id="4">4</h2>
+<p>She's sulking because her own editor seems useless now. Unfortunately, you've wasted so much time showing off that you've forgotten you have a report to finish. You've also forgotten to wear your watch today, and you need to make this very important deadline. Quickly, how do you access the system's correct time via the UNIX date command without leaving vi?</p>
+<pre class="hljs"><code><div>:r!date <span class="hljs-comment"># 현재 커서에(r) 시스템의 현재시간(date)을 받아 출력한다(!).</span>
+</div></code></pre>
+<p>실행 후 현재 시간이 출력됨을 확인할 수 있다.</p>
+<p><img src="image-4.png" alt="alt text"></p>
+<p>문서에 사용할 필요가 없는 경우 <code>dd</code> 등으로 다시 삭제하면 된다.</p>
+<h2 id="5">5</h2>
+<p>Your friend is making it hard for you to concentrate. At one point, you decide to move lines 20 through 30 inclusive to the point between line 1 and line 2, so you cut them out of the text by moving to line 20 and typing 11dd. Before you can paste them to the desired location, however, your friend points out that you have an extra &quot;the&quot; in one of your lines, so you delete it with dw to shut her up. Oops. Now how do you recover those 11 lines you had previously cut and then paste them to the desired location at the top of your file?</p>
+<pre class="hljs"><code><div>:2u <span class="hljs-comment"># 명령모드를 실행한 뒤(:) 2번째(2) 전 상태로 되돌린다(u).</span>
+</div></code></pre>
+<p>그 뒤 <code>dw</code>를 먼저 실행한 후 <code>11dd</code>를 실행하는 등 순서를 조정하여 다시 진행하면 된다.</p>
+<p>전후 비교</p>
+<p><img src="image-5.png" alt="before">
+<img src="image-6.png" alt="after"></p>
+<h2 id="6">6</h2>
+<p>Your friend finally found something more fun than pestering you. Candy, While she is out looking for a vending machine, you notice that you have been repeatedly typing the phrase, &quot;deoxyribonucleic acid&quot; (without the quotes) because your mean instructor will not allow students to abbreviate. How would you arrange it so that whenever you type the word &quot;dnas&quot; (without the quotes) in insert mode, it immediately expands to the correct phrase?</p>
+<p><code>.exrc</code> 파일을 생성하여 abbreviation을 추가한다.</p>
+<pre class="hljs"><code><div>$ vi ~/.exrc <span class="hljs-comment"># vi로 .exrc 파일을 연다.</span>
+i <span class="hljs-comment"># 삽입 모드로 전환한다.</span>
+ab dnas deoxyribonucleic acid strands <span class="hljs-comment"># dnas를 입력하면 deoxyribonucleic acid strands로 바꾼다.</span>
+&lt;ESC&gt; <span class="hljs-comment"># 기본 모드로 돌아간다.</span>
+:wq! <span class="hljs-comment"># 명령모드를 실행한 뒤(:) 저장하고(w) 종료한다(q!).</span>
+</div></code></pre>
+<p>이후 vi에서 <code>dnas</code>를 입력하면 <code>deoxyribonucleic acid strands</code>로 바뀌는 것을 확인할 수 있다.</p>
+<p><img src="image-7.png" alt="alt text">
+<img src="image-8.png" alt="alt text"></p>
+<h2 id="7">7</h2>
+<p>She's still out looking for candy. You are feeling better now that you don't have to keep typing that long phrase over and over again. But now you want the text to &quot;wrap&quot; for you whenever it goes beyond column 72, and you don't want to have to see it coming each time and manually hit Enter yourself. You also need to use the restroom, and you have to log out each time you leave this room. Quickly, how do you set vi to wrap the text for you and then make both this setting and your &quot;dnas&quot; macro from the previous question permanent?</p>
+<p><code>.exrc</code> 파일을 생성하여 설정을 추가한다.</p>
+<pre class="hljs"><code><div>$ vi ~/.exrc <span class="hljs-comment"># vi로 .exrc 파일을 연다.</span>
+i <span class="hljs-comment"># 삽입 모드로 전환한다.</span>
+<span class="hljs-built_in">set</span> wm=72 <span class="hljs-comment"># 텍스트가 72칸을 넘어가면 자동으로 줄바꿈한다.</span>
+ab dnas deoxyribonucleic acid strands <span class="hljs-comment"># dnas를 입력하면 deoxyribonucleic acid strands로 바꾼다.</span>
+&lt;ESC&gt; <span class="hljs-comment"># 기본 모드로 돌아간다.</span>
+:wq! <span class="hljs-comment"># 명령모드를 실행한 뒤(:) 저장하고(w) 종료한다(q!).</span>
+</div></code></pre>
+<p>이후 vi에서 <code>dnas</code>를 입력하면 <code>deoxyribonucleic acid strands</code>로 바뀌고, 72칸을 넘어가면 자동으로 줄바꿈되는 것을 확인할 수 있다.</p>
+<p><img src="image-9.png" alt="alt text"></p>
+<p>공백을 기준으로 가로 72칸을 넘어가면 자동으로 줄바꿈되는 것을 확인할 수 있다.</p>
 
 </body>
 </html>

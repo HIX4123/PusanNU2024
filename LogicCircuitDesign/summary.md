@@ -100,7 +100,7 @@
   - $A + A \cdot B = A$
   - $A \cdot (A + B) = A$
 - T10: Combining
-  - $(A \cdot B)g + (A \cdot \overline{B}) = A$
+  - $(A \cdot B) + (A \cdot \overline{B}) = A$
   - $(A + B) \cdot (A + \overline{B}) = A$
 - T11: Consensus
   - $(A + B) \cdot (\overline{A} + C) \cdot (B + C) = (A + B) \cdot (\overline{A} + C)$
