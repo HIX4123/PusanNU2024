@@ -13,6 +13,4 @@ class StringSplitter {
   StringSplitter& removeNonAlnum();
   std::vector<std::string> split(char delimiter);
 
-  // std::vector<std::string>::iterator begin();
-  // std::vector<std::string>::iterator end();
 };

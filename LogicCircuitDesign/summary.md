@@ -108,3 +108,10 @@
 - T12: 드모르간의 정리
   - $\overline{A \cdot B} = \overline{A} + \overline{B}$
   - $\overline{A + B} = \overline{A} \cdot \overline{B}$
+
+## 카르노 맵
+
+- 부울 대수 간소화 방법
+- 진리표 -> 2차원 표
+- 참값 매핑 후 식 간소화
+- 무관항의 경우 마음대로 설정
