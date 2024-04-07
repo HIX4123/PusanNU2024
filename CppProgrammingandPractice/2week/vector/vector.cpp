@@ -4,19 +4,26 @@
 #include <vector>
 
 int main() {
-  int vectors, questions;
-  std::cin >> vectors >> questions;
+  int num_array, num_query;
+  std::cin >> num_array >> num_query;
+  std::cin.ignore();
 
-  std::vector<std::vector<int>> vec(vectors);
+  std::vector<std::vector<int>> array(num_array);
 
-  for (int i = 0; i < vectors; i++) {
-    std::string input;
-    std::getline(std::cin, input);
-    std::istringstream iss(input);
+  for (auto& i : array) {
+    std::string line;
+    std::getline(std::cin, line);
 
+    std::istringstream iss(line);
     int num;
     while (iss >> num) {
-      vec[i].emplace_back(num);
+      i.emplace_back(num);
     }
+  }
+
+  while (num_query--) {
+    int i, j;
+    std::cin >> i >> j;
+    std::cout << array[i][j + 1] << std::endl;
   }
 }
