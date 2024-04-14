@@ -88,3 +88,25 @@
 - `하드 링크`: 파일의 inode를 공유하는 링크입니다.
 - `심볼릭 링크`: 파일의 경로를 가리키는 링크입니다.
 - 리눅스는 디렉토리를 파일로 취급합니다.
+
+## makefile 모음
+
+- `CC = g++`: 컴파일러를 지정합니다.
+- `CFLAGS = -c -Wall`: 컴파일 옵션을 지정합니다.
+- `LDFLAGS =`: 링크 옵션을 지정합니다.
+- `SOURCES = main.cpp hello.cpp factorial.cpp`: 소스 파일을 지정합니다.
+- `OBJECTS = $(SOURCES:.cpp=.o)`: 오브젝트 파일을 지정합니다.
+- `EXECUTABLE`: 실행 파일을 지정합니다.
+- `all: $(SOURCES) $(EXECUTABLE)`: 모든 파일을 컴파일합니다.
+- `$(EXECUTABLE): $(OBJECTS)`: 실행 파일을 생성합니다.
+- `.cpp.o`: 컴파일 규칙을 지정합니다.
+  - `$(CC) $(CFLAGS) $< -o $@`: 컴파일합니다.
+  - `$(CC) $(LDFLAGS) $(OBJECTS) -o $@`: 링크합니다.
+  - `$@`: 타겟 파일의 이름입니다.
+  - `$<`: 의존 파일 중 첫 번째 파일의 이름입니다.
+- `.PHONY`: 타겟이 파일이 아닌 명령어임을 지정합니다.
+
+```makefile
+target: dependencies
+    command
+```
