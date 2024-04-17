@@ -1,4 +1,4 @@
-#include <cstring>
+  #include <cstring>
 #include <iostream>
 
 #include "String.h"
@@ -28,7 +28,7 @@ int main() {
   // s5 = "abc";
   s5.print("s5");
 
-  s4.at(1) = 'A';
+  s4.at(1) = 'E';
   s4.print("s4");
   s4.print("s5");
 

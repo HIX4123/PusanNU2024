@@ -12,11 +12,12 @@ String::String(const String& str) : len(str.len), s(new char[len + 1]) {
 }
 
 String& String::operator=(const String& str) {
-  delete[] s;
-  len = str.len;
-  s = new char[len + 1];
-  std::strcpy(s, str.s);
-
+  if (this != &str) {
+    delete[] s;
+    len = str.len;
+    s = new char[len + 1];
+    std::copy(str.s, str.s + len + 1, s);
+  }
   return *this;
 }
 
