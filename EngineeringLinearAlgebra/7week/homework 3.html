@@ -1,0 +1,447 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>homework 3.md</title>
+<meta http-equiv="Content-type" content="text/html;charset=UTF-8">
+
+<style>
+/* https://github.com/microsoft/vscode/blob/master/extensions/markdown-language-features/media/markdown.css */
+/*---------------------------------------------------------------------------------------------
+ *  Copyright (c) Microsoft Corporation. All rights reserved.
+ *  Licensed under the MIT License. See License.txt in the project root for license information.
+ *--------------------------------------------------------------------------------------------*/
+
+body {
+	font-family: var(--vscode-markdown-font-family, -apple-system, BlinkMacSystemFont, "Segoe WPC", "Segoe UI", "Ubuntu", "Droid Sans", sans-serif);
+	font-size: var(--vscode-markdown-font-size, 14px);
+	padding: 0 26px;
+	line-height: var(--vscode-markdown-line-height, 22px);
+	word-wrap: break-word;
+}
+
+#code-csp-warning {
+	position: fixed;
+	top: 0;
+	right: 0;
+	color: white;
+	margin: 16px;
+	text-align: center;
+	font-size: 12px;
+	font-family: sans-serif;
+	background-color:#444444;
+	cursor: pointer;
+	padding: 6px;
+	box-shadow: 1px 1px 1px rgba(0,0,0,.25);
+}
+
+#code-csp-warning:hover {
+	text-decoration: none;
+	background-color:#007acc;
+	box-shadow: 2px 2px 2px rgba(0,0,0,.25);
+}
+
+body.scrollBeyondLastLine {
+	margin-bottom: calc(100vh - 22px);
+}
+
+body.showEditorSelection .code-line {
+	position: relative;
+}
+
+body.showEditorSelection .code-active-line:before,
+body.showEditorSelection .code-line:hover:before {
+	content: "";
+	display: block;
+	position: absolute;
+	top: 0;
+	left: -12px;
+	height: 100%;
+}
+
+body.showEditorSelection li.code-active-line:before,
+body.showEditorSelection li.code-line:hover:before {
+	left: -30px;
+}
+
+.vscode-light.showEditorSelection .code-active-line:before {
+	border-left: 3px solid rgba(0, 0, 0, 0.15);
+}
+
+.vscode-light.showEditorSelection .code-line:hover:before {
+	border-left: 3px solid rgba(0, 0, 0, 0.40);
+}
+
+.vscode-light.showEditorSelection .code-line .code-line:hover:before {
+	border-left: none;
+}
+
+.vscode-dark.showEditorSelection .code-active-line:before {
+	border-left: 3px solid rgba(255, 255, 255, 0.4);
+}
+
+.vscode-dark.showEditorSelection .code-line:hover:before {
+	border-left: 3px solid rgba(255, 255, 255, 0.60);
+}
+
+.vscode-dark.showEditorSelection .code-line .code-line:hover:before {
+	border-left: none;
+}
+
+.vscode-high-contrast.showEditorSelection .code-active-line:before {
+	border-left: 3px solid rgba(255, 160, 0, 0.7);
+}
+
+.vscode-high-contrast.showEditorSelection .code-line:hover:before {
+	border-left: 3px solid rgba(255, 160, 0, 1);
+}
+
+.vscode-high-contrast.showEditorSelection .code-line .code-line:hover:before {
+	border-left: none;
+}
+
+img {
+	max-width: 100%;
+	max-height: 100%;
+}
+
+a {
+	text-decoration: none;
+}
+
+a:hover {
+	text-decoration: underline;
+}
+
+a:focus,
+input:focus,
+select:focus,
+textarea:focus {
+	outline: 1px solid -webkit-focus-ring-color;
+	outline-offset: -1px;
+}
+
+hr {
+	border: 0;
+	height: 2px;
+	border-bottom: 2px solid;
+}
+
+h1 {
+	padding-bottom: 0.3em;
+	line-height: 1.2;
+	border-bottom-width: 1px;
+	border-bottom-style: solid;
+}
+
+h1, h2, h3 {
+	font-weight: normal;
+}
+
+table {
+	border-collapse: collapse;
+}
+
+table > thead > tr > th {
+	text-align: left;
+	border-bottom: 1px solid;
+}
+
+table > thead > tr > th,
+table > thead > tr > td,
+table > tbody > tr > th,
+table > tbody > tr > td {
+	padding: 5px 10px;
+}
+
+table > tbody > tr + tr > td {
+	border-top: 1px solid;
+}
+
+blockquote {
+	margin: 0 7px 0 5px;
+	padding: 0 16px 0 10px;
+	border-left-width: 5px;
+	border-left-style: solid;
+}
+
+code {
+	font-family: Menlo, Monaco, Consolas, "Droid Sans Mono", "Courier New", monospace, "Droid Sans Fallback";
+	font-size: 1em;
+	line-height: 1.357em;
+}
+
+body.wordWrap pre {
+	white-space: pre-wrap;
+}
+
+pre:not(.hljs),
+pre.hljs code > div {
+	padding: 16px;
+	border-radius: 3px;
+	overflow: auto;
+}
+
+pre code {
+	color: var(--vscode-editor-foreground);
+	tab-size: 4;
+}
+
+/** Theming */
+
+.vscode-light pre {
+	background-color: rgba(220, 220, 220, 0.4);
+}
+
+.vscode-dark pre {
+	background-color: rgba(10, 10, 10, 0.4);
+}
+
+.vscode-high-contrast pre {
+	background-color: rgb(0, 0, 0);
+}
+
+.vscode-high-contrast h1 {
+	border-color: rgb(0, 0, 0);
+}
+
+.vscode-light table > thead > tr > th {
+	border-color: rgba(0, 0, 0, 0.69);
+}
+
+.vscode-dark table > thead > tr > th {
+	border-color: rgba(255, 255, 255, 0.69);
+}
+
+.vscode-light h1,
+.vscode-light hr,
+.vscode-light table > tbody > tr + tr > td {
+	border-color: rgba(0, 0, 0, 0.18);
+}
+
+.vscode-dark h1,
+.vscode-dark hr,
+.vscode-dark table > tbody > tr + tr > td {
+	border-color: rgba(255, 255, 255, 0.18);
+}
+
+</style>
+
+<style>
+/* Tomorrow Theme */
+/* http://jmblog.github.com/color-themes-for-google-code-highlightjs */
+/* Original theme - https://github.com/chriskempson/tomorrow-theme */
+
+/* Tomorrow Comment */
+.hljs-comment,
+.hljs-quote {
+	color: #8e908c;
+}
+
+/* Tomorrow Red */
+.hljs-variable,
+.hljs-template-variable,
+.hljs-tag,
+.hljs-name,
+.hljs-selector-id,
+.hljs-selector-class,
+.hljs-regexp,
+.hljs-deletion {
+	color: #c82829;
+}
+
+/* Tomorrow Orange */
+.hljs-number,
+.hljs-built_in,
+.hljs-builtin-name,
+.hljs-literal,
+.hljs-type,
+.hljs-params,
+.hljs-meta,
+.hljs-link {
+	color: #f5871f;
+}
+
+/* Tomorrow Yellow */
+.hljs-attribute {
+	color: #eab700;
+}
+
+/* Tomorrow Green */
+.hljs-string,
+.hljs-symbol,
+.hljs-bullet,
+.hljs-addition {
+	color: #718c00;
+}
+
+/* Tomorrow Blue */
+.hljs-title,
+.hljs-section {
+	color: #4271ae;
+}
+
+/* Tomorrow Purple */
+.hljs-keyword,
+.hljs-selector-tag {
+	color: #8959a8;
+}
+
+.hljs {
+	display: block;
+	overflow-x: auto;
+	color: #4d4d4c;
+	padding: 0.5em;
+}
+
+.hljs-emphasis {
+	font-style: italic;
+}
+
+.hljs-strong {
+	font-weight: bold;
+}
+</style>
+
+<style>
+/*
+ * Markdown PDF CSS
+ */
+
+ body {
+	font-family: -apple-system, BlinkMacSystemFont, "Segoe WPC", "Segoe UI", "Ubuntu", "Droid Sans", sans-serif, "Meiryo";
+	padding: 0 12px;
+}
+
+pre {
+	background-color: #f8f8f8;
+	border: 1px solid #cccccc;
+	border-radius: 3px;
+	overflow-x: auto;
+	white-space: pre-wrap;
+	overflow-wrap: break-word;
+}
+
+pre:not(.hljs) {
+	padding: 23px;
+	line-height: 19px;
+}
+
+blockquote {
+	background: rgba(127, 127, 127, 0.1);
+	border-color: rgba(0, 122, 204, 0.5);
+}
+
+.emoji {
+	height: 1.4em;
+}
+
+code {
+	font-size: 14px;
+	line-height: 19px;
+}
+
+/* for inline code */
+:not(pre):not(.hljs) > code {
+	color: #C9AE75; /* Change the old color so it seems less like an error */
+	font-size: inherit;
+}
+
+/* Page Break : use <div class="page"/> to insert page break
+-------------------------------------------------------- */
+.page {
+	page-break-after: always;
+}
+
+</style>
+
+<script src="https://unpkg.com/mermaid/dist/mermaid.min.js"></script>
+</head>
+<body>
+  <script>
+    mermaid.initialize({
+      startOnLoad: true,
+      theme: document.body.classList.contains('vscode-dark') || document.body.classList.contains('vscode-high-contrast')
+          ? 'dark'
+          : 'default'
+    });
+  </script>
+<h1 id="%EC%84%A0%ED%98%95%EB%8C%80%EC%88%98%ED%95%99-%EA%B3%BC%EC%A0%9C-3%EC%9E%A5">선형대수학 과제 3장</h1>
+<p>학번: 202355517<br>
+학과: 컴퓨터공학과<br>
+이름: 권민규</p>
+<h2 id="1-%EB%8B%A4%EC%9D%8C-%EB%B2%A1%ED%84%B0%EB%93%A4%EC%9D%B4-p3-%EA%B3%B5%EA%B0%84%EC%97%90%EC%84%9C-%EC%84%A0%ED%98%95-%EB%8F%85%EB%A6%BD%EC%9D%B8%EC%A7%80-%ED%8C%90%EB%B3%84%ED%95%98%EB%9D%BC">1. 다음 벡터들이 $P_3$ 공간에서 선형 독립인지 판별하라.</h2>
+<h3 id="a-x2-1-x2-1">(a) $x^2$, $1$, $x^2-1$</h3>
+<p>$-\left(x^2\right)+\left(1\right)+\left(x^2-1\right)=0$</p>
+<p>$\therefore$ 선형 종속이다.</p>
+<h3 id="b-3-x-x2-x-2">(b) $3$, $x$, $x^2$, $x-2$</h3>
+<p>계수 행렬 $\left[\begin{array}{cccc|c}
+0 &amp; 0 &amp; 1 &amp; 0 &amp; 0 \
+0 &amp; 1 &amp; 0 &amp; 1 &amp; 0 \
+3 &amp; 0 &amp; 0 &amp; -2 &amp; 0
+\end{array}\right]$에서
+$\left(2, -3, 0, 3\right)$의 해가 존재하므로 선형 종속이다.</p>
+<h3 id="c-x1-x2-x-1">(c) $x+1$, $x^2$, $x-1$</h3>
+<p>1, 3번째 벡터에서 선형 독립임을 알 수 있다.</p>
+<h3 id="d-x22x-x1">(d) $x^2+2x$, $x+1$</h3>
+<p>일차항을 소거하려 할 때 나머지 항이 남아있으므로 선형 독립임을 알 수 있다.</p>
+<h2 id="2-mathbfv1mathbfv2cdotsmathbfvn%EC%9D%B4-%EB%B2%A1%ED%84%B0%EA%B3%B5%EA%B0%84-v%EC%9D%98-%EC%83%9D%EC%84%B1-%EC%A7%91%ED%95%A9%EC%9D%B4%EA%B3%A0-mathbfv%EA%B0%80-v%EC%9D%98-%EC%9E%84%EC%9D%98%EC%9D%98-%EB%8B%A4%EB%A5%B8-%EB%B2%A1%ED%84%B0%EB%9D%BC%EA%B3%A0-%ED%95%98%EB%A9%B4-mathbfv-mathbfv1-mathbfv2-cdots-mathbfvn%EC%9D%B4-%EC%84%A0%ED%98%95-%EC%A2%85%EC%86%8D%EC%9E%84%EC%9D%84-%EB%B3%B4%EC%97%AC%EB%9D%BC">2. ${\mathbf{v}_1,,\mathbf{v}_2,,\cdots,,\mathbf{v}_n}$이 벡터공간 $V$의 생성 집합이고, $\mathbf{v}$가 $V$의 임의의 다른 벡터라고 하면, $\mathbf{v}, \mathbf{v}_1, \mathbf{v}_2, \cdots, \mathbf{v}_n$이 선형 종속임을 보여라.</h2>
+<p>$\mathbf{v}=c_1\mathbf{v}_1+c_2\mathbf{v}_2+\cdots+c_n\mathbf{v}_n$에서 $\mathbf{v}+d_1\mathbf{v}_1+d_2\mathbf{v}_2+\cdots+d_n\mathbf{v}_n$일 때 $c_k=d_k$의 해를 가지므로 선형 종속이다.</p>
+<h2 id="3-%EB%8B%A4%EC%9D%8C%EA%B3%BC-%EA%B0%99%EC%9D%B4-%EC%A3%BC%EC%96%B4%EC%A7%84-%EB%B2%A1%ED%84%B0-mathbfx1beginbmatrix213endbmatrix-mathbfx2beginbmatrix3-14endbmatrix-mathbfx3beginbmatrix264endbmatrix%EC%97%90-%EB%8C%80%ED%95%B4">3. 다음과 같이 주어진 벡터 $\mathbf{x}_1=\begin{bmatrix}2\1\3\end{bmatrix}$, $\mathbf{x}_2=\begin{bmatrix}3\-1\4\end{bmatrix}$, $\mathbf{x}_3=\begin{bmatrix}2\6\4\end{bmatrix}$에 대해</h2>
+<h3 id="a-mathbfx1-mathbfx2-mathbfx3%EC%9D%B4-%EC%84%A0%ED%98%95-%EC%A2%85%EC%86%8D%EC%9E%84%EC%9D%84-%EB%B3%B4%EC%97%AC%EB%9D%BC">(a) $\mathbf{x}_1$, $\mathbf{x}_2$, $\mathbf{x}_3$이 선형 종속임을 보여라.</h3>
+<p>$\begin{vmatrix}
+2 &amp; 3 &amp; 2 \
+1 &amp; -1 &amp; 6  \
+3 &amp; 4 &amp; 4
+\end{vmatrix}=0$에서 선형 종속임을 알 수 있다.</p>
+<h3 id="b-mathbfx1%EC%99%80-mathbfx2%EA%B0%80-%EC%84%A0%ED%98%95-%EB%8F%85%EB%A6%BD%EC%9E%84%EC%9D%84-%EB%B3%B4%EC%97%AC%EB%9D%BC">(b) $\mathbf{x}_1$와 $\mathbf{x}_2$가 선형 독립임을 보여라.</h3>
+<p>각 행을 동시에 소거시킬 수 없다.</p>
+<h3 id="c-textspanleftmathbfx1mathbfx2mathbfx3right%EC%9D%98-%EC%B0%A8%EC%9B%90%EC%9D%84-%EA%B5%AC%ED%95%98%EB%9D%BC">(c) $\text{Span}\left(\mathbf{x}_1,,\mathbf{x}_2,,\mathbf{x}_3\right)$의 차원을 구하라.</h3>
+<p>$x_1$, $x_2$로 기저를 이룰 수 있으므로 2차원이다.</p>
+<h3 id="d-textspanleftmathbfx1mathbfx2mathbfx3right%EC%9D%84-%EA%B8%B0%ED%95%98%ED%95%99%EC%A0%81%EC%9C%BC%EB%A1%9C-%EC%84%A4%EB%AA%85%ED%95%98%EB%9D%BC">(d) $\text{Span}\left(\mathbf{x}_1,,\mathbf{x}_2,,\mathbf{x}_3\right)$을 기하학적으로 설명하라.</h3>
+<p>원점을 통과하는 3차원상 평면이다.</p>
+<h2 id="4-%EB%8B%A4%EC%9D%8C-%EB%B2%A1%ED%84%B0%EB%93%A4%EC%9D%80-mathbbr3%EC%9D%84-%EC%83%9D%EC%84%B1%ED%95%9C%EB%8B%A4-%EC%A7%91%ED%95%A9-mathbfv1mathbfv2mathbfv3-mathbfv4-mathbfv5%EA%B0%80-mathbbr3%EC%9D%98-%EA%B8%B0%EC%A0%80%EA%B0%80-%EB%90%98%EB%8F%84%EB%A1%9D-%EA%B0%90%EC%B6%95%ED%95%98%EB%9D%BC">4. 다음 벡터들은 $\mathbb{R}^3$을 생성한다. 집합 ${\mathbf{v}_1,,\mathbf{v}_2,,\mathbf{v}_3, \mathbf{v}_4, \mathbf{v}_5}$가 $\mathbb{R}^3$의 기저가 되도록 감축하라.</h2>
+<p>$\mathbf{v}_1=\begin{bmatrix}1\0\3\end{bmatrix}$, $\mathbf{v}_2=\begin{bmatrix}2\2\1\end{bmatrix}$, $\mathbf{v}_3=\begin{bmatrix}1\2\-2\end{bmatrix}$, $\mathbf{v}_4=\begin{bmatrix}2\0\6\end{bmatrix}$, $\mathbf{v}_5=\begin{bmatrix}0\4\5\end{bmatrix}$</p>
+<p>각 벡터들이 서로 선형독립일 때까지 벡터를 제거한다.</p>
+<p>$\mathbf{v}_4$를 제거하면 $\mathbf{v}_1$, $\mathbf{v}_2$, $\mathbf{v}_3$, $\mathbf{v}_5$가 기저가 된다.</p>
+<h2 id="5-%EB%8B%A4%EC%9D%8C%EC%9D%98-%EA%B0%81%EA%B0%81%EC%97%90-%EB%8C%80%ED%95%98%EC%97%AC-%EA%B8%B0%EC%A0%80%EB%A5%BC-mathbfu1-mathbfu2%EC%97%90%EC%84%9C-mathbfe1-mathbfe2%EB%A1%9C-%EB%B3%80%ED%99%98%ED%95%98%EA%B8%B0-%EC%9C%84%ED%95%9C-%EC%B2%9C%EC%9D%B4-%ED%96%89%EB%A0%AC%EC%9D%84-%EA%B5%AC%ED%95%98%EB%9D%BC">5. 다음의 각각에 대하여 기저를 ${\mathbf{u}_1, \mathbf{u}_2}$에서 ${\mathbf{e}_1, \mathbf{e}_2}$로 변환하기 위한 천이 행렬을 구하라.</h2>
+<h3 id="a-mathbfu1left1-1rightt-mathbfu2left12rightt">(a) $\mathbf{u}_1=\left(1,,-1\right)^T$, $\mathbf{u}_2=\left(1,,2\right)^T$</h3>
+<p>$\begin{bmatrix} 1 &amp; 1 \ -1 &amp; 2 \end{bmatrix}$</p>
+<h3 id="b-mathbfu1left23rightt-mathbfu2left47rightt">(b) $\mathbf{u}_1=\left(2,,3\right)^T$, $\mathbf{u}_2=\left(4,,7\right)^T$</h3>
+<p>$\begin{bmatrix} 2 &amp; 4 \ 3 &amp; 7 \end{bmatrix}$</p>
+<h3 id="c-mathbfu1left10rightt-mathbfu2left01rightt">(c) $\mathbf{u}_1=\left(1,,0\right)^T$, $\mathbf{u}_2=\left(0,,1\right)^T$</h3>
+<p>$\begin{bmatrix} 1 &amp; 0 \ 0 &amp; 1 \end{bmatrix}$</p>
+<h2 id="6-mathbfu1left111rightt-mathbfu2left122rightt-mathbfu3left234rightt%EB%9D%BC%EA%B3%A0-%ED%95%98%EC%9E%90">6. $\mathbf{u}_1=\left(1,,1,,1\right)^T$, $\mathbf{u}_2=\left(1,,2,,2\right)^T$, $\mathbf{u}_3=\left(2,,3,,4\right)^T$라고 하자.</h2>
+<h3 id="a-mathbfemathbfe2mathbfe3%EB%A1%9C%EB%B6%80%ED%84%B0-mathbfu1mathbfu2mathbfu3%EB%A1%9C%EC%9D%98-%EA%B8%B0%EC%A0%80-%EB%B3%80%ED%99%98%EC%97%90-%ED%95%B4%EB%8B%B9%ED%95%98%EB%8A%94-%EC%B2%9C%EC%9D%B4-%ED%96%89%EB%A0%AC%EC%9D%84-%EA%B5%AC%ED%95%98%EB%9D%BC">(a) ${\mathbf{e},,\mathbf{e}_2,,\mathbf{e}_3}$로부터 ${\mathbf{u}_1,,\mathbf{u}_2,,\mathbf{u}_3}$로의 기저 변환에 해당하는 천이 행렬을 구하라.</h3>
+<p>$\begin{bmatrix} 1 &amp; 1 &amp; 2 \ 1 &amp; 2 &amp; 3 \ 1 &amp; 2 &amp; 4 \end{bmatrix}^{-1}= \begin{bmatrix} 2 &amp; 0 &amp; 1 \ -1 &amp; 2 &amp; -1 \ 0 &amp; -1 &amp; 1 \end{bmatrix}$</p>
+<h3 id="b-%EA%B8%B0%EC%A0%80-mathbfu1-mathbfu2-mathbfu3%EC%97%90-%EB%8C%80%ED%95%9C-%EB%8B%A4%EC%9D%8C-%EB%B2%A1%ED%84%B0%EB%93%A4%EC%9D%98-%EC%A2%8C%ED%91%9C%EB%A5%BC-%EA%B5%AC%ED%95%98%EB%9D%BC">(b) 기저 ${\mathbf{u}_1, \mathbf{u}_2, \mathbf{u}_3}$에 대한 다음 벡터들의 좌표를 구하라.</h3>
+<h4 id="i-left325rightt">(i) $\left(3,,2,,5\right)^T$</h4>
+<p>$\begin{bmatrix} 2 &amp; 0 &amp; 1 \ -1 &amp; 2 &amp; -1 \ 0 &amp; -1 &amp; 1 \end{bmatrix}\begin{bmatrix} 3 \ 2 \ 5 \end{bmatrix}=\begin{bmatrix} 1 \ -4 \ 3 \end{bmatrix}$</p>
+<h4 id="ii-left112rightt">(ii) $\left(1,,1,,2\right)^T$</h4>
+<p>$\begin{bmatrix} 2 &amp; 0 &amp; 1 \ -1 &amp; 2 &amp; -1 \ 0 &amp; -1 &amp; 1 \end{bmatrix}\begin{bmatrix} 1 \ 1 \ 2 \end{bmatrix}=\begin{bmatrix} 0 \ -1 \ 1 \end{bmatrix}$</p>
+<h4 id="iii-left232rightt">(iii) $\left(2,,3,,2\right)^T$</h4>
+<p>$\begin{bmatrix} 2 &amp; 0 &amp; 1 \ -1 &amp; 2 &amp; -1 \ 0 &amp; -1 &amp; 1 \end{bmatrix}\begin{bmatrix} 2 \ 3 \ 2 \end{bmatrix}=\begin{bmatrix} 2 \ 2 \ -1 \end{bmatrix}$</p>
+<h2 id="7-%EB%8B%A4%EC%9D%8C%EA%B3%BC-%EA%B0%99%EC%9D%B4-%EC%A3%BC%EC%96%B4%EC%A7%84-%EB%B2%A1%ED%84%B0%EB%93%A4%EC%97%90-%EB%8C%80%ED%95%B4-s%EA%B0%80-mathbfw1mathbfw2%EB%A1%9C%EB%B6%80%ED%84%B0-mathbfv1mathbfv2%EB%A1%9C%EC%9D%98-%EC%B2%9C%EC%9D%B4-%ED%96%89%EB%A0%AC%EC%9D%B4%EA%B8%B0-%EC%9C%84%ED%95%9C-%EB%B2%A1%ED%84%B0-mathbfw1%EA%B3%BC-mathbfw2%EB%A5%BC-%EA%B5%AC%ED%95%98%EB%9D%BC">7. 다음과 같이 주어진 벡터들에 대해 $S$가 ${\mathbf{w}_1,,\mathbf{w}_2}로부터 {\mathbf{v}_1,,\mathbf{v}_2}$로의 천이 행렬이기 위한 벡터 $\mathbf{w}_1$과 $\mathbf{w}_2$를 구하라.</h2>
+<p>$\mathbf{v}_1=\begin{bmatrix}3\1\end{bmatrix}$, $\mathbf{v}_2=\begin{bmatrix}4\2\end{bmatrix}$, $S=\begin{bmatrix}2 &amp; -5 \ -1 &amp; 3\end{bmatrix}$</p>
+<p>$\begin{bmatrix}3 &amp; 4 \ 1 &amp; 2\end{bmatrix}\begin{bmatrix}2 &amp; -5 \ -1 &amp; 3\end{bmatrix}=\begin{bmatrix}2 &amp; -3 \ 0 &amp; 1\end{bmatrix}$</p>
+<p>$\therefore \mathbf{w}_1=\begin{bmatrix}2\0\end{bmatrix}$, $\mathbf{w}_2=\begin{bmatrix}-3\1\end{bmatrix}$</p>
+<h2 id="8-leftx1right%EA%B3%BC-left2x-12x1right%EC%9D%B4-p2%EC%9D%98-%EC%88%9C%EC%84%9C-%EA%B8%B0%EC%A0%80%EB%93%A4%EC%9D%B4%EB%9D%BC%EA%B3%A0-%ED%95%98%EC%9E%90">8. $\left[x,,1\right]$과 $\left[2x-1,,2x+1\right]$이 $P_2$의 순서 기저들이라고 하자.</h2>
+<h3 id="a-left2x-12x1right%EB%A1%9C%EB%B6%80%ED%84%B0-leftx1right%EB%A1%9C%EC%9D%98-%EC%A2%8C%ED%91%9C-%EB%B3%80%ED%99%98%EC%9D%84-%EB%82%98%ED%83%80%EB%82%B4%EB%8A%94-%EC%B2%9C%EC%9D%B4-%ED%96%89%EB%A0%AC%EC%9D%84-%EA%B5%AC%ED%95%98%EB%9D%BC">(a) $\left[2x-1,,2x+1\right]$로부터 $\left[x,,1\right]$로의 좌표 변환을 나타내는 천이 행렬을 구하라.</h3>
+<p>$\begin{bmatrix} 2 &amp; 2 \ -1 &amp; 1 \end{bmatrix}$</p>
+<h3 id="b-leftx1right%EB%A1%9C%EB%B6%80%ED%84%B0-left2x-12x1right%EB%A1%9C%EC%9D%98-%EC%A2%8C%ED%91%9C-%EB%B3%80%ED%99%98%EC%9D%84-%EB%82%98%ED%83%80%EB%82%B4%EB%8A%94-%EC%B2%9C%EC%9D%B4-%ED%96%89%EB%A0%AC%EC%9D%84-%EA%B5%AC%ED%95%98%EB%9D%BC">(b) $\left[x,,1\right]$로부터 $\left[2x-1,,2x+1\right]$로의 좌표 변환을 나타내는 천이 행렬을 구하라.</h3>
+<p>$\begin{bmatrix} 2 &amp; 2 \ -1 &amp; 1 \end{bmatrix}^{-1}=\dfrac14\begin{bmatrix} 1 &amp; -2 \ 1 &amp; 2 \end{bmatrix}$</p>
+<h2 id="9-%EB%8B%A4%EC%9D%8C-%EA%B0%81-%ED%96%89%EB%A0%AC%EB%93%A4%EC%97%90-%EB%8C%80%ED%95%98%EC%97%AC-%ED%96%89-%EA%B3%B5%EA%B0%84%EC%9D%98-%EA%B8%B0%EC%A0%80-%EC%97%B4-%EA%B3%B5%EA%B0%84%EC%9D%98-%EA%B8%B0%EC%A0%80-%EB%B0%8F-%EC%98%81%EA%B3%B5%EA%B0%84%EC%9D%98-%EA%B8%B0%EC%A0%80%EB%A5%BC-%EA%B5%AC%ED%95%98%EB%9D%BC">9. 다음 각 행렬들에 대하여 행 공간의 기저, 열 공간의 기저 및 영공간의 기저를 구하라.</h2>
+<h3 id="a-beginbmatrix-1--3--2--2--1--4--4--7--8-endbmatrix">(a) $\begin{bmatrix} 1 &amp; 3 &amp; 2 \ 2 &amp; 1 &amp; 4 \ 4 &amp; 7 &amp; 8 \end{bmatrix}$</h3>
+<p>감소된 행 사다리꼴로 변환하여 구할 수 있다.</p>
+<p>$\begin{bmatrix} 1 &amp; 3 &amp; 2 \ 0 &amp; -15 &amp; 0 \ 0 &amp; 0 &amp; -10 \end{bmatrix}$에서</p>
+<p>행 공간의 기저는 $\begin{bmatrix} 1 &amp; 3 &amp; 2 \end{bmatrix},,\begin{bmatrix} 0 &amp; -15 &amp; 0 \end{bmatrix},,\begin{bmatrix} 0 &amp; 0 &amp; -10 \end{bmatrix}$이고<br>
+열 공간의 기저는 $\begin{bmatrix} 1 \ 2 \ 4 \end{bmatrix},,\begin{bmatrix} 3 \ 1 \ 7 \end{bmatrix},,\begin{bmatrix} 2 \ 4 \ 8 \end{bmatrix}$이다.
+영공간의 기저는 $\begin{bmatrix} 0 \ 0 \ 0 \end{bmatrix}$이다.</p>
+<h3 id="b-beginbmatrix--3--1--3--4--1--2---1---2---3--8--4--2-endbmatrix">(b) $\begin{bmatrix} -3 &amp; 1 &amp; 3 &amp; 4 \ 1 &amp; 2 &amp; -1 &amp; -2 \ -3 &amp; 8 &amp; 4 &amp; 2 \end{bmatrix}$</h3>
+<p>감소된 행 사다리꼴로 변환하여 구할 수 있다.</p>
+<p>$\begin{bmatrix} -3 &amp; 1 &amp; 3 &amp; 4 \ 0 &amp; \dfrac{5}{3} &amp; 2 &amp; 2 \ 0 &amp; 0 &amp; 0 &amp; 0 \end{bmatrix}$에서</p>
+<h2 id="10-a%EB%8A%94-%EB%8B%A4%EC%9D%8C%EA%B3%BC-%EA%B0%99%EC%9D%80-%EA%B0%90%EC%86%8C%EB%90%9C-%EC%82%AC%EB%8B%A4%EB%A6%AC%EA%BC%B4%EC%9D%84-%EA%B0%96%EB%8A%94-4-times-4-%ED%96%89%EB%A0%AC%EC%9D%B4%EB%9D%BC%EA%B3%A0-%ED%95%98%EC%9E%90">10. $A$는 다음과 같은 감소된 사다리꼴을 갖는 $4 \times 4$ 행렬이라고 하자.</h2>
+<p>$$U=\begin{bmatrix} 1 &amp; 0 &amp; -1 &amp; 1 \ 0 &amp; 1 &amp; 3 &amp; 2 \ 0 &amp; 0 &amp; 0 &amp; 0 \ 0 &amp; 0 &amp; 0 &amp; 0 \end{bmatrix}$$</p>
+<p>만약 $\mathbf{a}_1=\begin{bmatrix} 3 \ 2 \ -1 \ 2 \end{bmatrix}$, $\mathbf{a}_2=\begin{bmatrix} 1 \ 1 \ -2 \ 3 \end{bmatrix}$이라면 $\mathbf{a}_3$와 $\mathbf{a}_4$를 구하라.</p>
+
+</body>
+</html>

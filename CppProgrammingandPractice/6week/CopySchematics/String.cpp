@@ -5,10 +5,10 @@
 
 String::String() : len(0), s(new char) { *s = '\0'; }
 String::String(const char* str) : len(std::strlen(str)), s(new char[len + 1]) {
-  std::strcpy(s, str);
+  std::copy(str, str + len + 1, s);
 }
-String::String(const String& str) : len(str.len), s(new char[len + 1]) {
-  std::strcpy(s, str.s);
+String::String(const String& str) : len(str.len), s(new char[str.len + 1]) {
+  std::copy(str.s, str.s + len + 1, s);
 }
 
 String& String::operator=(const String& str) {
@@ -16,7 +16,7 @@ String& String::operator=(const String& str) {
     delete[] s;
     len = str.len;
     s = new char[len + 1];
-    std::copy(str.s, str.s + len + 1, s);
+    std::copy(str.s, str.s + str.len + 1, s);
   }
   return *this;
 }
@@ -31,4 +31,9 @@ size_t String::size() const { return len; }
 
 void String::print(const char* str) const {
   std::cout << str << ": " << s << ", size: " << len << std::endl;
+}
+
+void String::swap(String& str) {
+  std::swap(len, str.len);
+  std::swap(s, str.s);
 }

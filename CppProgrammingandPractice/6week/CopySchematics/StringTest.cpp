@@ -6,7 +6,7 @@
 void printString(const String s) { s.print("printString"); }
 
 String createName() {
-  String name("Kim");
+  String name{"Kim"};
   return name;
 }
 
@@ -30,7 +30,7 @@ int main() {
 
   s4.at(1) = 'E';
   s4.print("s4");
-  s4.print("s5");
+  s5.print("s5");
 
   printString("hij");
   printString(s2);  // shallow copy ??

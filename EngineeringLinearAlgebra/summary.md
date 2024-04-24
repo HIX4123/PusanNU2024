@@ -59,6 +59,42 @@
 
 ## 행렬식
 
+- 특이행렬 판별식
+- 행렬식의 성질
+  - $|A^T| = |A|$
+  - $|AB| = |A||B|$
+  - $|A^{-1}| = \dfrac{1}{|A|}$
+  - $|cA| = c^n|A|$
+  - $|A| = 0 \iff A$는 특이행렬
+  - $|A| = 0 \iff A$는 역행렬이 존재하지 않음
+  - 삼각행렬의 행렬식은 대각원소의 곱
+  - 0만 있는 행이나 열이 하나라도 있으면 행렬식은 0
+  - 완전히 동일한 두 개의 행이나 열이 있으면 행렬식은 0
+
+### 1차원 행렬식
+
+- $\begin{vmatrix} a \end{vmatrix} = a$
+
+### 2차원 행렬식
+
+- $\begin{vmatrix} a & b \\ c & d \end{vmatrix} = ad - bc$
+
+### 3차원 행렬식
+
+- $\begin{vmatrix} a & b & c \\ d & e & f \\ g & h & i \end{vmatrix} = aei + bfg + cdh - ceg - bdi - afh$ (사루스 법칙)
+
+### 소행렬식
+
+- 주어진 행렬에서 특정 행과 열을 제거한 행렬식
+
+### 여인수
+
+- $C_{ij} = (-1)^{i+j} \begin{vmatrix} M_{ij} \end{vmatrix}$
+
+#### 여인수 전개
+
+- $|A| = \sum_{j=1}^{n} a_{ij}C_{ij}$
+
 ## 벡터공간
 
 ## 선형독립
