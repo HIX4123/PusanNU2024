@@ -1,12 +1,54 @@
 #include "String.h"
 
-#include <algorithm>
-#include <iostream>
-
 void String::swap(String& str) {
   using std::swap;
   swap(s, str.s);
   swap(len, str.len);
+}
+
+String::String() : len(0), s(nullptr) {}
+
+String::String(const char* str)
+    : len(strlen(str)), s(new char[strlen(str) + 1]) {
+  std::copy(str, str + len + 1, s);
+}
+
+String::String(const String& str) {
+  if (this != &str) {
+    len = str.len;
+    s = new char[len + 1];
+    std::copy(str.s, str.s + str.len + 1, s);
+  }
+}
+
+String& String::operator=(const String& str) {
+  if (this != &str) {
+    delete[] s;
+    len = str.len;
+    s = new char[len + 1];
+    std::copy(str.s, str.s + str.len + 1, s);
+  }
+
+  return *this;
+}
+
+String::String(String&& str) noexcept
+    : len(std::move(str.len)), s(std::move(str.s)) {
+  std::copy(str.s, str.s + str.len + 1, s);
+  delete[] str.s;
+  str.s = nullptr;
+  str.len = 0;
+}
+
+String& String::operator=(String&& str) noexcept {
+  s = std::move(str.s);
+  len = std::move(str.len);
+  std::copy(str.s, str.s + str.len + 1, s);
+  delete[] str.s;
+  str.s = nullptr;
+  str.len = 0;
+
+  return *this;
 }
 
 String::~String() {
@@ -14,8 +56,9 @@ String::~String() {
 }
 
 const char* String::data() const { return s; }
+
 char& String::at(size_t pos) {
-  if (len != 0 && 0 <= pos && pos < len) return s[pos];
+  if (len != 0 && pos < len) return s[pos];
   throw std::out_of_range("out of range at index: " + std::to_string(pos) +
                           ", but the length of String is " +
                           std::to_string(len));

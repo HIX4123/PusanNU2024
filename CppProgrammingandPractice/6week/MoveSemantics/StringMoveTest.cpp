@@ -1,18 +1,22 @@
+#include <vector>
+
+#include "String.h"
+
 void printString(String s) { s.print("printCopyString"); }
 
-String createname() {
+String createName() {
   String name{"Kim"};
   return name;
 }
 
 int main() {
   String s1 = createName();
-  s1.print("s1");
-  printString(s1);
+  s1.print("s1");   // s1: Kim, size: 3
+  printString(s1);  // printCopyString: Kim, size: 3
 
-  printString("acb");
-  printString(createName());
-  printString(std::move(s1));
+  printString("acb");          // printCopyString: acb, size: 3
+  printString(createName());   // printCopyString: Kim, size: 3
+  printString(std::move(s1));  //! printCopyString: 8?, size: 3
 
   String s2;
   s2 = s1;
@@ -28,16 +32,16 @@ int main() {
     s3.at(0) = 'a';
     s2.print("s2");
     s3.print("s3");
-  } catch (std::out_or_range& ex) {
+  } catch (std::out_of_range& ex) {
     std::cout << ex.what() << std::endl;
   }
   s3 = "HIG";
 
   std::vector<String> vec1;
-  vec1.puch_back(std::move(s1));
-  vec1.puch_back(std::move(s2));
-  vec1.puch_back(std::move(s3));
-  vec1.puch_back(std::move(s4));
+  vec1.push_back(std::move(s1));
+  vec1.push_back(std::move(s2));
+  vec1.push_back(std::move(s3));
+  vec1.push_back(std::move(s4));
 
   std::vector<String> vec2(4);
   vec2 = std::move(vec1);

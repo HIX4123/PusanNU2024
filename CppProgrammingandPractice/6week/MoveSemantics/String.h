@@ -1,5 +1,10 @@
 #include <stddef.h>
 
+#include <cstring>
+#include <iostream>
+#include <string>
+#include <utility>
+
 class String {
  public:
   String();
@@ -16,6 +21,6 @@ class String {
 
  private:
   void swap(String& str);
-  int len;
+  size_t len;
   char* s;
 };
