@@ -68,4 +68,5 @@ int main() {
   String s10;
   s10 = std::move(createName());
   s10 = std::move(s10);
+  s10.print("s10");
 }

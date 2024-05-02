@@ -1,5 +1,9 @@
 #include "String.h"
 
+#include <cstring>
+#include <iostream>
+#include <utility>
+
 void String::swap(String& str) {
   using std::swap;
   swap(s, str.s);
@@ -42,13 +46,15 @@ String::String(String&& str) noexcept
 }
 
 String& String::operator=(String&& str) noexcept {
-  s = new char[len + 1];
-  len = std::move(str.len);
-  std::copy(str.s, str.s + str.len + 1, s);
-  delete[] str.s;
-  str.s = new char;
-  *str.s = 0;
-  str.len = 0;
+  if (this != &str) {
+    s = new char[len + 1];
+    len = std::move(str.len);
+    std::copy(str.s, str.s + str.len + 1, s);
+    delete[] str.s;
+    str.s = new char;
+    *str.s = 0;
+    str.len = 0;
+  }
 
   return *this;
 }
