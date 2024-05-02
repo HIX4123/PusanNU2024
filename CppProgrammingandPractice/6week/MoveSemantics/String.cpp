@@ -6,7 +6,7 @@ void String::swap(String& str) {
   swap(len, str.len);
 }
 
-String::String() : len(0), s(nullptr) {}
+String::String() : len(0), s(new char) { *s = 0; }
 
 String::String(const char* str)
     : len(strlen(str)), s(new char[strlen(str) + 1]) {
@@ -33,19 +33,21 @@ String& String::operator=(const String& str) {
 }
 
 String::String(String&& str) noexcept
-    : len(std::move(str.len)), s(std::move(str.s)) {
+    : len(std::move(str.len)), s(new char[len + 1]) {
   std::copy(str.s, str.s + str.len + 1, s);
   delete[] str.s;
-  str.s = nullptr;
+  str.s = new char;
+  *str.s = 0;
   str.len = 0;
 }
 
 String& String::operator=(String&& str) noexcept {
-  s = std::move(str.s);
+  s = new char[len + 1];
   len = std::move(str.len);
   std::copy(str.s, str.s + str.len + 1, s);
   delete[] str.s;
-  str.s = nullptr;
+  str.s = new char;
+  *str.s = 0;
   str.len = 0;
 
   return *this;

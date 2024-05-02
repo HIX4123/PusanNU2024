@@ -64,6 +64,7 @@ int main() {
 
   String s9 = std::move(createName());
   printString(std::move(createName()));
+  
   String s10;
   s10 = std::move(createName());
   s10 = std::move(s10);
