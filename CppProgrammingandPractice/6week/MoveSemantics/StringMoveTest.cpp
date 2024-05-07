@@ -16,14 +16,14 @@ int main() {
 
   printString("acb");          // printCopyString: acb, size: 3
   printString(createName());   // printCopyString: Kim, size: 3
-  printString(std::move(s1));  //! printCopyString: 8?, size: 3
+  printString(std::move(s1));
 
   String s2;
   s2 = s1;
   s1.print("s1");
   s2.print("s2");
 
-  String s3 = "DEF";
+   String s3 = "DEF";
   String s4 = std::move(s3);
   s3.print("s3");
   s4.print("s4");

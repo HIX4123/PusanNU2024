@@ -8,13 +8,8 @@
       "args": [],
       "stopAtEntry": false,
       "externalConsole": true,
-<<<<<<< HEAD
       "cwd": "c:/Users/rnjsa/OneDrive/Desktop/2024",
       "program": "c:/Users/rnjsa/OneDrive/Desktop/2024/build/Debug/outDebug",
-=======
-      "cwd": "c:/Users/user/Desktop/PusanNU2024/CppProgrammingandPractice/6week/MoveSemantics",
-      "program": "c:/Users/user/Desktop/PusanNU2024/CppProgrammingandPractice/6week/MoveSemantics/build/Debug/outDebug",
->>>>>>> 5986edb721eaf2a72f2891c69ca4b780d7f89fe8
       "MIMode": "gdb",
       "miDebuggerPath": "gdb",
       "setupCommands": [

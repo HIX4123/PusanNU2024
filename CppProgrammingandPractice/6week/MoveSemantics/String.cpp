@@ -9,24 +9,25 @@ void String::swap(String& str) {
 String::String() : len(0), s(nullptr) {}
 
 String::String(const char* str)
-    : len(strlen(str)), s(new char[strlen(str) + 1]) {
-  std::copy(str, str + len + 1, s);
+    : len(str ? strlen(str) : 0), s(str ? new char[len + 1] : nullptr) {
+  if (str) std::copy(str, str + len + 1, s);
 }
 
-String::String(const String& str) {
-  if (this != &str) {
-    len = str.len;
-    s = new char[len + 1];
-    std::copy(str.s, str.s + str.len + 1, s);
-  }
+String::String(const String& str)
+    : len(str.len), s(str.s ? new char[len + 1] : nullptr) {
+  if (str.s) std::copy(str.s, str.s + str.len + 1, s);
 }
 
 String& String::operator=(const String& str) {
   if (this != &str) {
     delete[] s;
     len = str.len;
-    s = new char[len + 1];
-    std::copy(str.s, str.s + str.len + 1, s);
+    if (len) {
+      s = new char[len + 1];
+      std::copy(str.s, str.s + str.len + 1, s);
+    } else {
+      s = nullptr;
+    }
   }
 
   return *this;
@@ -34,17 +35,14 @@ String& String::operator=(const String& str) {
 
 String::String(String&& str) noexcept
     : len(std::move(str.len)), s(std::move(str.s)) {
-  std::copy(str.s, str.s + str.len + 1, s);
-  delete[] str.s;
-  str.s = nullptr;
   str.len = 0;
+  str.s = nullptr;
 }
 
 String& String::operator=(String&& str) noexcept {
   s = std::move(str.s);
   len = std::move(str.len);
-  std::copy(str.s, str.s + str.len + 1, s);
-  delete[] str.s;
+
   str.s = nullptr;
   str.len = 0;
 
@@ -68,7 +66,7 @@ size_t String::size() const { return len; }
 
 void String::print(const char* str) const {
   // for debugging
-  // std::cout << str << ": " << s << ", size: " << len << " address: " << (void
-  // *) s << std::endl;
-  std::cout << str << ": " << s << ", size: " << len << std::endl;
+  std::cout << str << ": " << s << ", size: " << len << " address: " << (void*)s
+            << std::endl;
+  // std::cout << str << ": " << s << ", size: " << len << std::endl;
 }
