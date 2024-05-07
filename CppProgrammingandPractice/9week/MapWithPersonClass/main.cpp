@@ -12,7 +12,7 @@ auto make_person() {
   std::cin >> name;
   std::cin >> age;
   std::cin >> salary;
-  return std::pair(Person{name, age}, salary);
+  return std::pair<Person, size_t>(Person{name, age}, salary);
 }
 
 int main() {
@@ -48,7 +48,7 @@ int main() {
       std::begin(v_payroll), std::end(v_payroll),
       [](const auto& lhs, const auto& rhs) { return lhs.second < rhs.second; });
   for (const auto& [person, salary] : v_payroll)
-    std::cout << person << " " << salary < std::endl;
+    std::cout << person << " " << salary << std::endl;
 
   return 0;
 }
