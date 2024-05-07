@@ -3,7 +3,7 @@ section .data
   output_msg db "The largest prime number smaller than the input is: ", 0
 
 section .bss
-  input resb 2
+  input resb 2  
 
 section .text
   global _start

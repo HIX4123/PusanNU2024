@@ -10,5 +10,5 @@ class Array {
 
  private:
   std::unique_ptr<int[]> data;
-  size_t size;
+  size_t _size;
 };

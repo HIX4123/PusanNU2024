@@ -8,8 +8,8 @@
       "args": [],
       "stopAtEntry": false,
       "externalConsole": true,
-      "cwd": "c:/Users/rnjsa/OneDrive/Desktop/2024/CppProgrammingandPractice/9week/OverloadingCompareOperator",
-      "program": "c:/Users/rnjsa/OneDrive/Desktop/2024/CppProgrammingandPractice/9week/OverloadingCompareOperator/build/Debug/outDebug",
+      "cwd": "c:/Users/rnjsa/OneDrive/Desktop/2024/CppProgrammingandPractice/9week/SubscriptOperator",
+      "program": "c:/Users/rnjsa/OneDrive/Desktop/2024/CppProgrammingandPractice/9week/SubscriptOperator/build/Debug/outDebug",
       "MIMode": "gdb",
       "miDebuggerPath": "gdb",
       "setupCommands": [
