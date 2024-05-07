@@ -36,5 +36,19 @@ int main() {
   for (const auto& [person, salary] : v_payroll)
     std::cout << person << " " << salary << std::endl;
 
-  
+  std::cout << "Sort By Name" << std::endl;
+  std::sort(std::begin(v_payroll), std::end(v_payroll),
+            [](const auto& lhs, const auto& rhs) {
+              auto Comparator = Person::ComparatorByName();
+              return Comparator(lhs.first, rhs.first);
+            });
+
+  std::cout << "Sort By Salary" << std::endl;
+  std::sort(
+      std::begin(v_payroll), std::end(v_payroll),
+      [](const auto& lhs, const auto& rhs) { return lhs.second < rhs.second; });
+  for (const auto& [person, salary] : v_payroll)
+    std::cout << person << " " << salary < std::endl;
+
+  return 0;
 }
