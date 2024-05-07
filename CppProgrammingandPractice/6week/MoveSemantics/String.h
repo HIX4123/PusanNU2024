@@ -1,10 +1,7 @@
 #include <stddef.h>
 
-#include <cstring>
 #include <iostream>
 #include <string>
-#include <utility>
-
 class String {
  public:
   String();
