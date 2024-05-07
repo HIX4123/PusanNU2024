@@ -6,17 +6,17 @@ class Person {
     // set ID with uniqueness
   }
 
-  friend std::ostream& operator<<(std::ostream& out, const Person& p) {
+  friend std::ostream &operator<<(std::ostream &out, const Person &p) {
     // implementation
   }
 
-  bool operator<(const Person& rhs) const {
+  bool operator<(const Person &rhs) const {
     // implementation
   }
 
   class ComparatorByAge {
    public:
-    bool operator()(const Person& lhs, const Person& rhs) const {
+    bool operator()(const Person &lhs, const Person &rhs) const {
       // implementation
     }
   };
