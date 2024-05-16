@@ -1,0 +1,736 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>202355517-민규-권.md</title>
+<meta http-equiv="Content-type" content="text/html;charset=UTF-8">
+
+<style>
+/* https://github.com/microsoft/vscode/blob/master/extensions/markdown-language-features/media/markdown.css */
+/*---------------------------------------------------------------------------------------------
+ *  Copyright (c) Microsoft Corporation. All rights reserved.
+ *  Licensed under the MIT License. See License.txt in the project root for license information.
+ *--------------------------------------------------------------------------------------------*/
+
+body {
+	font-family: var(--vscode-markdown-font-family, -apple-system, BlinkMacSystemFont, "Segoe WPC", "Segoe UI", "Ubuntu", "Droid Sans", sans-serif);
+	font-size: var(--vscode-markdown-font-size, 14px);
+	padding: 0 26px;
+	line-height: var(--vscode-markdown-line-height, 22px);
+	word-wrap: break-word;
+}
+
+#code-csp-warning {
+	position: fixed;
+	top: 0;
+	right: 0;
+	color: white;
+	margin: 16px;
+	text-align: center;
+	font-size: 12px;
+	font-family: sans-serif;
+	background-color:#444444;
+	cursor: pointer;
+	padding: 6px;
+	box-shadow: 1px 1px 1px rgba(0,0,0,.25);
+}
+
+#code-csp-warning:hover {
+	text-decoration: none;
+	background-color:#007acc;
+	box-shadow: 2px 2px 2px rgba(0,0,0,.25);
+}
+
+body.scrollBeyondLastLine {
+	margin-bottom: calc(100vh - 22px);
+}
+
+body.showEditorSelection .code-line {
+	position: relative;
+}
+
+body.showEditorSelection .code-active-line:before,
+body.showEditorSelection .code-line:hover:before {
+	content: "";
+	display: block;
+	position: absolute;
+	top: 0;
+	left: -12px;
+	height: 100%;
+}
+
+body.showEditorSelection li.code-active-line:before,
+body.showEditorSelection li.code-line:hover:before {
+	left: -30px;
+}
+
+.vscode-light.showEditorSelection .code-active-line:before {
+	border-left: 3px solid rgba(0, 0, 0, 0.15);
+}
+
+.vscode-light.showEditorSelection .code-line:hover:before {
+	border-left: 3px solid rgba(0, 0, 0, 0.40);
+}
+
+.vscode-light.showEditorSelection .code-line .code-line:hover:before {
+	border-left: none;
+}
+
+.vscode-dark.showEditorSelection .code-active-line:before {
+	border-left: 3px solid rgba(255, 255, 255, 0.4);
+}
+
+.vscode-dark.showEditorSelection .code-line:hover:before {
+	border-left: 3px solid rgba(255, 255, 255, 0.60);
+}
+
+.vscode-dark.showEditorSelection .code-line .code-line:hover:before {
+	border-left: none;
+}
+
+.vscode-high-contrast.showEditorSelection .code-active-line:before {
+	border-left: 3px solid rgba(255, 160, 0, 0.7);
+}
+
+.vscode-high-contrast.showEditorSelection .code-line:hover:before {
+	border-left: 3px solid rgba(255, 160, 0, 1);
+}
+
+.vscode-high-contrast.showEditorSelection .code-line .code-line:hover:before {
+	border-left: none;
+}
+
+img {
+	max-width: 100%;
+	max-height: 100%;
+}
+
+a {
+	text-decoration: none;
+}
+
+a:hover {
+	text-decoration: underline;
+}
+
+a:focus,
+input:focus,
+select:focus,
+textarea:focus {
+	outline: 1px solid -webkit-focus-ring-color;
+	outline-offset: -1px;
+}
+
+hr {
+	border: 0;
+	height: 2px;
+	border-bottom: 2px solid;
+}
+
+h1 {
+	padding-bottom: 0.3em;
+	line-height: 1.2;
+	border-bottom-width: 1px;
+	border-bottom-style: solid;
+}
+
+h1, h2, h3 {
+	font-weight: normal;
+}
+
+table {
+	border-collapse: collapse;
+}
+
+table > thead > tr > th {
+	text-align: left;
+	border-bottom: 1px solid;
+}
+
+table > thead > tr > th,
+table > thead > tr > td,
+table > tbody > tr > th,
+table > tbody > tr > td {
+	padding: 5px 10px;
+}
+
+table > tbody > tr + tr > td {
+	border-top: 1px solid;
+}
+
+blockquote {
+	margin: 0 7px 0 5px;
+	padding: 0 16px 0 10px;
+	border-left-width: 5px;
+	border-left-style: solid;
+}
+
+code {
+	font-family: Menlo, Monaco, Consolas, "Droid Sans Mono", "Courier New", monospace, "Droid Sans Fallback";
+	font-size: 1em;
+	line-height: 1.357em;
+}
+
+body.wordWrap pre {
+	white-space: pre-wrap;
+}
+
+pre:not(.hljs),
+pre.hljs code > div {
+	padding: 16px;
+	border-radius: 3px;
+	overflow: auto;
+}
+
+pre code {
+	color: var(--vscode-editor-foreground);
+	tab-size: 4;
+}
+
+/** Theming */
+
+.vscode-light pre {
+	background-color: rgba(220, 220, 220, 0.4);
+}
+
+.vscode-dark pre {
+	background-color: rgba(10, 10, 10, 0.4);
+}
+
+.vscode-high-contrast pre {
+	background-color: rgb(0, 0, 0);
+}
+
+.vscode-high-contrast h1 {
+	border-color: rgb(0, 0, 0);
+}
+
+.vscode-light table > thead > tr > th {
+	border-color: rgba(0, 0, 0, 0.69);
+}
+
+.vscode-dark table > thead > tr > th {
+	border-color: rgba(255, 255, 255, 0.69);
+}
+
+.vscode-light h1,
+.vscode-light hr,
+.vscode-light table > tbody > tr + tr > td {
+	border-color: rgba(0, 0, 0, 0.18);
+}
+
+.vscode-dark h1,
+.vscode-dark hr,
+.vscode-dark table > tbody > tr + tr > td {
+	border-color: rgba(255, 255, 255, 0.18);
+}
+
+</style>
+
+<style>
+/* Tomorrow Theme */
+/* http://jmblog.github.com/color-themes-for-google-code-highlightjs */
+/* Original theme - https://github.com/chriskempson/tomorrow-theme */
+
+/* Tomorrow Comment */
+.hljs-comment,
+.hljs-quote {
+	color: #8e908c;
+}
+
+/* Tomorrow Red */
+.hljs-variable,
+.hljs-template-variable,
+.hljs-tag,
+.hljs-name,
+.hljs-selector-id,
+.hljs-selector-class,
+.hljs-regexp,
+.hljs-deletion {
+	color: #c82829;
+}
+
+/* Tomorrow Orange */
+.hljs-number,
+.hljs-built_in,
+.hljs-builtin-name,
+.hljs-literal,
+.hljs-type,
+.hljs-params,
+.hljs-meta,
+.hljs-link {
+	color: #f5871f;
+}
+
+/* Tomorrow Yellow */
+.hljs-attribute {
+	color: #eab700;
+}
+
+/* Tomorrow Green */
+.hljs-string,
+.hljs-symbol,
+.hljs-bullet,
+.hljs-addition {
+	color: #718c00;
+}
+
+/* Tomorrow Blue */
+.hljs-title,
+.hljs-section {
+	color: #4271ae;
+}
+
+/* Tomorrow Purple */
+.hljs-keyword,
+.hljs-selector-tag {
+	color: #8959a8;
+}
+
+.hljs {
+	display: block;
+	overflow-x: auto;
+	color: #4d4d4c;
+	padding: 0.5em;
+}
+
+.hljs-emphasis {
+	font-style: italic;
+}
+
+.hljs-strong {
+	font-weight: bold;
+}
+</style>
+
+<style>
+/*
+ * Markdown PDF CSS
+ */
+
+ body {
+	font-family: -apple-system, BlinkMacSystemFont, "Segoe WPC", "Segoe UI", "Ubuntu", "Droid Sans", sans-serif, "Meiryo";
+	padding: 0 12px;
+}
+
+pre {
+	background-color: #f8f8f8;
+	border: 1px solid #cccccc;
+	border-radius: 3px;
+	overflow-x: auto;
+	white-space: pre-wrap;
+	overflow-wrap: break-word;
+}
+
+pre:not(.hljs) {
+	padding: 23px;
+	line-height: 19px;
+}
+
+blockquote {
+	background: rgba(127, 127, 127, 0.1);
+	border-color: rgba(0, 122, 204, 0.5);
+}
+
+.emoji {
+	height: 1.4em;
+}
+
+code {
+	font-size: 14px;
+	line-height: 19px;
+}
+
+/* for inline code */
+:not(pre):not(.hljs) > code {
+	color: #C9AE75; /* Change the old color so it seems less like an error */
+	font-size: inherit;
+}
+
+/* Page Break : use <div class="page"/> to insert page break
+-------------------------------------------------------- */
+.page {
+	page-break-after: always;
+}
+
+</style>
+
+<script src="https://unpkg.com/mermaid/dist/mermaid.min.js"></script>
+</head>
+<body>
+  <script>
+    mermaid.initialize({
+      startOnLoad: true,
+      theme: document.body.classList.contains('vscode-dark') || document.body.classList.contains('vscode-high-contrast')
+          ? 'dark'
+          : 'default'
+    });
+  </script>
+<h1 id="homework-5">Homework #5</h1>
+<p>School ID: 202355517
+Name: 권민규</p>
+<p>이번 Homework는 20점입니다.</p>
+<h2 id="1">1</h2>
+<pre class="hljs"><code><div><span class="hljs-meta">#<span class="hljs-meta-keyword">include</span> <span class="hljs-meta-string">&lt;stdio.h&gt;</span></span>
+
+<span class="hljs-function"><span class="hljs-keyword">int</span> <span class="hljs-title">mydivide</span><span class="hljs-params">(<span class="hljs-keyword">int</span>, <span class="hljs-keyword">int</span>)</span></span>;
+
+<span class="hljs-function"><span class="hljs-keyword">int</span> <span class="hljs-title">main</span><span class="hljs-params">()</span> </span>{
+  <span class="hljs-keyword">int</span> x = <span class="hljs-number">5</span>, y = <span class="hljs-number">2</span>;
+  <span class="hljs-built_in">printf</span>(<span class="hljs-string">"%d\n"</span>, mydivide(x, y));
+
+  x = <span class="hljs-number">3</span>; y = <span class="hljs-number">0</span>;
+  <span class="hljs-built_in">printf</span>(<span class="hljs-string">"%d\n"</span>, mydivide(x, y));
+
+  <span class="hljs-keyword">return</span> <span class="hljs-number">0</span>;
+}
+
+<span class="hljs-function"><span class="hljs-keyword">int</span> <span class="hljs-title">mydivide</span><span class="hljs-params">(<span class="hljs-keyword">int</span> a, <span class="hljs-keyword">int</span> b)</span> </span>{
+  <span class="hljs-keyword">return</span> a / b;
+}
+</div></code></pre>
+<h3 id="1-%EC%BD%94%EB%93%9C%EB%A5%BC-%EC%88%98%ED%96%89%ED%95%98%EC%97%AC-%EB%B0%9C%EC%83%9D%EB%90%9C-%EC%97%90%EB%9F%AC%EA%B0%80-%EB%AC%B4%EC%97%87%EC%9D%B8%EC%A7%80%EB%A5%BC-%EC%84%A4%EB%AA%85%ED%95%98%EB%9D%BC">1. 코드를 수행하여 발생된 에러가 무엇인지를 설명하라</h3>
+<p>코드를 컴파일한 뒤 그대로 실행했다.</p>
+<pre class="hljs"><code><div>gcc -o main -ggdb main.c &amp;&amp; ./main
+</div></code></pre>
+<p><img src="image.png" alt="gcc -o main --ggdb main.c &amp;&amp; ./main"></p>
+<p>부동소수점 예외를 내뱉는다. 특히 주로 0으로 나누기 연산을 할 때 주로 발생하는 오류다.</p>
+<h3 id="2-gdb%EB%A5%BC-%EC%8B%A4%ED%96%89%EC%8B%9C%EC%BC%9C-run-%EB%B0%8F-where%EC%9D%98-%EA%B2%B0%EA%B3%BC%EB%A5%BC-%EA%B8%B0%EC%88%A0%ED%95%98%EB%9D%BC">2. gdb를 실행시켜 run 및 where의 결과를 기술하라.</h3>
+<pre class="hljs"><code><div>gdb ./main
+run
+<span class="hljs-built_in">where</span>
+</div></code></pre>
+<p><img src="image-1.png" alt="gdb ./main"></p>
+<p>pwndbg 플러그인이 설치되어있어 약간의 CUI에 차이가 발생한다. 전체 결과는 아래와 같다.</p>
+<pre class="hljs"><code><div>pwndbg&gt; run
+Starting program: /home/seworl/<span class="hljs-built_in">test</span>/main
+[Thread debugging using libthread_db enabled]
+Using host libthread_db library <span class="hljs-string">"/lib/x86_64-linux-gnu/libthread_db.so.1"</span>.
+2
+
+Program received signal SIGFPE, Arithmetic exception.
+0x00005555555551d4 <span class="hljs-keyword">in</span> mydivide (a=3, b=0) at main.c:16
+16      int mydivide(int a, int b) { <span class="hljs-built_in">return</span> a / b; }
+LEGEND: STACK | HEAP | CODE | DATA | RWX | RODATA
+──────────────────────────[ REGISTERS / show-flags off / show-compact-regs off ]──────────────────────────
+*RAX  0x3
+ RBX  0x0
+*RCX  0x1
+ RDX  0x0
+*RDI  0x3
+ RSI  0x0
+ R8   0x0
+*R9   0x5555555592a0 ◂— 0xa32 /* <span class="hljs-string">'2\n'</span> */
+*R10  0x77
+*R11  0x246
+*R12  0x7fffffffd848 —▸ 0x7fffffffdb46 ◂— <span class="hljs-string">'/home/seworl/test/main'</span>
+*R13  0x555555555149 (main) ◂— endbr64
+*R14  0x555555557dc0 (__do_global_dtors_aux_fini_array_entry) —▸ 0x555555555100 (__do_global_dtors_aux) ◂— endbr64
+*R15  0x7ffff7ffd040 (_rtld_global) —▸ 0x7ffff7ffe2e0 —▸ 0x555555554000 ◂— 0x10102464c457f
+*RBP  0x7fffffffd710 —▸ 0x7fffffffd730 ◂— 0x1
+*RSP  0x7fffffffd710 —▸ 0x7fffffffd730 ◂— 0x1
+*RIP  0x5555555551d4 (mydivide+18) ◂— idiv dword ptr [rbp - 8]
+───────────────────────────────────[ DISASM / x86-64 / <span class="hljs-built_in">set</span> <span class="hljs-built_in">emulate</span> on ]───────────────────────────────────
+ ► 0x5555555551d4 &lt;mydivide+18&gt;    idiv   dword ptr [rbp - 8]
+    ↓
+   0x5555555551d4 &lt;mydivide+18&gt;    idiv   dword ptr [rbp - 8]
+
+
+
+
+
+
+
+
+────────────────────────────────────────────[ SOURCE (CODE) ]─────────────────────────────────────────────
+In file: /home/seworl/<span class="hljs-built_in">test</span>/main.c:16
+   11   <span class="hljs-built_in">printf</span>(<span class="hljs-string">"%d\n"</span>, mydivide(x, y));
+   12
+   13   <span class="hljs-built_in">return</span> 0;
+   14 }
+   15
+ ► 16 int mydivide(int a, int b) { <span class="hljs-built_in">return</span> a / b; }
+────────────────────────────────────────────────[ STACK ]─────────────────────────────────────────────────
+00:0000│ rbp rsp 0x7fffffffd710 —▸ 0x7fffffffd730 ◂— 0x1
+01:0008│+008     0x7fffffffd718 —▸ 0x5555555551a5 (main+92) ◂— mov esi, eax
+02:0010│+010     0x7fffffffd720 ◂— 0x0
+03:0018│+018     0x7fffffffd728 ◂— 0x3
+04:0020│+020     0x7fffffffd730 ◂— 0x1
+05:0028│+028     0x7fffffffd738 —▸ 0x7ffff7db1d90 (__libc_start_call_main+128) ◂— mov edi, eax
+06:0030│+030     0x7fffffffd740 ◂— 0x0
+07:0038│+038     0x7fffffffd748 —▸ 0x555555555149 (main) ◂— endbr64
+──────────────────────────────────────────────[ BACKTRACE ]───────────────────────────────────────────────
+ ► 0   0x5555555551d4 mydivide+18
+   1   0x5555555551a5 main+92
+   2   0x7ffff7db1d90 __libc_start_call_main+128
+   3   0x7ffff7db1e40 __libc_start_main+128
+   4   0x555555555085 _start+37
+──────────────────────────────────────────────────────────────────────────────────────────────────────────
+pwndbg&gt; <span class="hljs-built_in">where</span>
+<span class="hljs-comment">#0  0x00005555555551d4 in mydivide (a=3, b=0) at main.c:16</span>
+<span class="hljs-comment">#1  0x00005555555551a5 in main () at main.c:11</span>
+<span class="hljs-comment">#2  0x00007ffff7db1d90 in __libc_start_call_main (main=main@entry=0x555555555149 &lt;main&gt;, argc=argc@entry=1, argv=argv@entry=0x7fffffffd848) at ../sysdeps/nptl/libc_start_call_main.h:58</span>
+<span class="hljs-comment">#3  0x00007ffff7db1e40 in __libc_start_main_impl (main=0x555555555149 &lt;main&gt;, argc=1, argv=0x7fffffffd848, init=&lt;optimized out&gt;, fini=&lt;optimized out&gt;, rtld_fini=&lt;optimized out&gt;, stack_end=0x7fffffffd838) at ../csu/libc-start.c:392</span>
+<span class="hljs-comment">#4  0x0000555555555085 in _start ()</span>
+</div></code></pre>
+<h3 id="3-%EB%AC%B8%EC%A0%9C%EB%A5%BC-%EC%9D%BC%EC%9C%BC%ED%82%A4%EB%8A%94-%EB%B3%80%EC%88%98%EC%9D%98-%EA%B0%92%EA%B3%BC-%EC%A3%BC%EC%86%8C-%EA%B7%B8%EB%A6%AC%EA%B3%A0-%EA%B7%B8%EA%B2%83%EC%9D%B4-%EC%96%B4%EB%96%A4-%EB%AC%B8%EC%A0%9C%EB%A5%BC-%EC%9D%BC%EC%9C%BC%ED%82%A4%EB%8A%94%EC%A7%80%EB%A5%BC-%EA%B8%B0%EC%88%A0%ED%95%98%EB%9D%BC">3. 문제를 일으키는 변수의 값과 주소, 그리고 그것이 어떤 문제를 일으키는지를 기술하라.</h3>
+<p>위에서 main 함수에서 두 번쨰로 mydivide를 호출하는 부분에서 오류가 발생했으므로, breakpoint를 설정하고 변수를 확인해준다.</p>
+<pre class="hljs"><code><div>b main.c:11
+run
+info locals
+</div></code></pre>
+<p><img src="image-2.png" alt="info locals"></p>
+<p>y값이 0이기 때문에 <code>mydivide</code> 함수에서 0으로 나누기 연산을 수행하며 오류를 뱉게 된다. y값의 주소를 확인해준다.</p>
+<pre class="hljs"><code><div><span class="hljs-built_in">print</span> &amp;y
+</div></code></pre>
+<p><img src="image-3.png" alt="print &amp;y"></p>
+<h2 id="2">2</h2>
+<pre class="hljs"><code><div><span class="hljs-meta">#<span class="hljs-meta-keyword">include</span> <span class="hljs-meta-string">&lt;stdio.h&gt;</span></span>
+<span class="hljs-function"><span class="hljs-keyword">void</span> <span class="hljs-title">myInt</span><span class="hljs-params">(<span class="hljs-keyword">int</span>*, <span class="hljs-keyword">int</span>)</span></span>;
+
+<span class="hljs-function"><span class="hljs-keyword">int</span> <span class="hljs-title">main</span><span class="hljs-params">()</span> </span>{
+  <span class="hljs-keyword">int</span> a;
+  myInt(&amp;a, <span class="hljs-number">10</span>);
+  <span class="hljs-built_in">printf</span>(<span class="hljs-string">"a: %d\n"</span>, a);
+
+  <span class="hljs-keyword">int</span>* b;
+  myInt(b, <span class="hljs-number">10</span>);
+  <span class="hljs-built_in">printf</span>(<span class="hljs-string">"b: %d\n"</span>, *b);
+
+  <span class="hljs-keyword">return</span> <span class="hljs-number">0</span>;
+}
+
+<span class="hljs-function"><span class="hljs-keyword">void</span> <span class="hljs-title">myInt</span><span class="hljs-params">(<span class="hljs-keyword">int</span>* ip, <span class="hljs-keyword">int</span> i)</span> </span>{
+  *ip = i;
+}
+</div></code></pre>
+<h3 id="1-%EC%BD%94%EB%93%9C%EB%A5%BC-%EC%88%98%ED%96%89%ED%95%98%EC%97%AC-%EB%B0%9C%EC%83%9D%EB%90%9C-%EC%97%90%EB%9F%AC%EA%B0%80-%EB%AC%B4%EC%97%87%EC%9D%B8%EC%A7%80%EB%A5%BC-%EC%84%A4%EB%AA%85%ED%95%98%EB%9D%BC">1. 코드를 수행하여 발생된 에러가 무엇인지를 설명하라.</h3>
+<p>코드를 컴파일한 뒤 그대로 실행했다.</p>
+<pre class="hljs"><code><div>gcc -o main -ggdb main.c &amp;&amp; ./main
+</div></code></pre>
+<p><img src="image-4.png" alt="gcc -o main --ggdb main.c &amp;&amp; ./main"></p>
+<p>segmentation fault가 뜬다.</p>
+<h3 id="2-gdb%EB%A5%BC-%EC%8B%A4%ED%96%89%EC%8B%9C%EC%BC%9C-run-%EB%B0%8F-where%EC%9D%98-%EA%B2%B0%EA%B3%BC%EB%A5%BC-%EA%B8%B0%EC%88%A0%ED%95%98%EB%9D%BC">2. gdb를 실행시켜 run 및 where의 결과를 기술하라.</h3>
+<p>구체적인 실행 방법은 1번 문제와 동일하므로 생략한다.</p>
+<p><img src="image-5.png" alt="gdb ./main"></p>
+<pre class="hljs"><code><div>pwndbg&gt; run
+Starting program: /home/seworl/<span class="hljs-built_in">test</span>/main
+[Thread debugging using libthread_db enabled]
+Using host libthread_db library <span class="hljs-string">"/lib/x86_64-linux-gnu/libthread_db.so.1"</span>.
+a: 10
+
+Program received signal SIGSEGV, Segmentation fault.
+0x000055555555520c <span class="hljs-keyword">in</span> myInt (ip=0x0, i=10) at main.c:16
+16      void myInt(int* ip, int i) { *ip = i; }
+LEGEND: STACK | HEAP | CODE | DATA | RWX | RODATA
+──────────────────────────[ REGISTERS / show-flags off / show-compact-regs off ]──────────────────────────
+ RAX  0x0
+ RBX  0x0
+*RCX  0x1
+*RDX  0xa
+ RDI  0x0
+*RSI  0xa
+ R8   0x0
+*R9   0x7fffffffd5e6 ◂— 0xe0b4181cce003031 /* <span class="hljs-string">'10'</span> */
+ R10  0x0
+*R11  0x246
+*R12  0x7fffffffd848 —▸ 0x7fffffffdb46 ◂— <span class="hljs-string">'/home/seworl/test/main'</span>
+*R13  0x555555555169 (main) ◂— endbr64
+*R14  0x555555557db8 (__do_global_dtors_aux_fini_array_entry) —▸ 0x555555555120 (__do_global_dtors_aux) ◂— endbr64
+*R15  0x7ffff7ffd040 (_rtld_global) —▸ 0x7ffff7ffe2e0 —▸ 0x555555554000 ◂— 0x10102464c457f
+*RBP  0x7fffffffd700 —▸ 0x7fffffffd730 ◂— 0x1
+*RSP  0x7fffffffd700 —▸ 0x7fffffffd730 ◂— 0x1
+*RIP  0x55555555520c (myInt+22) ◂— mov dword ptr [rax], edx
+───────────────────────────────────[ DISASM / x86-64 / <span class="hljs-built_in">set</span> <span class="hljs-built_in">emulate</span> on ]───────────────────────────────────
+ ► 0x55555555520c &lt;myInt+22&gt;    mov    dword ptr [rax], edx
+   0x55555555520e &lt;myInt+24&gt;    nop
+   0x55555555520f &lt;myInt+25&gt;    pop    rbp
+   0x555555555210 &lt;myInt+26&gt;    ret
+
+   0x555555555211               add    byte ptr [rax], al
+   0x555555555213               add    bl, dh
+
+
+
+
+────────────────────────────────────────────[ SOURCE (CODE) ]─────────────────────────────────────────────
+In file: /home/seworl/<span class="hljs-built_in">test</span>/main.c:16
+   11   <span class="hljs-built_in">printf</span>(<span class="hljs-string">"b: %d\n"</span>, *b);
+   12
+   13   <span class="hljs-built_in">return</span> 0;
+   14 }
+   15
+ ► 16 void myInt(int* ip, int i) { *ip = i; }
+────────────────────────────────────────────────[ STACK ]─────────────────────────────────────────────────
+00:0000│ rbp rsp 0x7fffffffd700 —▸ 0x7fffffffd730 ◂— 0x1
+01:0008│+008     0x7fffffffd708 —▸ 0x5555555551bf (main+86) ◂— mov rax, qword ptr [rbp - 0x10]
+02:0010│+010     0x7fffffffd710 ◂— 0x0
+03:0018│+018     0x7fffffffd718 ◂— 0xa00000000
+04:0020│+020     0x7fffffffd720 ◂— 0x0
+05:0028│+028     0x7fffffffd728 ◂— 0x1f5de0b4181cce00
+06:0030│+030     0x7fffffffd730 ◂— 0x1
+07:0038│+038     0x7fffffffd738 —▸ 0x7ffff7db1d90 (__libc_start_call_main+128) ◂— mov edi, eax
+──────────────────────────────────────────────[ BACKTRACE ]───────────────────────────────────────────────
+ ► 0   0x55555555520c myInt+22
+   1   0x5555555551bf main+86
+   2   0x7ffff7db1d90 __libc_start_call_main+128
+   3   0x7ffff7db1e40 __libc_start_main+128
+   4   0x5555555550a5 _start+37
+──────────────────────────────────────────────────────────────────────────────────────────────────────────
+pwndbg&gt; <span class="hljs-built_in">where</span>
+<span class="hljs-comment">#0  0x000055555555520c in myInt (ip=0x0, i=10) at main.c:16</span>
+<span class="hljs-comment">#1  0x00005555555551bf in main () at main.c:10</span>
+<span class="hljs-comment">#2  0x00007ffff7db1d90 in __libc_start_call_main (main=main@entry=0x555555555169 &lt;main&gt;, argc=argc@entry=1, argv=argv@entry=0x7fffffffd848) at ../sysdeps/nptl/libc_start_call_main.h:58</span>
+<span class="hljs-comment">#3  0x00007ffff7db1e40 in __libc_start_main_impl (main=0x555555555169 &lt;main&gt;, argc=1, argv=0x7fffffffd848, init=&lt;optimized out&gt;, fini=&lt;optimized out&gt;, rtld_fini=&lt;optimized out&gt;, stack_end=0x7fffffffd838) at ../csu/libc-start.c:392</span>
+<span class="hljs-comment">#4  0x00005555555550a5 in _start ()</span>
+</div></code></pre>
+<h3 id="3-%EB%AC%B8%EC%A0%9C%EB%A5%BC-%EC%9D%BC%EC%9C%BC%ED%82%A4%EB%8A%94-%EB%B3%80%EC%88%98%EC%9D%98-%EA%B0%92%EA%B3%BC-%EC%A3%BC%EC%86%8C-%EA%B7%B8%EB%A6%AC%EA%B3%A0-%EA%B7%B8%EA%B2%83%EC%9D%B4-%EC%96%B4%EB%96%A4-%EB%AC%B8%EC%A0%9C%EB%A5%BC-%EC%9D%BC%EC%9C%BC%ED%82%A4%EB%8A%94%EC%A7%80%EB%A5%BC-%EA%B8%B0%EC%88%A0%ED%95%98%EB%9D%BC">3. 문제를 일으키는 변수의 값과 주소, 그리고 그것이 어떤 문제를 일으키는지를 기술하라.</h3>
+<p><img src="image-7.png" alt="info locals"></p>
+<p>포인터 변수로 선언된 b의 주솟값이 정해지지 않았고, 그 상태에서 값을 저장하려 시도해서 발생한 오류이다.</p>
+<p>포인터 변수인 b의 주소가 이번 오류의 분석에 필요한 건 아니라 b와 *b를 탐색하였다.</p>
+<h2 id="3">3</h2>
+<pre class="hljs"><code><div><span class="hljs-meta">#<span class="hljs-meta-keyword">include</span> <span class="hljs-meta-string">&lt;stdio.h&gt;</span></span>
+<span class="hljs-meta">#<span class="hljs-meta-keyword">include</span> <span class="hljs-meta-string">&lt;stdlib.h&gt;</span></span>
+
+<span class="hljs-function"><span class="hljs-keyword">void</span> <span class="hljs-title">sort</span><span class="hljs-params">(<span class="hljs-keyword">int</span> myData[], <span class="hljs-keyword">size_t</span> len)</span></span>;
+<span class="hljs-function"><span class="hljs-keyword">void</span> <span class="hljs-title">swap</span><span class="hljs-params">(<span class="hljs-keyword">int</span> *pa, <span class="hljs-keyword">int</span> *pb)</span></span>;
+
+<span class="hljs-keyword">enum</span> { LEN = <span class="hljs-number">5</span> };
+
+<span class="hljs-function"><span class="hljs-keyword">int</span> <span class="hljs-title">main</span><span class="hljs-params">()</span> </span>{
+  <span class="hljs-keyword">int</span> myData[LEN] = {<span class="hljs-number">2</span>, <span class="hljs-number">1</span>, <span class="hljs-number">5</span>, <span class="hljs-number">3</span>, <span class="hljs-number">6</span>};
+
+  sort(myData, LEN);
+
+  <span class="hljs-built_in">printf</span>(<span class="hljs-string">"sorted myData:\n"</span>);
+
+  <span class="hljs-keyword">for</span> (<span class="hljs-keyword">int</span> i = <span class="hljs-number">0</span>; i &lt; LEN; ++i) {
+    <span class="hljs-built_in">printf</span>(<span class="hljs-string">"%d\n"</span>, myData[i]);
+  }
+
+  <span class="hljs-keyword">return</span> <span class="hljs-number">0</span>;
+}
+
+<span class="hljs-function"><span class="hljs-keyword">void</span> <span class="hljs-title">sort</span><span class="hljs-params">(<span class="hljs-keyword">int</span> myData[], <span class="hljs-keyword">size_t</span> len)</span> </span>{
+  <span class="hljs-keyword">for</span> (<span class="hljs-keyword">int</span> i = <span class="hljs-number">0</span>; i &lt; (len - <span class="hljs-number">1</span>); ++i) {
+    <span class="hljs-keyword">for</span> (<span class="hljs-keyword">int</span> j = i + <span class="hljs-number">1</span>; j &lt; len; ++j) {
+      <span class="hljs-keyword">if</span> (myData[i] &gt; myData[j]) {
+        swap(&amp;myData[i], &amp;myData[j]);
+      }
+    }
+  }
+}
+
+<span class="hljs-function"><span class="hljs-keyword">void</span> <span class="hljs-title">swap</span><span class="hljs-params">(<span class="hljs-keyword">int</span> *a, <span class="hljs-keyword">int</span> *b)</span> </span>{
+  <span class="hljs-keyword">int</span> *temp;
+  *temp = *a;
+  a = b;
+  b = temp;
+}
+</div></code></pre>
+<h3 id="1-%EC%BD%94%EB%93%9C%EB%A5%BC-%EC%88%98%ED%96%89%ED%95%98%EC%97%AC-%EB%B0%9C%EC%83%9D%EB%90%9C-%EC%97%90%EB%9F%AC%EA%B0%80-%EB%AC%B4%EC%97%87%EC%9D%B8%EC%A7%80%EB%A5%BC-%EC%84%A4%EB%AA%85%ED%95%98%EB%9D%BC">1. 코드를 수행하여 발생된 에러가 무엇인지를 설명하라.</h3>
+<p>코드를 컴파일한 뒤 그대로 실행했다.</p>
+<pre class="hljs"><code><div>gcc -o main -ggdb main.c &amp;&amp; ./main
+</div></code></pre>
+<p><img src="image-9.png" alt="gcc -o main -ggdb main.c &amp;&amp; ./main"></p>
+<p>segmentation fault 오류이다.</p>
+<h3 id="2-gdb%EB%A5%BC-%EC%8B%A4%ED%96%89%EC%8B%9C%EC%BC%9C-run-%EB%B0%8F-where%EC%9D%98-%EA%B2%B0%EA%B3%BC%EB%A5%BC-%EA%B8%B0%EC%88%A0%ED%95%98%EB%9D%BC">2. gdb를 실행시켜 run 및 where의 결과를 기술하라.</h3>
+<p>구체적인 실행 방법은 1번 문제와 동일하므로 생략한다.</p>
+<p><img src="image-10.png" alt="gdb ./main"></p>
+<pre class="hljs"><code><div>pwndbg&gt; run
+Starting program: /home/seworl/<span class="hljs-built_in">test</span>/main
+[Thread debugging using libthread_db enabled]
+Using host libthread_db library <span class="hljs-string">"/lib/x86_64-linux-gnu/libthread_db.so.1"</span>.
+
+Program received signal SIGSEGV, Segmentation fault.
+0x0000555555555309 <span class="hljs-keyword">in</span> swap (a=0x7fffffffd710, b=0x7fffffffd714) at main.c:35
+35        *temp = *a;
+LEGEND: STACK | HEAP | CODE | DATA | RWX | RODATA
+──────────────────────────[ REGISTERS / show-flags off / show-compact-regs off ]──────────────────────────
+ RAX  0x0
+ RBX  0x0
+ RCX  0x0
+*RDX  0x2
+*RDI  0x7fffffffd710 ◂— 0x100000002
+*RSI  0x7fffffffd714 ◂— 0x500000001
+*R8   0x7ffff7fa3f10 (initial+16) ◂— 0x4
+*R9   0x7ffff7fc9040 (_dl_fini) ◂— endbr64
+*R10  0x7ffff7fc3908 ◂— 0xd00120000000e
+*R11  0x7ffff7fde660 (_dl_audit_preinit) ◂— endbr64
+*R12  0x7fffffffd848 —▸ 0x7fffffffdb46 ◂— <span class="hljs-string">'/home/seworl/test/main'</span>
+*R13  0x555555555189 (main) ◂— endbr64
+*R14  0x555555557db0 (__do_global_dtors_aux_fini_array_entry) —▸ 0x555555555140 (__do_global_dtors_aux) ◂— endbr64
+*R15  0x7ffff7ffd040 (_rtld_global) —▸ 0x7ffff7ffe2e0 —▸ 0x555555554000 ◂— 0x10102464c457f
+*RBP  0x7fffffffd6c0 —▸ 0x7fffffffd6f0 —▸ 0x7fffffffd730 ◂— 0x1
+*RSP  0x7fffffffd6c0 —▸ 0x7fffffffd6f0 —▸ 0x7fffffffd730 ◂— 0x1
+*RIP  0x555555555309 (swap+26) ◂— mov dword ptr [rax], edx
+───────────────────────────────────[ DISASM / x86-64 / <span class="hljs-built_in">set</span> <span class="hljs-built_in">emulate</span> on ]───────────────────────────────────
+ ► 0x555555555309 &lt;swap+26&gt;    mov    dword ptr [rax], edx
+   0x55555555530b &lt;swap+28&gt;    mov    rax, qword ptr [rbp - 0x20]
+   0x55555555530f &lt;swap+32&gt;    mov    qword ptr [rbp - 0x18], rax
+   0x555555555313 &lt;swap+36&gt;    mov    rax, qword ptr [rbp - 8]
+   0x555555555317 &lt;swap+40&gt;    mov    qword ptr [rbp - 0x20], rax
+   0x55555555531b &lt;swap+44&gt;    nop
+   0x55555555531c &lt;swap+45&gt;    pop    rbp
+   0x55555555531d &lt;swap+46&gt;    ret
+
+   0x55555555531e              add    byte ptr [rax], al
+   0x555555555320 &lt;_fini&gt;      endbr64
+   0x555555555324 &lt;_fini+4&gt;    sub    rsp, 8
+────────────────────────────────────────────[ SOURCE (CODE) ]─────────────────────────────────────────────
+In file: /home/seworl/<span class="hljs-built_in">test</span>/main.c:35
+   30   }
+   31 }
+   32
+   33 void swap(int *a, int *b) {
+   34   int *temp;
+ ► 35   *temp = *a;
+   36   a = b;
+   37   b = temp;
+   38 }
+────────────────────────────────────────────────[ STACK ]─────────────────────────────────────────────────
+00:0000│ rbp rsp 0x7fffffffd6c0 —▸ 0x7fffffffd6f0 —▸ 0x7fffffffd730 ◂— 0x1
+01:0008│+008     0x7fffffffd6c8 —▸ 0x5555555552c2 (sort+142) ◂— add dword ptr [rbp - 4], 1
+02:0010│+010     0x7fffffffd6d0 ◂— 0x5
+03:0018│+018     0x7fffffffd6d8 —▸ 0x7fffffffd710 ◂— 0x100000002
+04:0020│+020     0x7fffffffd6e0 ◂— 0x0
+05:0028│+028     0x7fffffffd6e8 ◂— 0x100000000
+06:0030│+030     0x7fffffffd6f0 —▸ 0x7fffffffd730 ◂— 0x1
+07:0038│+038     0x7fffffffd6f8 —▸ 0x5555555551d8 (main+79) ◂— lea rax, [rip + 0xe25]
+──────────────────────────────────────────────[ BACKTRACE ]───────────────────────────────────────────────
+ ► 0   0x555555555309 swap+26
+   1   0x5555555552c2 sort+142
+   2   0x5555555551d8 main+79
+   3   0x7ffff7db1d90 __libc_start_call_main+128
+   4   0x7ffff7db1e40 __libc_start_main+128
+   5   0x5555555550c5 _start+37
+──────────────────────────────────────────────────────────────────────────────────────────────────────────
+pwndbg&gt; <span class="hljs-built_in">where</span>
+<span class="hljs-comment">#0  0x0000555555555309 in swap (a=0x7fffffffd710, b=0x7fffffffd714) at main.c:35</span>
+<span class="hljs-comment">#1  0x00005555555552c2 in sort (myData=0x7fffffffd710, len=5) at main.c:27</span>
+<span class="hljs-comment">#2  0x00005555555551d8 in main () at main.c:12</span>
+<span class="hljs-comment">#3  0x00007ffff7db1d90 in __libc_start_call_main (main=main@entry=0x555555555189 &lt;main&gt;, argc=argc@entry=1, argv=argv@entry=0x7fffffffd848) at ../sysdeps/nptl/libc_start_call_main.h:58</span>
+<span class="hljs-comment">#4  0x00007ffff7db1e40 in __libc_start_main_impl (main=0x555555555189 &lt;main&gt;, argc=1, argv=0x7fffffffd848, init=&lt;optimized out&gt;, fini=&lt;optimized out&gt;, rtld_fini=&lt;optimized out&gt;, stack_end=0x7fffffffd838) at ../csu/libc-start.c:392</span>
+<span class="hljs-comment">#5  0x00005555555550c5 in _start ()</span>
+</div></code></pre>
+<h3 id="3-%EB%AC%B8%EC%A0%9C%EB%A5%BC-%EC%9D%BC%EC%9C%BC%ED%82%A4%EB%8A%94-%EB%B3%80%EC%88%98%EC%9D%98-%EA%B0%92%EA%B3%BC-%EC%A3%BC%EC%86%8C-%EA%B7%B8%EB%A6%AC%EA%B3%A0-%EA%B7%B8%EA%B2%83%EC%9D%B4-%EC%96%B4%EB%96%A4-%EB%AC%B8%EC%A0%9C%EB%A5%BC-%EC%9D%BC%EC%9C%BC%ED%82%A4%EB%8A%94%EC%A7%80%EB%A5%BC-%EA%B8%B0%EC%88%A0%ED%95%98%EB%9D%BC">3. 문제를 일으키는 변수의 값과 주소, 그리고 그것이 어떤 문제를 일으키는지를 기술하라.</h3>
+<p>swap 함수의 내부에 breakpoint를 걸어주고 변수를 확인해준다.</p>
+<pre class="hljs"><code><div>b main.c:35
+run
+info args
+info locals
+</div></code></pre>
+<p><img src="image-11.png" alt="b main.c:35"></p>
+<p>포인터 변수 temp가 초기화되지 않은 상태에서 값을 저장하려 시도해서 발생한 오류이다.</p>
+<h3 id="4-%EC%97%90%EB%9F%AC%EB%A5%BC-%EC%88%98%EC%A0%95%ED%95%98%EC%97%AC-%EC%9D%B4-%EC%BD%94%EB%93%9C%EA%B0%80-%EC%9D%98%EB%8F%84%ED%95%98%EB%8A%94-%EA%B2%B0%EA%B3%BC%EB%A5%BC-%EA%B8%B0%EC%88%A0%ED%95%98%EB%9D%BC">4. 에러를 수정하여 이 코드가 의도하는 결과를 기술하라.</h3>
+<p><code>swap</code> 함수를 다음과 같이 수정한다.</p>
+<pre class="hljs"><code><div><span class="hljs-function"><span class="hljs-keyword">void</span> <span class="hljs-title">swap</span><span class="hljs-params">(<span class="hljs-keyword">int</span> *a, <span class="hljs-keyword">int</span> *b)</span> </span>{
+  <span class="hljs-keyword">int</span> temp;
+  temp = *a;
+  *a = *b;
+  *b = temp;
+}
+</div></code></pre>
+<p><img src="image-12.png" alt="void swap(int *a, int *b)"></p>
+
+</body>
+</html>

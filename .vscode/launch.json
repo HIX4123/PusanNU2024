@@ -8,8 +8,8 @@
       "args": [],
       "stopAtEntry": false,
       "externalConsole": true,
-      "cwd": "c:/Users/user/Desktop/PusanNU2024/CppProgrammingandPractice/9week/MapWithPersonClass",
-      "program": "c:/Users/user/Desktop/PusanNU2024/CppProgrammingandPractice/9week/MapWithPersonClass/build/Debug/outDebug",
+      "cwd": "c:/Users/rnjsa/OneDrive/Desktop/2024/CppProgrammingandPractice/10week/DynamicPolymorphism",
+      "program": "c:/Users/rnjsa/OneDrive/Desktop/2024/CppProgrammingandPractice/10week/DynamicPolymorphism/build/Debug/outDebug",
       "MIMode": "gdb",
       "miDebuggerPath": "gdb",
       "setupCommands": [
