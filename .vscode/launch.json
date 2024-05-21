@@ -8,8 +8,8 @@
       "args": [],
       "stopAtEntry": false,
       "externalConsole": true,
-      "cwd": "c:/Users/user/Desktop/PusanNU2024/CppProgrammingandPractice/11week/ShapeHierarchy",
-      "program": "c:/Users/user/Desktop/PusanNU2024/CppProgrammingandPractice/11week/ShapeHierarchy/build/Debug/outDebug",
+      "cwd": "c:/Users/rnjsa/OneDrive/Desktop/2024/CppProgrammingandPractice/9week/Matrix",
+      "program": "c:/Users/rnjsa/OneDrive/Desktop/2024/CppProgrammingandPractice/9week/Matrix/build/Debug/outDebug",
       "MIMode": "gdb",
       "miDebuggerPath": "gdb",
       "setupCommands": [
