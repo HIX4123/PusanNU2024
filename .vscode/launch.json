@@ -8,8 +8,8 @@
       "args": [],
       "stopAtEntry": false,
       "externalConsole": true,
-      "cwd": "c:/Users/user/Desktop/PusanNU2024/CppProgrammingandPractice/2week/BMI",
-      "program": "c:/Users/user/Desktop/PusanNU2024/CppProgrammingandPractice/2week/BMI/build/Debug/outDebug",
+      "cwd": "c:/Users/rnjsa/OneDrive/Desktop/2024/CppProgrammingandPractice/14week/fstream",
+      "program": "c:/Users/rnjsa/OneDrive/Desktop/2024/CppProgrammingandPractice/14week/fstream/build/Debug/outDebug",
       "MIMode": "gdb",
       "miDebuggerPath": "gdb",
       "setupCommands": [

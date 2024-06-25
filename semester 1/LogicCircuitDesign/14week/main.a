@@ -1,0 +1,6 @@
+  bge a0, a1, L1
+  add a0, a0, a1
+  j L2
+L1:
+  sub a0, a0, a1
+L2:

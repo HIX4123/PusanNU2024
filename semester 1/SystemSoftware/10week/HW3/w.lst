@@ -1,0 +1,59 @@
+     1                                  %macro		first	0
+     2                                  		mov	ax, data
+     3                                  		mov	ds, ax
+     4                                  		mov	es, ax
+     5                                  		cld
+     6                                  		cli
+     7                                  		mov	ax, stack
+     8                                  		mov	ss, ax
+     9                                  		mov	sp, tos
+    10                                  		sti
+    11                                  %endmacro
+    12                                  
+    13                                  %macro		finish	1
+    14                                  		mov	ax, %1
+    15                                  		int	21h
+    16                                  %endmacro
+    17                                  
+    18                                  segment		stack	stack
+    19 00000000 <res 00000400>          		resw	512
+    20                                  tos:
+    21                                  
+    22                                  segment 		data
+    23 00000000 696E70757420203A20-     msg1		db	'input  : $'
+    24 00000009 24                 
+    25 0000000A 0D0A6F757470757420-     msg2		db	0dh, 0ah, 'output : $'
+    26 00000013 3A2024             
+    27                                  
+    28                                  segment		code
+    29                                  ..start:
+    30                                  		first
+    31 00000000 B8[0000]            <1>  mov ax, data
+    32 00000003 8ED8                <1>  mov ds, ax
+    33 00000005 8EC0                <1>  mov es, ax
+    34 00000007 FC                  <1>  cld
+    35 00000008 FA                  <1>  cli
+    36 00000009 B8[0000]            <1>  mov ax, stack
+    37 0000000C 8ED0                <1>  mov ss, ax
+    38 0000000E BC[0004]            <1>  mov sp, tos
+    39 00000011 FB                  <1>  sti
+    40                                  
+    41 00000012 B409                    		mov 	ah, 09h
+    42 00000014 BA[0000]                		mov	dx, msg1
+    43 00000017 CD21                    		int	21h
+    44                                  
+    45 00000019 B401                    		mov	ah, 01h
+    46 0000001B CD21                    		int 	21h
+    47                                  
+    48 0000001D 88C3                    		mov	bl, al
+    49 0000001F B409                    		mov	ah, 09h
+    50 00000021 BA[0A00]                		mov	dx, msg2
+    51 00000024 CD21                    		int 	21h
+    52                                  
+    53 00000026 B402                    		mov	ah, 02h
+    54 00000028 88C2                    		mov	dl, al
+    55 0000002A CD21                    		int	21h
+    56                                  
+    57                                  		finish	4c00h
+    58 0000002C B8004C              <1>  mov ax, %1
+    59 0000002F CD21                <1>  int 21h
