@@ -1,0 +1,47 @@
+import requests
+from bs4 import BeautifulSoup
+import time
+import webbrowser
+
+
+def crawl_website():
+    while True:
+        try:
+            # Send a GET request to the website
+            response = requests.get("https://arca.live/b/hotdeal?mode=best")
+
+            # Check if the request was successful
+            if response.status_code == 200:
+                # Parse the HTML content of the page
+                soup = BeautifulSoup(response.content, "html.parser")
+
+                # TODO: Extract the information you need from the parsed HTML
+
+            else:
+                print("Failed to retrieve website content.")
+                break
+
+        except requests.exceptions.RequestException as e:
+            print("An error occurred:", e)
+            break
+
+        return soup
+
+
+# Start crawling the website
+soup = crawl_website()
+
+# Check if "프로틴" keyword is present in the parsed HTML
+keywords = ["프로틴", "계란", "달걀", "닭가슴살", "ASUS"]
+
+if any(keyword in soup.get_text() for keyword in keywords):
+  matching_keywords = [keyword for keyword in keywords if keyword in soup.get_text()]
+  if matching_keywords:
+      print("The following keywords are present:", ", ".join(matching_keywords))
+      for keyword in matching_keywords:
+        url = f"https://arca.live/b/hotdeal?mode=best&keyword={keyword}"
+        webbrowser.open(url)
+  else:
+      print("None of the keywords are present.")
+else:
+  print("검사할 단어들이 포함되어 있지 않습니다.")
