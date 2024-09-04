@@ -1,0 +1,8 @@
+vendor_name = ModelSim
+source_file = 1, C:/Users/rnjsa/OneDrive/Desktop/2024/semester 2/LogicCircuitDesignAndExperimentation/QuartusPrimeTest/Introduction.bdf
+source_file = 1, C:/Users/rnjsa/OneDrive/Desktop/2024/semester 2/LogicCircuitDesignAndExperimentation/QuartusPrimeTest/db/Introduction.cbx.xml
+design_name = Introduction
+instance = comp, \pin_name3~output , pin_name3~output, Introduction, 1
+instance = comp, \pin_name2~input , pin_name2~input, Introduction, 1
+instance = comp, \pin_name1~input , pin_name1~input, Introduction, 1
+instance = comp, \~QUARTUS_CREATED_GND~I , ~QUARTUS_CREATED_GND~I, Introduction, 1
