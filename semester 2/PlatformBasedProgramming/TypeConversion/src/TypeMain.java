@@ -14,7 +14,7 @@ public class TypeMain {
         printType(input);
         System.out.println("Type conversion to int...");
         printType(Integer.parseInt(input));
-        System.out.println("Type conversion to float...");
+        System.out.println("Type conversion int to float...");
         printType(Float.parseFloat(input));
     }
 
