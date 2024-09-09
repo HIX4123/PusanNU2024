@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class Main {
+public class CharacterMethod {
 
 
     /**
@@ -22,15 +22,16 @@ public class Main {
     }
 
     public static void main(String[] args) {
-        // Main method, entry point of the application
         Scanner scanner = new Scanner(System.in);
 
         String string = scanner.nextLine();
         int caesarNumber = scanner.nextInt();
 
-        for (int i = 0; i < string.length(); i++) {
-            string.charAt(i) = shiftChar(string.charAt(i), caesarNumber);
+        char[] chars = string.toCharArray();
+        for (int i = 0; i < chars.length; i++) {
+            chars[i] = shiftChar(chars[i], caesarNumber);
         }
+        string = String.valueOf(chars);
 
         System.out.println(string);
     }
