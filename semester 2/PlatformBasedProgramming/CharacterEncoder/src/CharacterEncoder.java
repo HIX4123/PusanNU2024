@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class CharacterMethod {
+public class CharacterEncoder {
 
 
     /**
