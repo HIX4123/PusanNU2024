@@ -27,13 +27,15 @@ public class CharacterEncoder {
         String string = scanner.nextLine();
         int caesarNumber = scanner.nextInt();
 
-        char[] chars = string.toCharArray();
-        for (int i = 0; i < chars.length; i++) {
-            chars[i] = shiftChar(chars[i], caesarNumber);
+        StringBuilder stringBuilder = new StringBuilder("Encoded String: ");
+        for (char c : string.toCharArray()) {
+            if (!Character.isLetter(c)) {
+                System.out.println("The string contains characters that cannot be encoded.");
+                return;
+            }
+            stringBuilder.append(shiftChar(c, caesarNumber));
         }
-        string = String.valueOf(chars);
-
-        System.out.println(string);
+        System.out.println(stringBuilder);
     }
 
 
