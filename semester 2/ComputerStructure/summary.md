@@ -129,37 +129,37 @@
 ### 1.15 성능 지표
 
 - **응답 시간**: 작업을 완료하는 데 걸린 시간입니다.
-- **Throughput**: Amount of work completed per time unit.
+- **처리량**: 시간 단위당 완료된 작업의 양입니다.
 
 ---
 
-### 1.16 Measuring Execution Time
+### 1.16 실행 시간 측정
 
-- **CPU Time**: Time spent processing a task, influenced by clock rate and number of clock cycles.
-- **Instruction Count**: Number of instructions executed, affected by the program, ISA, and compiler.
-
----
-
-### 1.17 CPU Performance
-
-- **Clocking**: The operation of digital hardware is governed by a clock cycle.
-- **CPI (Cycles per Instruction)**: A measure of how many clock cycles are required for each instruction.
+- **CPU 시간**: 클럭 속도와 클럭 사이클 수에 영향을 받는 작업 처리 시간입니다.
+- **명령어 수**: 실행된 명령어 수로, 프로그램, ISA 및 컴파일러의 영향을 받습니다.
 
 ---
 
-### 1.18 Power and Energy Considerations
+### 1.17 CPU 성능
 
-- **Power Trends**: CMOS technology governs power consumption, with voltage and frequency being key factors.
-- **Reducing Power**: Techniques such as lowering capacitive load or clock frequency can reduce power usage, but the "power wall" limits further improvements.
-
----
-
-### 1.19 The Shift to Multiprocessing
-
-- **Multiprocessors**: Multiple cores on a single chip are becoming the standard. They require parallel programming and load balancing for optimal performance.
+- **클럭킹**: 디지털 하드웨어의 작동은 클럭 주기에 의해 제어됩니다.
+- **CPI(명령어당 사이클)**: 각 명령어에 필요한 클럭 사이클 수를 측정한 값입니다.
 
 ---
 
-### 1.20 Performance Benchmarks
+### 1.18 전력 및 에너지 고려 사항
 
-- **SPEC Benchmark**: Used to evaluate CPU performance with workloads representative of real-world applications.
+- **전력 트렌드**: CMOS 기술은 전압과 주파수가 핵심 요소인 전력 소비를 관리합니다.
+- **전력 절감**: 용량성 부하 또는 클록 주파수를 낮추는 등의 기술로 전력 사용량을 줄일 수 있지만 '전력 벽'으로 인해 추가 개선이 제한됩니다.
+
+---
+
+### 1.19 멀티프로세싱으로의 전환
+
+- **멀티프로세서**: 단일 칩에 여러 개의 코어를 탑재하는 것이 표준이 되고 있습니다. 최적의 성능을 위해 병렬 프로그래밍과 로드 밸런싱이 필요합니다.
+
+---
+
+### 1.20 성능 벤치마크
+
+- **SPEC 벤치마크**: 실제 애플리케이션을 대표하는 워크로드로 CPU 성능을 평가하는 데 사용됩니다.
