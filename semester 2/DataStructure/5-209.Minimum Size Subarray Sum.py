@@ -1,4 +1,15 @@
 def minSubArrayLen(target, nums):
+    """
+    Finds the minimal length of a contiguous subarray of which the sum is at least `target`.
+    If there is no such subarray, returns 0.
+
+    Parameters:
+    target (int): The target sum for the subarray.
+    nums (List[int]): The list of positive integers.
+
+    Returns:
+    int: The minimal length of a contiguous subarray with sum at least `target`, or 0 if no such subarray exists.
+    """
     min_len = float('inf')
     left = 0
     sum = 0

@@ -2,6 +2,13 @@ from typing import List
 
 
 class ListNode:
+    """
+    A class representing a node in a singly linked list.
+
+    Attributes:
+        val (int): The value stored in the node.
+        next (ListNode): The reference to the next node in the linked list.
+    """
     def __init__(self, x):
         self.val = x
         self.next = None
