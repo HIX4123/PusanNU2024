@@ -1,0 +1,17 @@
+vendor_name = ModelSim
+source_file = 1, C:/Users/rnjsa/OneDrive/Desktop/2024/semester 2/LogicCircuitDesignAndExperimentation/FourBitsRegister/FourBitsRegister.bdf
+source_file = 1, C:/Users/rnjsa/OneDrive/Desktop/2024/semester 2/LogicCircuitDesignAndExperimentation/FourBitsRegister/db/FourBitsRegister.cbx.xml
+design_name = FourBitsRegister
+instance = comp, \q1~output , q1~output, FourBitsRegister, 1
+instance = comp, \q2~output , q2~output, FourBitsRegister, 1
+instance = comp, \q3~output , q3~output, FourBitsRegister, 1
+instance = comp, \q4~output , q4~output, FourBitsRegister, 1
+instance = comp, \Ce~input , Ce~input, FourBitsRegister, 1
+instance = comp, \CLK~input , CLK~input, FourBitsRegister, 1
+instance = comp, \d1~input , d1~input, FourBitsRegister, 1
+instance = comp, \RST~input , RST~input, FourBitsRegister, 1
+instance = comp, \d2~input , d2~input, FourBitsRegister, 1
+instance = comp, \d3~input , d3~input, FourBitsRegister, 1
+instance = comp, \d4~input , d4~input, FourBitsRegister, 1
+instance = comp, \inst9~feeder , inst9~feeder, FourBitsRegister, 1
+instance = comp, \~QUARTUS_CREATED_GND~I , ~QUARTUS_CREATED_GND~I, FourBitsRegister, 1

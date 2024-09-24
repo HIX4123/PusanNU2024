@@ -1,0 +1,120 @@
+|FourBitsRippleCarryAdder
+S0 <= FullAdder:inst.S
+A0 => FullAdder:inst.A
+B0 => FullAdder:inst.B
+S1 <= FullAdder:inst1.S
+A1 => FullAdder:inst1.A
+B1 => FullAdder:inst1.B
+S2 <= FullAdder:inst2.S
+A2 => FullAdder:inst2.A
+B2 => FullAdder:inst2.B
+S3 <= FullAdder:inst3.S
+A3 => FullAdder:inst3.A
+B3 => FullAdder:inst3.B
+C <= FullAdder:inst3.Cout
+
+
+|FourBitsRippleCarryAdder|FullAdder:inst
+S <= HalfAdder:inst2.S
+A => HalfAdder:inst.A
+B => HalfAdder:inst.B
+Cin => HalfAdder:inst2.B
+Cout <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|FourBitsRippleCarryAdder|FullAdder:inst|HalfAdder:inst2
+C <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+A => inst2.IN0
+A => inst.IN0
+B => inst2.IN1
+B => inst.IN1
+S <= inst.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|FourBitsRippleCarryAdder|FullAdder:inst|HalfAdder:inst
+C <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+A => inst2.IN0
+A => inst.IN0
+B => inst2.IN1
+B => inst.IN1
+S <= inst.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|FourBitsRippleCarryAdder|FullAdder:inst1
+S <= HalfAdder:inst2.S
+A => HalfAdder:inst.A
+B => HalfAdder:inst.B
+Cin => HalfAdder:inst2.B
+Cout <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|FourBitsRippleCarryAdder|FullAdder:inst1|HalfAdder:inst2
+C <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+A => inst2.IN0
+A => inst.IN0
+B => inst2.IN1
+B => inst.IN1
+S <= inst.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|FourBitsRippleCarryAdder|FullAdder:inst1|HalfAdder:inst
+C <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+A => inst2.IN0
+A => inst.IN0
+B => inst2.IN1
+B => inst.IN1
+S <= inst.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|FourBitsRippleCarryAdder|FullAdder:inst2
+S <= HalfAdder:inst2.S
+A => HalfAdder:inst.A
+B => HalfAdder:inst.B
+Cin => HalfAdder:inst2.B
+Cout <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|FourBitsRippleCarryAdder|FullAdder:inst2|HalfAdder:inst2
+C <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+A => inst2.IN0
+A => inst.IN0
+B => inst2.IN1
+B => inst.IN1
+S <= inst.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|FourBitsRippleCarryAdder|FullAdder:inst2|HalfAdder:inst
+C <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+A => inst2.IN0
+A => inst.IN0
+B => inst2.IN1
+B => inst.IN1
+S <= inst.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|FourBitsRippleCarryAdder|FullAdder:inst3
+S <= HalfAdder:inst2.S
+A => HalfAdder:inst.A
+B => HalfAdder:inst.B
+Cin => HalfAdder:inst2.B
+Cout <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|FourBitsRippleCarryAdder|FullAdder:inst3|HalfAdder:inst2
+C <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+A => inst2.IN0
+A => inst.IN0
+B => inst2.IN1
+B => inst.IN1
+S <= inst.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|FourBitsRippleCarryAdder|FullAdder:inst3|HalfAdder:inst
+C <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+A => inst2.IN0
+A => inst.IN0
+B => inst2.IN1
+B => inst.IN1
+S <= inst.DB_MAX_OUTPUT_PORT_TYPE
+
+

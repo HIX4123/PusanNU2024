@@ -1,0 +1,59 @@
+m255
+K4
+z2
+!s11f vlog 2020.1 2020.02, Feb 28 2020
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dC:/Users/rnjsa/OneDrive/Desktop/2024/semester 2/LogicCircuitDesignAndExperimentation/SyncDFlipFlopWithAsyncReset/simulation/qsim
+vSyncDFlipFlopWithAsyncReset
+Z1 !s110 1727084883
+!i10b 1
+!s100 zO8zJ;fAED2^aUIRhQRGh1
+Z2 !s11b Dg1SIo80bB@j0V0VzS_@n1
+IKFITXA2DO]IjMA9h4NIea3
+Z3 VDg1SIo80bB@j0V0VzS_@n1
+R0
+w1727084882
+8SyncDFlipFlopWithAsyncReset.vo
+FSyncDFlipFlopWithAsyncReset.vo
+!i122 2
+L0 32 152
+Z4 OV;L;2020.1;71
+r1
+!s85 0
+31
+!s108 1727084882.000000
+!s107 SyncDFlipFlopWithAsyncReset.vo|
+!s90 -work|work|SyncDFlipFlopWithAsyncReset.vo|
+!i113 1
+Z5 o-work work
+Z6 tCvgOpt 0
+n@sync@d@flip@flop@with@async@reset
+vSyncDFlipFlopWithAsyncReset_vlg_vec_tst
+R1
+!i10b 1
+!s100 2h<H4igi61_GDUi?S<XcZ1
+R2
+Ihg:`I^05A@W`6FHC>AaZm3
+R3
+R0
+w1727084881
+8Waveform.vwf.vt
+FWaveform.vwf.vt
+!i122 3
+L0 30 56
+R4
+r1
+!s85 0
+31
+!s108 1727084883.000000
+!s107 Waveform.vwf.vt|
+!s90 -work|work|Waveform.vwf.vt|
+!i113 1
+R5
+R6
+n@sync@d@flip@flop@with@async@reset_vlg_vec_tst

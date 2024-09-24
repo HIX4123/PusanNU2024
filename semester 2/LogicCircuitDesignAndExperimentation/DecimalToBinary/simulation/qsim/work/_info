@@ -18,20 +18,20 @@ Ij<3iOdV?kF5mNQk9?U@Yd2
 Z3 VDg1SIo80bB@j0V0VzS_@n1
 R0
 w1725874964
-8DecimalToBinary.vo
-FDecimalToBinary.vo
+Z4 8DecimalToBinary.vo
+Z5 FDecimalToBinary.vo
 !i122 4
-L0 32 399
-Z4 OV;L;2020.1;71
+Z6 L0 32 399
+Z7 OV;L;2020.1;71
 r1
 !s85 0
 31
-Z5 !s108 1725874965.000000
-!s107 DecimalToBinary.vo|
-!s90 -work|work|DecimalToBinary.vo|
+Z8 !s108 1725874965.000000
+Z9 !s107 DecimalToBinary.vo|
+Z10 !s90 -work|work|DecimalToBinary.vo|
 !i113 1
-Z6 o-work work
-Z7 tCvgOpt 0
+Z11 o-work work
+Z12 tCvgOpt 0
 n@decimal@to@binary
 vDecimalToBinary_vlg_vec_tst
 R1
@@ -42,18 +42,66 @@ I]LWHX4bY][XkoRZ2fBz8N0
 R3
 R0
 w1725874963
-8Waveform.vwf.vt
-FWaveform.vwf.vt
+Z13 8Waveform.vwf.vt
+Z14 FWaveform.vwf.vt
 !i122 5
-L0 30 141
-R4
+Z15 L0 30 141
+R7
 r1
 !s85 0
 31
-R5
+R8
 !s107 Waveform.vwf.vt|
-!s90 -work|work|Waveform.vwf.vt|
+Z16 !s90 -work|work|Waveform.vwf.vt|
 !i113 1
+R11
+R12
+n@decimal@to@binary_vlg_vec_tst
+vDecimalToBinarySymbol
+!s110 1727073082
+!i10b 1
+!s100 WYBPLlL2IGh`KjzgUBoW90
+R2
+IHPaV774_NZ]4nh6S@Sf7B1
+R3
+R0
+w1727073082
+R4
+R5
+!i122 8
 R6
 R7
-n@decimal@to@binary_vlg_vec_tst
+r1
+!s85 0
+31
+Z17 !s108 1727073082.000000
+R9
+R10
+!i113 1
+R11
+R12
+n@decimal@to@binary@symbol
+vDecimalToBinarySymbol_vlg_vec_tst
+!s110 1727073083
+!i10b 1
+!s100 >nWM5W?Z:AR=dnTL190L92
+R2
+IZ7BbznTVC[^QQQA0DfJD]3
+R3
+R0
+w1727073081
+R13
+R14
+!i122 9
+R15
+R7
+r1
+!s85 0
+31
+R17
+Z18 !s107 Waveform.vwf.vt|
+R16
+!i113 1
+R11
+R12
+n@decimal@to@binary@symbol_vlg_vec_tst

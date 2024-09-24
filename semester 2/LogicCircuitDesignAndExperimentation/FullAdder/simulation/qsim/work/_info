@@ -1,0 +1,59 @@
+m255
+K4
+z2
+!s11f vlog 2020.1 2020.02, Feb 28 2020
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dC:/Users/rnjsa/OneDrive/Desktop/2024/semester 2/LogicCircuitDesignAndExperimentation/FullAdder/simulation/qsim
+vFullAdder
+Z1 !s110 1727081909
+!i10b 1
+!s100 ]DiU3fncM@J@=9MI>^a<^1
+Z2 !s11b Dg1SIo80bB@j0V0VzS_@n1
+I^]mRYU60b8hIFzVmS^DEM1
+Z3 VDg1SIo80bB@j0V0VzS_@n1
+R0
+w1727081907
+8FullAdder.vo
+FFullAdder.vo
+!i122 0
+L0 32 176
+Z4 OV;L;2020.1;71
+r1
+!s85 0
+31
+Z5 !s108 1727081909.000000
+!s107 FullAdder.vo|
+!s90 -work|work|FullAdder.vo|
+!i113 1
+Z6 o-work work
+Z7 tCvgOpt 0
+n@full@adder
+vFullAdder_vlg_vec_tst
+R1
+!i10b 1
+!s100 3XA@z`ECIii^m]VHN[0>N3
+R2
+IMXG6VWoIlh2QD?XJPA=V90
+R3
+R0
+w1727081906
+8Waveform.vwf.vt
+FWaveform.vwf.vt
+!i122 1
+L0 30 56
+R4
+r1
+!s85 0
+31
+R5
+!s107 Waveform.vwf.vt|
+!s90 -work|work|Waveform.vwf.vt|
+!i113 1
+R6
+R7
+n@full@adder_vlg_vec_tst

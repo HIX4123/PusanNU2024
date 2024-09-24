@@ -1,4 +1,23 @@
-|DecimalToBinary
+|DecimalToBinarySymbol
+b3 <= DecimalToBinary:inst.b3
+d0 => DecimalToBinary:inst.d0
+d1 => DecimalToBinary:inst.d1
+d2 => DecimalToBinary:inst.d2
+d3 => DecimalToBinary:inst.d3
+d4 => DecimalToBinary:inst.d4
+d5 => DecimalToBinary:inst.d5
+d6 => DecimalToBinary:inst.d6
+d7 => DecimalToBinary:inst.d7
+d8 => DecimalToBinary:inst.d8
+d9 => DecimalToBinary:inst.d9
+d10 => DecimalToBinary:inst.d10
+d11 => DecimalToBinary:inst.d11
+b2 <= DecimalToBinary:inst.b2
+b1 <= DecimalToBinary:inst.b1
+b0 <= DecimalToBinary:inst.b0
+
+
+|DecimalToBinarySymbol|DecimalToBinary:inst
 b3 <= inst6.DB_MAX_OUTPUT_PORT_TYPE
 d8 => inst6.IN0
 d10 => inst6.IN1

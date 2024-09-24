@@ -1,0 +1,59 @@
+m255
+K4
+z2
+!s11f vlog 2020.1 2020.02, Feb 28 2020
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dC:/Users/rnjsa/OneDrive/Desktop/2024/semester 2/LogicCircuitDesignAndExperimentation/HalfAdder/simulation/qsim
+vHalfAdder
+Z1 !s110 1727075667
+!i10b 1
+!s100 mgJ]8cGEU>6VnP3DWGT4z3
+Z2 !s11b Dg1SIo80bB@j0V0VzS_@n1
+IV5H8678iDP:jP[Vheh<BQ2
+Z3 VDg1SIo80bB@j0V0VzS_@n1
+R0
+w1727075666
+8HalfAdder.vo
+FHalfAdder.vo
+!i122 0
+L0 32 161
+Z4 OV;L;2020.1;71
+r1
+!s85 0
+31
+Z5 !s108 1727075667.000000
+!s107 HalfAdder.vo|
+!s90 -work|work|HalfAdder.vo|
+!i113 1
+Z6 o-work work
+Z7 tCvgOpt 0
+n@half@adder
+vHalfAdder_vlg_vec_tst
+R1
+!i10b 1
+!s100 Gn]O;kU`TRIIW1j9HSk`Z3
+R2
+I>8<XkkzDK^BiWYDzP`FZF0
+R3
+R0
+w1727075664
+8Waveform.vwf.vt
+FWaveform.vwf.vt
+!i122 1
+L0 30 40
+R4
+r1
+!s85 0
+31
+R5
+!s107 Waveform.vwf.vt|
+!s90 -work|work|Waveform.vwf.vt|
+!i113 1
+R6
+R7
+n@half@adder_vlg_vec_tst

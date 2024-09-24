@@ -1,0 +1,41 @@
+{
+	"partitions" : [
+		{
+			"name" : "Top",
+			"pins" : [
+				{
+					"name" : "eq",
+					"strict" : false
+				},
+				{
+					"name" : "neq",
+					"strict" : false
+				},
+				{
+					"name" : "geq",
+					"strict" : false
+				},
+				{
+					"name" : "leq",
+					"strict" : false
+				},
+				{
+					"name" : "a0",
+					"strict" : false
+				},
+				{
+					"name" : "b0",
+					"strict" : false
+				},
+				{
+					"name" : "a1",
+					"strict" : false
+				},
+				{
+					"name" : "b1",
+					"strict" : false
+				}
+			]
+		}
+	]
+}

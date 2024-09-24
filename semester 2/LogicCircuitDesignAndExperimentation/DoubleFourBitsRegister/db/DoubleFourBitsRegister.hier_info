@@ -1,0 +1,55 @@
+|DoubleFourBitsRegister
+a1 <= FourBitsRegister:inst.q1
+d1 => FourBitsRegister:inst.d1
+d2 => FourBitsRegister:inst.d2
+d3 => FourBitsRegister:inst.d3
+d4 => FourBitsRegister:inst.d4
+Ce => FourBitsRegister:inst.Ce
+Ce => FourBitsRegister:inst3.Ce
+CLK => FourBitsRegister:inst.CLK
+CLK => FourBitsRegister:inst3.CLK
+RST => FourBitsRegister:inst.RST
+RST => FourBitsRegister:inst3.RST
+a2 <= FourBitsRegister:inst.q2
+a3 <= FourBitsRegister:inst.q3
+a4 <= FourBitsRegister:inst.q4
+b1 <= FourBitsRegister:inst3.q1
+b2 <= FourBitsRegister:inst3.q2
+b3 <= FourBitsRegister:inst3.q3
+b4 <= FourBitsRegister:inst3.q4
+
+
+|DoubleFourBitsRegister|FourBitsRegister:inst
+q1 <= inst6.DB_MAX_OUTPUT_PORT_TYPE
+RST => inst6.ACLR
+RST => inst7.ACLR
+RST => inst8.ACLR
+RST => inst9.ACLR
+Ce => inst.IN0
+CLK => inst.IN1
+d1 => inst6.DATAIN
+q2 <= inst7.DB_MAX_OUTPUT_PORT_TYPE
+d2 => inst7.DATAIN
+q3 <= inst8.DB_MAX_OUTPUT_PORT_TYPE
+d3 => inst8.DATAIN
+q4 <= inst9.DB_MAX_OUTPUT_PORT_TYPE
+d4 => inst9.DATAIN
+
+
+|DoubleFourBitsRegister|FourBitsRegister:inst3
+q1 <= inst6.DB_MAX_OUTPUT_PORT_TYPE
+RST => inst6.ACLR
+RST => inst7.ACLR
+RST => inst8.ACLR
+RST => inst9.ACLR
+Ce => inst.IN0
+CLK => inst.IN1
+d1 => inst6.DATAIN
+q2 <= inst7.DB_MAX_OUTPUT_PORT_TYPE
+d2 => inst7.DATAIN
+q3 <= inst8.DB_MAX_OUTPUT_PORT_TYPE
+d3 => inst8.DATAIN
+q4 <= inst9.DB_MAX_OUTPUT_PORT_TYPE
+d4 => inst9.DATAIN
+
+

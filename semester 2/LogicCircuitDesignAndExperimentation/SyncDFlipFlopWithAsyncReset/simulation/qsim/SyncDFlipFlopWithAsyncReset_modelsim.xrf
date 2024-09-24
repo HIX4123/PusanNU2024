@@ -1,0 +1,10 @@
+vendor_name = ModelSim
+source_file = 1, C:/Users/rnjsa/OneDrive/Desktop/2024/semester 2/LogicCircuitDesignAndExperimentation/SyncDFlipFlopWithAsyncReset/SyncDFlipFlopWithAsyncReset.bdf
+source_file = 1, C:/Users/rnjsa/OneDrive/Desktop/2024/semester 2/LogicCircuitDesignAndExperimentation/SyncDFlipFlopWithAsyncReset/db/SyncDFlipFlopWithAsyncReset.cbx.xml
+design_name = SyncDFlipFlopWithAsyncReset
+instance = comp, \Qout~output , Qout~output, SyncDFlipFlopWithAsyncReset, 1
+instance = comp, \CLK~input , CLK~input, SyncDFlipFlopWithAsyncReset, 1
+instance = comp, \Din~input , Din~input, SyncDFlipFlopWithAsyncReset, 1
+instance = comp, \inst~feeder , inst~feeder, SyncDFlipFlopWithAsyncReset, 1
+instance = comp, \Reset~input , Reset~input, SyncDFlipFlopWithAsyncReset, 1
+instance = comp, \~QUARTUS_CREATED_GND~I , ~QUARTUS_CREATED_GND~I, SyncDFlipFlopWithAsyncReset, 1

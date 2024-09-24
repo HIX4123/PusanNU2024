@@ -3,7 +3,7 @@ $comment
 		vcd file DecimalToBinary.msim.vcd -direction
 $end
 $date
-	Mon Sep 09 18:42:46 2024
+	Mon Sep 23 15:31:23 2024
 $end
 $version
 	ModelSim Version 2020.1
@@ -12,7 +12,7 @@ $timescale
 	1ps
 $end
 
-$scope module DecimalToBinary_vlg_vec_tst $end
+$scope module DecimalToBinarySymbol_vlg_vec_tst $end
 $var reg 1 ! d0 $end
 $var reg 1 " d1 $end
 $var reg 1 # d2 $end
@@ -39,21 +39,21 @@ $var tri1 1 5 devpor $end
 $var tri1 1 6 devoe $end
 $var wire 1 7 d0~input_o $end
 $var wire 1 8 ~QUARTUS_CREATED_GND~I_combout $end
-$var wire 1 9 d11~input_o $end
-$var wire 1 : d8~input_o $end
-$var wire 1 ; d10~input_o $end
-$var wire 1 < d9~input_o $end
-$var wire 1 = inst6~combout $end
-$var wire 1 > d6~input_o $end
+$var wire 1 9 d8~input_o $end
+$var wire 1 : d9~input_o $end
+$var wire 1 ; d11~input_o $end
+$var wire 1 < d10~input_o $end
+$var wire 1 = inst|inst6~combout $end
+$var wire 1 > d4~input_o $end
 $var wire 1 ? d5~input_o $end
 $var wire 1 @ d7~input_o $end
-$var wire 1 A d4~input_o $end
-$var wire 1 B inst5~combout $end
+$var wire 1 A d6~input_o $end
+$var wire 1 B inst|inst5~combout $end
 $var wire 1 C d2~input_o $end
 $var wire 1 D d3~input_o $end
-$var wire 1 E inst4~combout $end
+$var wire 1 E inst|inst4~combout $end
 $var wire 1 F d1~input_o $end
-$var wire 1 G inst~combout $end
+$var wire 1 G inst|inst~combout $end
 $upscope $end
 $upscope $end
 $enddefinitions $end
@@ -125,7 +125,7 @@ $end
 #80000
 1%
 0$
-1A
+1>
 0D
 0G
 0E
@@ -137,13 +137,13 @@ $end
 1&
 0%
 1?
-0A
+0>
 1G
 1-
 #120000
 1'
 0&
-1>
+1A
 0?
 0G
 1E
@@ -153,13 +153,13 @@ $end
 1(
 0'
 1@
-0>
+0A
 1G
 1-
 #160000
 1)
 0(
-1:
+19
 0@
 0G
 0E
@@ -172,15 +172,15 @@ $end
 #180000
 1*
 0)
-1<
-0:
+1:
+09
 1G
 1-
 #200000
 1+
 0*
-1;
-0<
+1<
+0:
 0G
 1E
 1.
@@ -188,13 +188,13 @@ $end
 #220000
 1,
 0+
-19
-0;
+1;
+0<
 1G
 1-
 #240000
 0,
-09
+0;
 0G
 0E
 0=

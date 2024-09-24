@@ -1,0 +1,156 @@
+m255
+K4
+z2
+!s11f MIXED_VERSIONS
+!s11e vcom 2020.1 2020.02, Feb 28 2020
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dC:/Users/rnjsa/OneDrive/Desktop/2024/semester 2/LogicCircuitDesignAndExperimentation/FourBitsRegister/simulation/qsim
+Efourbitsregister
+Z1 w1727086937
+Z2 DPx8 cyclonev 18 cyclonev_atom_pack 0 22 3HQPc5MVbmOPN?>a5EBYj2
+Z3 DPx8 cyclonev 19 cyclonev_components 0 22 jZ]H46BQLgIP5mfRTO`3B1
+Z4 DPx12 altera_lnsim 23 altera_lnsim_components 0 22 ^Ch;U@;bMk1;>A2B<UV`k2
+Z5 DPx4 ieee 16 vital_primitives 0 22 G>kiXP8Q9dRClKfK1Zn7j1
+Z6 DPx6 altera 11 dffeas_pack 0 22 dc5N=DKXMMTVYdUQ@D3FA2
+Z7 DPx4 ieee 12 vital_timing 0 22 J>EBealN09f8GzldA[z2>3
+Z8 DPx3 std 6 textio 0 22 zE1`LPoLg^DX3Oz^4Fj1K3
+Z9 DPx4 ieee 14 std_logic_1164 0 22 cVAk:aDinOX8^VGI1ekP<3
+Z10 DPx6 altera 28 altera_primitives_components 0 22 ca:ehlQAg4;_gVV:^8MAg3
+!i122 4
+R0
+Z11 8FourBitsRegister.vho
+Z12 FFourBitsRegister.vho
+l0
+L39 1
+VSfBNbU`0UUHLXnXPE@P_a1
+!s100 cdAY`j?gCE63?b]Y^Q;cT1
+Z13 OV;C;2020.1;71
+32
+Z14 !s110 1727086938
+!i10b 1
+Z15 !s108 1727086938.000000
+Z16 !s90 -work|work|FourBitsRegister.vho|
+Z17 !s107 FourBitsRegister.vho|
+!i113 1
+Z18 o-work work
+Z19 tExplicit 1 CvgOpt 0
+Astructure
+R2
+R3
+R4
+R5
+R6
+R7
+R8
+R9
+R10
+DEx4 work 16 fourbitsregister 0 22 SfBNbU`0UUHLXnXPE@P_a1
+!i122 4
+l126
+L69 470
+VGo1K5Zci>YC`1NZo16l961
+!s100 f@WW;n7GEYSkR[Y=EVjfa1
+R13
+32
+R14
+!i10b 1
+R15
+R16
+R17
+!i113 1
+R18
+R19
+vFourBitsRegister
+Z20 !s110 1727092578
+!i10b 1
+!s100 [9cFd0jV9R@QocR4VS4lg1
+Z21 !s11b Dg1SIo80bB@j0V0VzS_@n1
+IF_8k=]G[O0nKebGhG=^0T2
+Z22 VDg1SIo80bB@j0V0VzS_@n1
+R0
+w1727092577
+8FourBitsRegister.vo
+FFourBitsRegister.vo
+!i122 34
+L0 32 354
+Z23 OV;L;2020.1;71
+r1
+!s85 0
+31
+Z24 !s108 1727092578.000000
+!s107 FourBitsRegister.vo|
+!s90 -work|work|FourBitsRegister.vo|
+!i113 1
+R18
+Z25 tCvgOpt 0
+n@four@bits@register
+Efourbitsregister_vhd_vec_tst
+Z26 w1727086936
+R8
+R9
+!i122 5
+R0
+Z27 8Waveform.vwf.vht
+Z28 FWaveform.vwf.vht
+l0
+L32 1
+VNE[Cnd:9;^RzE]3W0^7M?0
+!s100 BU=n900MCH53W3RIU83FW0
+R13
+32
+R14
+!i10b 1
+R15
+Z29 !s90 -work|work|Waveform.vwf.vht|
+Z30 !s107 Waveform.vwf.vht|
+!i113 1
+R18
+R19
+Afourbitsregister_arch
+R8
+R9
+DEx4 work 28 fourbitsregister_vhd_vec_tst 0 22 NE[Cnd:9;^RzE]3W0^7M?0
+!i122 5
+l63
+L34 124
+VUzPol=HDW0]JB;eXeS0@H1
+!s100 8PAcE94olQOPj]90bHh:F3
+R13
+32
+R14
+!i10b 1
+R15
+R29
+R30
+!i113 1
+R18
+R19
+vFourBitsRegister_vlg_vec_tst
+R20
+!i10b 1
+!s100 aJUc^lKk>?n@XWLo_7<XH2
+R21
+I?EmbOAR[VaKh<99H439gC0
+R22
+R0
+w1727092576
+8Waveform1.vwf.vt
+FWaveform1.vwf.vt
+!i122 35
+L0 30 92
+R23
+r1
+!s85 0
+31
+R24
+!s107 Waveform1.vwf.vt|
+!s90 -work|work|Waveform1.vwf.vt|
+!i113 1
+R18
+R25
+n@four@bits@register_vlg_vec_tst

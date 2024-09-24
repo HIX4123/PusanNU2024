@@ -24,6 +24,10 @@
 					"strict" : false
 				},
 				{
+					"name" : "d9",
+					"strict" : false
+				},
+				{
 					"name" : "d10",
 					"strict" : false
 				},
@@ -32,11 +36,11 @@
 					"strict" : false
 				},
 				{
-					"name" : "d9",
+					"name" : "d4",
 					"strict" : false
 				},
 				{
-					"name" : "d4",
+					"name" : "d5",
 					"strict" : false
 				},
 				{
@@ -45,10 +49,6 @@
 				},
 				{
 					"name" : "d7",
-					"strict" : false
-				},
-				{
-					"name" : "d5",
 					"strict" : false
 				},
 				{

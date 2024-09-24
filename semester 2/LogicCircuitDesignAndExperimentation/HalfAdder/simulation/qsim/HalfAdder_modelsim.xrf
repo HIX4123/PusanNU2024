@@ -1,0 +1,9 @@
+vendor_name = ModelSim
+source_file = 1, C:/Users/rnjsa/OneDrive/Desktop/2024/semester 2/LogicCircuitDesignAndExperimentation/HalfAdder/HalfAdder.bdf
+source_file = 1, C:/Users/rnjsa/OneDrive/Desktop/2024/semester 2/LogicCircuitDesignAndExperimentation/HalfAdder/db/HalfAdder.cbx.xml
+design_name = HalfAdder
+instance = comp, \C~output , C~output, HalfAdder, 1
+instance = comp, \S~output , S~output, HalfAdder, 1
+instance = comp, \A~input , A~input, HalfAdder, 1
+instance = comp, \B~input , B~input, HalfAdder, 1
+instance = comp, \~QUARTUS_CREATED_GND~I , ~QUARTUS_CREATED_GND~I, HalfAdder, 1
