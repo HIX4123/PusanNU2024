@@ -1,0 +1,59 @@
+m255
+K4
+z2
+!s11f vlog 2020.1 2020.02, Feb 28 2020
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dC:/Users/rnjsa/OneDrive/Desktop/2024/semester 2/LogicCircuitDesignAndExperimentation/SyncDFFwithAsyncRst/simulation/qsim
+vSyncDFFwithAsyncRst
+Z1 !s110 1727288098
+!i10b 1
+!s100 RB:Kn4O=J?40di_]V`MmZ1
+Z2 !s11b Dg1SIo80bB@j0V0VzS_@n1
+IM9XhD;OXo_W9^9]gzN1Ll2
+Z3 VDg1SIo80bB@j0V0VzS_@n1
+R0
+w1727288094
+8SyncDFFwithAsyncRst.vo
+FSyncDFFwithAsyncRst.vo
+!i122 0
+L0 32 152
+Z4 OV;L;2020.1;71
+r1
+!s85 0
+31
+!s108 1727288097.000000
+!s107 SyncDFFwithAsyncRst.vo|
+!s90 -work|work|SyncDFFwithAsyncRst.vo|
+!i113 1
+Z5 o-work work
+Z6 tCvgOpt 0
+n@sync@d@f@fwith@async@rst
+vSyncDFFwithAsyncRst_vlg_vec_tst
+R1
+!i10b 1
+!s100 =hdAjaId4hb=CYeM3E6Wo1
+R2
+I<JiX:;UfBa3S_P?2Xzjjj1
+R3
+R0
+w1727288092
+8Waveform.vwf.vt
+FWaveform.vwf.vt
+!i122 1
+L0 30 56
+R4
+r1
+!s85 0
+31
+!s108 1727288098.000000
+!s107 Waveform.vwf.vt|
+!s90 -work|work|Waveform.vwf.vt|
+!i113 1
+R5
+R6
+n@sync@d@f@fwith@async@rst_vlg_vec_tst

@@ -1,0 +1,59 @@
+m255
+K4
+z2
+!s11f vlog 2020.1 2020.02, Feb 28 2020
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dC:/Users/rnjsa/OneDrive/Desktop/2024/semester 2/LogicCircuitDesignAndExperimentation/FourBitComparator/simulation/qsim
+vFourBitComparator
+Z1 !s110 1727278295
+!i10b 1
+!s100 H^5]WPNb0g2OJ[7IZA;Io3
+Z2 !s11b Dg1SIo80bB@j0V0VzS_@n1
+IRS?QC72LbPR=3>l?RNKk92
+Z3 VDg1SIo80bB@j0V0VzS_@n1
+R0
+w1727278294
+8FourBitComparator.vo
+FFourBitComparator.vo
+!i122 8
+L0 32 362
+Z4 OV;L;2020.1;71
+r1
+!s85 0
+31
+Z5 !s108 1727278295.000000
+!s107 FourBitComparator.vo|
+!s90 -work|work|FourBitComparator.vo|
+!i113 1
+Z6 o-work work
+Z7 tCvgOpt 0
+n@four@bit@comparator
+vFourBitComparator_vlg_vec_tst
+R1
+!i10b 1
+!s100 Gofak]BAj]kV=a0=]W?6I0
+R2
+II3K5edAMcEPN;:?;=iHf@2
+R3
+R0
+w1727278293
+8Waveform.vwf.vt
+FWaveform.vwf.vt
+!i122 9
+L0 30 96
+R4
+r1
+!s85 0
+31
+R5
+!s107 Waveform.vwf.vt|
+!s90 -work|work|Waveform.vwf.vt|
+!i113 1
+R6
+R7
+n@four@bit@comparator_vlg_vec_tst

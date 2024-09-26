@@ -1,0 +1,208 @@
+|Adder
+Sum[0] <= FourBitsRippleCarryAdder:inst.S0
+Sum[1] <= FourBitsRippleCarryAdder:inst.S1
+Sum[2] <= FourBitsRippleCarryAdder:inst.S2
+Sum[3] <= FourBitsRippleCarryAdder:inst.S3
+Sum[4] <= FourBitsRippleCarryAdder:inst.C
+A[0] => DecimalToBinary:inst3.d0
+A[1] => DecimalToBinary:inst3.d1
+A[2] => DecimalToBinary:inst3.d2
+A[3] => DecimalToBinary:inst3.d3
+A[4] => DecimalToBinary:inst3.d4
+A[5] => DecimalToBinary:inst3.d5
+A[6] => DecimalToBinary:inst3.d6
+A[7] => DecimalToBinary:inst3.d7
+A[8] => DecimalToBinary:inst3.d8
+A[9] => DecimalToBinary:inst3.d9
+A[10] => DecimalToBinary:inst3.d10
+A[11] => DecimalToBinary:inst3.d11
+B[0] => DecimalToBinary:inst4.d0
+B[1] => DecimalToBinary:inst4.d1
+B[2] => DecimalToBinary:inst4.d2
+B[3] => DecimalToBinary:inst4.d3
+B[4] => DecimalToBinary:inst4.d4
+B[5] => DecimalToBinary:inst4.d5
+B[6] => DecimalToBinary:inst4.d6
+B[7] => DecimalToBinary:inst4.d7
+B[8] => DecimalToBinary:inst4.d8
+B[9] => DecimalToBinary:inst4.d9
+B[10] => DecimalToBinary:inst4.d10
+B[11] => DecimalToBinary:inst4.d11
+
+
+|Adder|FourBitsRippleCarryAdder:inst
+S0 <= FullAdder:inst.S
+A0 => FullAdder:inst.A
+B0 => FullAdder:inst.B
+S1 <= FullAdder:inst1.S
+A1 => FullAdder:inst1.A
+B1 => FullAdder:inst1.B
+S2 <= FullAdder:inst2.S
+A2 => FullAdder:inst2.A
+B2 => FullAdder:inst2.B
+S3 <= FullAdder:inst3.S
+A3 => FullAdder:inst3.A
+B3 => FullAdder:inst3.B
+C <= FullAdder:inst3.Cout
+
+
+|Adder|FourBitsRippleCarryAdder:inst|FullAdder:inst
+S <= HalfAdder:inst2.S
+A => HalfAdder:inst.A
+B => HalfAdder:inst.B
+Cin => HalfAdder:inst2.B
+Cout <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Adder|FourBitsRippleCarryAdder:inst|FullAdder:inst|HalfAdder:inst2
+C <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+A => inst2.IN0
+A => inst.IN0
+B => inst2.IN1
+B => inst.IN1
+S <= inst.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Adder|FourBitsRippleCarryAdder:inst|FullAdder:inst|HalfAdder:inst
+C <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+A => inst2.IN0
+A => inst.IN0
+B => inst2.IN1
+B => inst.IN1
+S <= inst.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Adder|FourBitsRippleCarryAdder:inst|FullAdder:inst1
+S <= HalfAdder:inst2.S
+A => HalfAdder:inst.A
+B => HalfAdder:inst.B
+Cin => HalfAdder:inst2.B
+Cout <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Adder|FourBitsRippleCarryAdder:inst|FullAdder:inst1|HalfAdder:inst2
+C <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+A => inst2.IN0
+A => inst.IN0
+B => inst2.IN1
+B => inst.IN1
+S <= inst.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Adder|FourBitsRippleCarryAdder:inst|FullAdder:inst1|HalfAdder:inst
+C <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+A => inst2.IN0
+A => inst.IN0
+B => inst2.IN1
+B => inst.IN1
+S <= inst.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Adder|FourBitsRippleCarryAdder:inst|FullAdder:inst2
+S <= HalfAdder:inst2.S
+A => HalfAdder:inst.A
+B => HalfAdder:inst.B
+Cin => HalfAdder:inst2.B
+Cout <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Adder|FourBitsRippleCarryAdder:inst|FullAdder:inst2|HalfAdder:inst2
+C <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+A => inst2.IN0
+A => inst.IN0
+B => inst2.IN1
+B => inst.IN1
+S <= inst.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Adder|FourBitsRippleCarryAdder:inst|FullAdder:inst2|HalfAdder:inst
+C <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+A => inst2.IN0
+A => inst.IN0
+B => inst2.IN1
+B => inst.IN1
+S <= inst.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Adder|FourBitsRippleCarryAdder:inst|FullAdder:inst3
+S <= HalfAdder:inst2.S
+A => HalfAdder:inst.A
+B => HalfAdder:inst.B
+Cin => HalfAdder:inst2.B
+Cout <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Adder|FourBitsRippleCarryAdder:inst|FullAdder:inst3|HalfAdder:inst2
+C <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+A => inst2.IN0
+A => inst.IN0
+B => inst2.IN1
+B => inst.IN1
+S <= inst.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Adder|FourBitsRippleCarryAdder:inst|FullAdder:inst3|HalfAdder:inst
+C <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+A => inst2.IN0
+A => inst.IN0
+B => inst2.IN1
+B => inst.IN1
+S <= inst.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Adder|DecimalToBinary:inst3
+b3 <= inst6.DB_MAX_OUTPUT_PORT_TYPE
+d8 => inst6.IN0
+d10 => inst6.IN1
+d10 => inst4.IN4
+d11 => inst6.IN2
+d11 => inst4.IN5
+d11 => inst.IN5
+d9 => inst6.IN3
+d9 => inst.IN4
+b2 <= inst5.DB_MAX_OUTPUT_PORT_TYPE
+d4 => inst5.IN0
+d6 => inst5.IN1
+d6 => inst4.IN1
+d7 => inst5.IN2
+d7 => inst4.IN3
+d7 => inst.IN3
+d5 => inst5.IN3
+d5 => inst.IN1
+b1 <= inst4.DB_MAX_OUTPUT_PORT_TYPE
+d2 => inst4.IN0
+d3 => inst4.IN2
+d3 => inst.IN2
+b0 <= inst.DB_MAX_OUTPUT_PORT_TYPE
+d1 => inst.IN0
+d0 => ~NO_FANOUT~
+
+
+|Adder|DecimalToBinary:inst4
+b3 <= inst6.DB_MAX_OUTPUT_PORT_TYPE
+d8 => inst6.IN0
+d10 => inst6.IN1
+d10 => inst4.IN4
+d11 => inst6.IN2
+d11 => inst4.IN5
+d11 => inst.IN5
+d9 => inst6.IN3
+d9 => inst.IN4
+b2 <= inst5.DB_MAX_OUTPUT_PORT_TYPE
+d4 => inst5.IN0
+d6 => inst5.IN1
+d6 => inst4.IN1
+d7 => inst5.IN2
+d7 => inst4.IN3
+d7 => inst.IN3
+d5 => inst5.IN3
+d5 => inst.IN1
+b1 <= inst4.DB_MAX_OUTPUT_PORT_TYPE
+d2 => inst4.IN0
+d3 => inst4.IN2
+d3 => inst.IN2
+b0 <= inst.DB_MAX_OUTPUT_PORT_TYPE
+d1 => inst.IN0
+d0 => ~NO_FANOUT~
+
+
