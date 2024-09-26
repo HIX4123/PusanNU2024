@@ -13,37 +13,49 @@ public class UriProcessor {
         this.patternMappings = patternMappings;
     }
 
-    public List<String> extractVariableNames(String ignoredMethod, String path) {
+    public List<String> extractVariableNames(String method, String path) {
+
         List<String> variableNames = new ArrayList<>();
 
-        Pattern pattern = Pattern.compile("\\{\\w+}");
-        Matcher matcher = pattern.matcher(path);
-        while (matcher.find()) {
-            for (int i = 0; i < matcher.groupCount(); i++) {
-                variableNames.add(matcher.group(i));
+        patternMappings.forEach((key, value) -> {
+            Pattern pattern = Pattern.compile("\\{(\\w+)}");
+            Matcher matcher = pattern.matcher(key);
+
+            while (matcher.find()) {
+                for (int i = 1; i <= matcher.groupCount(); i++) {
+                    variableNames.add(matcher.group(i));
+                }
             }
-        }
+
+        });
 
         return variableNames;
     }
 
-    public List<String> extractVariableValues(String method, String path) {
+
+    public List<String> extractVariableValues(String get, String path) {
+        // construct a regex from the URI template that can capture the values corresponding to the placeholders in
+        // the actual URI.
+
         List<String> variableValues = new ArrayList<>();
 
-        String pattern = patternMappings.get(method + " " + path);
-        if (pattern == null) {
+        if (patternMappings.isEmpty()) {
             return variableValues;
         }
 
-        Pattern p = Pattern.compile(pattern);
-        Matcher m = p.matcher(path);
-        if (m.find()) {
-            for (int i = 1; i <= m.groupCount(); i++) {
-                variableValues.add(m.group(i));
+        patternMappings.forEach((key, value) -> {
+            Pattern pattern = Pattern.compile(value.split(" ")[1]);
+            Matcher matcher = pattern.matcher(path);
+
+            while (matcher.find()) {
+                for (int i = 1; i <= matcher.groupCount(); i++) {
+                    variableValues.add(matcher.group(i));
+                }
             }
-        }
+        });
 
         return variableValues;
+
     }
 
 
