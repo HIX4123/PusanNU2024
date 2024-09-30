@@ -1,5 +1,7 @@
 vendor_name = ModelSim
 source_file = 1, C:/Users/rnjsa/OneDrive/Desktop/2024/semester 2/LogicCircuitDesignAndExperimentation/FullAdder/FullAdder.bdf
+source_file = 1, C:/Users/rnjsa/OneDrive/Desktop/2024/semester 2/LogicCircuitDesignAndExperimentation/FullAdder/Waveform.vwf
+source_file = 1, C:/Users/rnjsa/OneDrive/Desktop/2024/semester 2/LogicCircuitDesignAndExperimentation/FullAdder/FullAdderSymbol.bdf
 source_file = 1, C:/Users/rnjsa/OneDrive/Desktop/2024/semester 2/LogicCircuitDesignAndExperimentation/FullAdder/halfadder.bdf
 design_name = FullAdder
 instance = comp, \S~output , S~output, FullAdder, 1

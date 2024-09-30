@@ -10,23 +10,23 @@ z2
 cModel Technology
 Z0 dC:/Users/rnjsa/OneDrive/Desktop/2024/semester 2/LogicCircuitDesignAndExperimentation/FourBitsRippleCarryAdder/simulation/qsim
 vFourBitsRippleCarryAdder
-Z1 !s110 1727083511
+Z1 !s110 1727385653
 !i10b 1
 !s100 oOG7eH5llM?J6nF=NCOC_2
 Z2 !s11b Dg1SIo80bB@j0V0VzS_@n1
 I_IMUA0;T@jHQQjMZ1K=`71
 Z3 VDg1SIo80bB@j0V0VzS_@n1
 R0
-w1727083510
+w1727385652
 8FourBitsRippleCarryAdder.vo
 FFourBitsRippleCarryAdder.vo
-!i122 0
+!i122 2
 L0 32 411
 Z4 OV;L;2020.1;71
 r1
 !s85 0
 31
-Z5 !s108 1727083511.000000
+Z5 !s108 1727385653.000000
 !s107 FourBitsRippleCarryAdder.vo|
 !s90 -work|work|FourBitsRippleCarryAdder.vo|
 !i113 1
@@ -41,10 +41,10 @@ R2
 InCXZQ;fa]lLKZ2CGlUe`G3
 R3
 R0
-w1727083509
+w1727385651
 8Waveform.vwf.vt
 FWaveform.vwf.vt
-!i122 1
+!i122 3
 L0 30 114
 R4
 r1

@@ -1,5 +1,5 @@
 Flow report for DecimalToBinary
-Mon Sep 23 15:47:47 2024
+Fri Sep 27 06:00:19 2024
 Quartus Prime Version 20.1.1 Build 720 11/11/2020 SJ Lite Edition
 
 
@@ -41,7 +41,7 @@ https://fpgasoftware.intel.com/eula.
 +-------------------------------------------------------------------------------+
 ; Flow Summary                                                                  ;
 +---------------------------------+---------------------------------------------+
-; Flow Status                     ; Successful - Mon Sep 23 15:47:43 2024       ;
+; Flow Status                     ; Successful - Fri Sep 27 06:00:19 2024       ;
 ; Quartus Prime Version           ; 20.1.1 Build 720 11/11/2020 SJ Lite Edition ;
 ; Revision Name                   ; DecimalToBinary                             ;
 ; Top-level Entity Name           ; DecimalToBinarySymbol                       ;
@@ -99,7 +99,9 @@ https://fpgasoftware.intel.com/eula.
 ; Fitter               ; 00:00:22     ; 1.0                     ; 6655 MB             ; 00:00:43                           ;
 ; Assembler            ; 00:00:06     ; 1.0                     ; 4828 MB             ; 00:00:06                           ;
 ; Timing Analyzer      ; 00:00:03     ; 1.0                     ; 5137 MB             ; 00:00:04                           ;
-; Total                ; 00:00:38     ; --                      ; --                  ; 00:01:10                           ;
+; EDA Netlist Writer   ; 00:00:01     ; 1.0                     ; 4716 MB             ; 00:00:01                           ;
+; EDA Netlist Writer   ; 00:00:01     ; 1.0                     ; 4724 MB             ; 00:00:01                           ;
+; Total                ; 00:00:40     ; --                      ; --                  ; 00:01:12                           ;
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
 
 
@@ -112,6 +114,8 @@ https://fpgasoftware.intel.com/eula.
 ; Fitter               ; SeworL           ; Windows 10 ; 10.0       ; x86_64         ;
 ; Assembler            ; SeworL           ; Windows 10 ; 10.0       ; x86_64         ;
 ; Timing Analyzer      ; SeworL           ; Windows 10 ; 10.0       ; x86_64         ;
+; EDA Netlist Writer   ; SeworL           ; Windows 10 ; 10.0       ; x86_64         ;
+; EDA Netlist Writer   ; SeworL           ; Windows 10 ; 10.0       ; x86_64         ;
 +----------------------+------------------+------------+------------+----------------+
 
 
@@ -122,6 +126,8 @@ quartus_map --read_settings_files=on --write_settings_files=off DecimalToBinary 
 quartus_fit --read_settings_files=off --write_settings_files=off DecimalToBinary -c DecimalToBinary
 quartus_asm --read_settings_files=off --write_settings_files=off DecimalToBinary -c DecimalToBinary
 quartus_sta DecimalToBinary -c DecimalToBinary
+quartus_eda --gen_testbench --tool=modelsim_oem --format=verilog --write_settings_files=off DecimalToBinary -c DecimalToBinary --vector_source="C:/Users/rnjsa/OneDrive/Desktop/2024/semester 2/LogicCircuitDesignAndExperimentation/DecimalToBinary/Waveform.vwf" --testbench_file="C:/Users/rnjsa/OneDrive/Desktop/2024/semester 2/LogicCircuitDesignAndExperimentation/DecimalToBinary/simulation/qsim/Waveform.vwf.vt"
+quartus_eda --write_settings_files=off --simulation=on --functional=on --flatten_buses=off --tool=modelsim_oem --format=verilog --output_directory="C:/Users/rnjsa/OneDrive/Desktop/2024/semester 2/LogicCircuitDesignAndExperimentation/DecimalToBinary/simulation/qsim/" DecimalToBinary -c DecimalToBinary
 
 
 

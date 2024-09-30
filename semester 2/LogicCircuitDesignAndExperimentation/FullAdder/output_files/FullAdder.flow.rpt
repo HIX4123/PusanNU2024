@@ -1,5 +1,5 @@
 Flow report for FullAdder
-Mon Sep 23 17:58:27 2024
+Fri Sep 27 06:19:40 2024
 Quartus Prime Version 20.1.1 Build 720 11/11/2020 SJ Lite Edition
 
 
@@ -41,7 +41,7 @@ https://fpgasoftware.intel.com/eula.
 +-------------------------------------------------------------------------------+
 ; Flow Summary                                                                  ;
 +---------------------------------+---------------------------------------------+
-; Flow Status                     ; Successful - Mon Sep 23 17:58:27 2024       ;
+; Flow Status                     ; Successful - Fri Sep 27 06:19:40 2024       ;
 ; Quartus Prime Version           ; 20.1.1 Build 720 11/11/2020 SJ Lite Edition ;
 ; Revision Name                   ; FullAdder                                   ;
 ; Top-level Entity Name           ; FullAdder                                   ;
@@ -98,7 +98,9 @@ https://fpgasoftware.intel.com/eula.
 ; Timing Analyzer      ; 00:00:05     ; 1.0                     ; 5178 MB             ; 00:00:04                           ;
 ; EDA Netlist Writer   ; 00:00:01     ; 1.0                     ; 4716 MB             ; 00:00:01                           ;
 ; EDA Netlist Writer   ; 00:00:00     ; 1.0                     ; 4724 MB             ; 00:00:01                           ;
-; Total                ; 00:00:57     ; --                      ; --                  ; 00:01:18                           ;
+; EDA Netlist Writer   ; 00:00:01     ; 1.0                     ; 4712 MB             ; 00:00:01                           ;
+; EDA Netlist Writer   ; 00:00:01     ; 1.0                     ; 4721 MB             ; 00:00:01                           ;
+; Total                ; 00:00:59     ; --                      ; --                  ; 00:01:20                           ;
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
 
 
@@ -113,6 +115,8 @@ https://fpgasoftware.intel.com/eula.
 ; Timing Analyzer      ; SeworL           ; Windows 10 ; 10.0       ; x86_64         ;
 ; EDA Netlist Writer   ; SeworL           ; Windows 10 ; 10.0       ; x86_64         ;
 ; EDA Netlist Writer   ; SeworL           ; Windows 10 ; 10.0       ; x86_64         ;
+; EDA Netlist Writer   ; SeworL           ; Windows 10 ; 10.0       ; x86_64         ;
+; EDA Netlist Writer   ; SeworL           ; Windows 10 ; 10.0       ; x86_64         ;
 +----------------------+------------------+------------+------------+----------------+
 
 
@@ -123,6 +127,8 @@ quartus_map --read_settings_files=on --write_settings_files=off FullAdder -c Ful
 quartus_fit --read_settings_files=off --write_settings_files=off FullAdder -c FullAdder
 quartus_asm --read_settings_files=off --write_settings_files=off FullAdder -c FullAdder
 quartus_sta FullAdder -c FullAdder
+quartus_eda --gen_testbench --tool=modelsim_oem --format=verilog --write_settings_files=off FullAdder -c FullAdder --vector_source="C:/Users/rnjsa/OneDrive/Desktop/2024/semester 2/LogicCircuitDesignAndExperimentation/FullAdder/Waveform.vwf" --testbench_file="C:/Users/rnjsa/OneDrive/Desktop/2024/semester 2/LogicCircuitDesignAndExperimentation/FullAdder/simulation/qsim/Waveform.vwf.vt"
+quartus_eda --write_settings_files=off --simulation=on --functional=on --flatten_buses=off --tool=modelsim_oem --format=verilog --output_directory="C:/Users/rnjsa/OneDrive/Desktop/2024/semester 2/LogicCircuitDesignAndExperimentation/FullAdder/simulation/qsim/" FullAdder -c FullAdder
 quartus_eda --gen_testbench --tool=modelsim_oem --format=verilog --write_settings_files=off FullAdder -c FullAdder --vector_source="C:/Users/rnjsa/OneDrive/Desktop/2024/semester 2/LogicCircuitDesignAndExperimentation/FullAdder/Waveform.vwf" --testbench_file="C:/Users/rnjsa/OneDrive/Desktop/2024/semester 2/LogicCircuitDesignAndExperimentation/FullAdder/simulation/qsim/Waveform.vwf.vt"
 quartus_eda --write_settings_files=off --simulation=on --functional=on --flatten_buses=off --tool=modelsim_oem --format=verilog --output_directory="C:/Users/rnjsa/OneDrive/Desktop/2024/semester 2/LogicCircuitDesignAndExperimentation/FullAdder/simulation/qsim/" FullAdder -c FullAdder
 

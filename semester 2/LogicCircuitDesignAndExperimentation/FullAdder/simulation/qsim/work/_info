@@ -10,23 +10,23 @@ z2
 cModel Technology
 Z0 dC:/Users/rnjsa/OneDrive/Desktop/2024/semester 2/LogicCircuitDesignAndExperimentation/FullAdder/simulation/qsim
 vFullAdder
-Z1 !s110 1727081909
+Z1 !s110 1727385581
 !i10b 1
 !s100 ]DiU3fncM@J@=9MI>^a<^1
 Z2 !s11b Dg1SIo80bB@j0V0VzS_@n1
 I^]mRYU60b8hIFzVmS^DEM1
 Z3 VDg1SIo80bB@j0V0VzS_@n1
 R0
-w1727081907
+w1727385580
 8FullAdder.vo
 FFullAdder.vo
-!i122 0
+!i122 2
 L0 32 176
 Z4 OV;L;2020.1;71
 r1
 !s85 0
 31
-Z5 !s108 1727081909.000000
+Z5 !s108 1727385581.000000
 !s107 FullAdder.vo|
 !s90 -work|work|FullAdder.vo|
 !i113 1
@@ -41,10 +41,10 @@ R2
 IMXG6VWoIlh2QD?XJPA=V90
 R3
 R0
-w1727081906
+w1727385579
 8Waveform.vwf.vt
 FWaveform.vwf.vt
-!i122 1
+!i122 3
 L0 30 56
 R4
 r1

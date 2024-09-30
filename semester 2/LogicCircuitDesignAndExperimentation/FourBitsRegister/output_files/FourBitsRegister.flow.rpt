@@ -1,5 +1,5 @@
 Flow report for FourBitsRegister
-Mon Sep 23 20:56:17 2024
+Fri Sep 27 06:40:12 2024
 Quartus Prime Version 20.1.1 Build 720 11/11/2020 SJ Lite Edition
 
 
@@ -41,7 +41,7 @@ https://fpgasoftware.intel.com/eula.
 +-------------------------------------------------------------------------------+
 ; Flow Summary                                                                  ;
 +---------------------------------+---------------------------------------------+
-; Flow Status                     ; Successful - Mon Sep 23 20:56:17 2024       ;
+; Flow Status                     ; Successful - Fri Sep 27 06:40:12 2024       ;
 ; Quartus Prime Version           ; 20.1.1 Build 720 11/11/2020 SJ Lite Edition ;
 ; Revision Name                   ; FourBitsRegister                            ;
 ; Top-level Entity Name           ; FourBitsRegister                            ;
@@ -102,7 +102,9 @@ https://fpgasoftware.intel.com/eula.
 ; Timing Analyzer      ; 00:00:04     ; 1.0                     ; 5187 MB             ; 00:00:04                           ;
 ; EDA Netlist Writer   ; 00:00:01     ; 1.0                     ; 4716 MB             ; 00:00:01                           ;
 ; EDA Netlist Writer   ; 00:00:01     ; 1.0                     ; 4724 MB             ; 00:00:01                           ;
-; Total                ; 00:00:40     ; --                      ; --                  ; 00:01:12                           ;
+; EDA Netlist Writer   ; 00:00:01     ; 1.0                     ; 4716 MB             ; 00:00:01                           ;
+; EDA Netlist Writer   ; 00:00:01     ; 1.0                     ; 4724 MB             ; 00:00:01                           ;
+; Total                ; 00:00:42     ; --                      ; --                  ; 00:01:14                           ;
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
 
 
@@ -117,6 +119,8 @@ https://fpgasoftware.intel.com/eula.
 ; Timing Analyzer      ; SeworL           ; Windows 10 ; 10.0       ; x86_64         ;
 ; EDA Netlist Writer   ; SeworL           ; Windows 10 ; 10.0       ; x86_64         ;
 ; EDA Netlist Writer   ; SeworL           ; Windows 10 ; 10.0       ; x86_64         ;
+; EDA Netlist Writer   ; SeworL           ; Windows 10 ; 10.0       ; x86_64         ;
+; EDA Netlist Writer   ; SeworL           ; Windows 10 ; 10.0       ; x86_64         ;
 +----------------------+------------------+------------+------------+----------------+
 
 
@@ -127,6 +131,8 @@ quartus_map --read_settings_files=on --write_settings_files=off FourBitsRegister
 quartus_fit --read_settings_files=off --write_settings_files=off FourBitsRegister -c FourBitsRegister
 quartus_asm --read_settings_files=off --write_settings_files=off FourBitsRegister -c FourBitsRegister
 quartus_sta FourBitsRegister -c FourBitsRegister
+quartus_eda --gen_testbench --tool=modelsim_oem --format=verilog --write_settings_files=off FourBitsRegister -c FourBitsRegister --vector_source="C:/Users/rnjsa/OneDrive/Desktop/2024/semester 2/LogicCircuitDesignAndExperimentation/FourBitsRegister/Waveform1.vwf" --testbench_file="C:/Users/rnjsa/OneDrive/Desktop/2024/semester 2/LogicCircuitDesignAndExperimentation/FourBitsRegister/simulation/qsim/Waveform1.vwf.vt"
+quartus_eda --write_settings_files=off --simulation=on --functional=on --flatten_buses=off --tool=modelsim_oem --format=verilog --output_directory="C:/Users/rnjsa/OneDrive/Desktop/2024/semester 2/LogicCircuitDesignAndExperimentation/FourBitsRegister/simulation/qsim/" FourBitsRegister -c FourBitsRegister
 quartus_eda --gen_testbench --tool=modelsim_oem --format=verilog --write_settings_files=off FourBitsRegister -c FourBitsRegister --vector_source="C:/Users/rnjsa/OneDrive/Desktop/2024/semester 2/LogicCircuitDesignAndExperimentation/FourBitsRegister/Waveform1.vwf" --testbench_file="C:/Users/rnjsa/OneDrive/Desktop/2024/semester 2/LogicCircuitDesignAndExperimentation/FourBitsRegister/simulation/qsim/Waveform1.vwf.vt"
 quartus_eda --write_settings_files=off --simulation=on --functional=on --flatten_buses=off --tool=modelsim_oem --format=verilog --output_directory="C:/Users/rnjsa/OneDrive/Desktop/2024/semester 2/LogicCircuitDesignAndExperimentation/FourBitsRegister/simulation/qsim/" FourBitsRegister -c FourBitsRegister
 

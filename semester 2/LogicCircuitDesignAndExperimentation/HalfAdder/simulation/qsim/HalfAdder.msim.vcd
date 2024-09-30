@@ -3,7 +3,7 @@ $comment
 		vcd file HalfAdder.msim.vcd -direction
 $end
 $date
-	Mon Sep 23 16:14:27 2024
+	Fri Sep 27 06:19:09 2024
 $end
 $version
 	ModelSim Version 2020.1

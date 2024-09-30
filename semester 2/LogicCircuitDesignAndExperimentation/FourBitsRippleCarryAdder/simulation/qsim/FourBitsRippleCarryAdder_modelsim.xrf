@@ -1,5 +1,7 @@
 vendor_name = ModelSim
 source_file = 1, C:/Users/rnjsa/OneDrive/Desktop/2024/semester 2/LogicCircuitDesignAndExperimentation/FourBitsRippleCarryAdder/FourBitsRippleCarryAdder.bdf
+source_file = 1, C:/Users/rnjsa/OneDrive/Desktop/2024/semester 2/LogicCircuitDesignAndExperimentation/FourBitsRippleCarryAdder/Waveform.vwf
+source_file = 1, C:/Users/rnjsa/OneDrive/Desktop/2024/semester 2/LogicCircuitDesignAndExperimentation/FourBitsRippleCarryAdder/FourBitsRippleCarryAdderSymbol.bdf
 source_file = 1, C:/Users/rnjsa/OneDrive/Desktop/2024/semester 2/LogicCircuitDesignAndExperimentation/FourBitsRippleCarryAdder/fulladder.bdf
 source_file = 1, C:/Users/rnjsa/OneDrive/Desktop/2024/semester 2/LogicCircuitDesignAndExperimentation/FourBitsRippleCarryAdder/halfadder.bdf
 design_name = FourBitsRippleCarryAdder

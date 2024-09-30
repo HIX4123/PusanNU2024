@@ -10,23 +10,23 @@ z2
 cModel Technology
 Z0 dC:/Users/rnjsa/OneDrive/Desktop/2024/semester 2/LogicCircuitDesignAndExperimentation/SyncDFFwithAsyncRst/simulation/qsim
 vSyncDFFwithAsyncRst
-Z1 !s110 1727288098
+Z1 !s110 1727386196
 !i10b 1
 !s100 RB:Kn4O=J?40di_]V`MmZ1
 Z2 !s11b Dg1SIo80bB@j0V0VzS_@n1
 IM9XhD;OXo_W9^9]gzN1Ll2
 Z3 VDg1SIo80bB@j0V0VzS_@n1
 R0
-w1727288094
+w1727386194
 8SyncDFFwithAsyncRst.vo
 FSyncDFFwithAsyncRst.vo
-!i122 0
+!i122 16
 L0 32 152
 Z4 OV;L;2020.1;71
 r1
 !s85 0
 31
-!s108 1727288097.000000
+!s108 1727386195.000000
 !s107 SyncDFFwithAsyncRst.vo|
 !s90 -work|work|SyncDFFwithAsyncRst.vo|
 !i113 1
@@ -41,16 +41,16 @@ R2
 I<JiX:;UfBa3S_P?2Xzjjj1
 R3
 R0
-w1727288092
+w1727386193
 8Waveform.vwf.vt
 FWaveform.vwf.vt
-!i122 1
+!i122 17
 L0 30 56
 R4
 r1
 !s85 0
 31
-!s108 1727288098.000000
+!s108 1727386196.000000
 !s107 Waveform.vwf.vt|
 !s90 -work|work|Waveform.vwf.vt|
 !i113 1

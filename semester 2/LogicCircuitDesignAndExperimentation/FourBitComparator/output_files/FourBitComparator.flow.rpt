@@ -1,5 +1,5 @@
 Flow report for FourBitComparator
-Thu Sep 26 00:31:34 2024
+Fri Sep 27 06:24:07 2024
 Quartus Prime Version 20.1.1 Build 720 11/11/2020 SJ Lite Edition
 
 
@@ -41,7 +41,7 @@ https://fpgasoftware.intel.com/eula.
 +-------------------------------------------------------------------------------+
 ; Flow Summary                                                                  ;
 +---------------------------------+---------------------------------------------+
-; Flow Status                     ; Successful - Thu Sep 26 00:31:34 2024       ;
+; Flow Status                     ; Successful - Fri Sep 27 06:24:07 2024       ;
 ; Quartus Prime Version           ; 20.1.1 Build 720 11/11/2020 SJ Lite Edition ;
 ; Revision Name                   ; FourBitComparator                           ;
 ; Top-level Entity Name           ; FourBitComparator                           ;
@@ -104,7 +104,9 @@ https://fpgasoftware.intel.com/eula.
 ; EDA Netlist Writer   ; 00:00:01     ; 1.0                     ; 4724 MB             ; 00:00:01                           ;
 ; EDA Netlist Writer   ; 00:00:01     ; 1.0                     ; 4716 MB             ; 00:00:01                           ;
 ; EDA Netlist Writer   ; 00:00:01     ; 1.0                     ; 4724 MB             ; 00:00:01                           ;
-; Total                ; 00:00:53     ; --                      ; --                  ; 00:01:28                           ;
+; EDA Netlist Writer   ; 00:00:01     ; 1.0                     ; 4716 MB             ; 00:00:01                           ;
+; EDA Netlist Writer   ; 00:00:01     ; 1.0                     ; 4724 MB             ; 00:00:01                           ;
+; Total                ; 00:00:55     ; --                      ; --                  ; 00:01:30                           ;
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
 
 
@@ -125,6 +127,8 @@ https://fpgasoftware.intel.com/eula.
 ; EDA Netlist Writer   ; SeworL           ; Windows 10 ; 10.0       ; x86_64         ;
 ; EDA Netlist Writer   ; SeworL           ; Windows 10 ; 10.0       ; x86_64         ;
 ; EDA Netlist Writer   ; SeworL           ; Windows 10 ; 10.0       ; x86_64         ;
+; EDA Netlist Writer   ; SeworL           ; Windows 10 ; 10.0       ; x86_64         ;
+; EDA Netlist Writer   ; SeworL           ; Windows 10 ; 10.0       ; x86_64         ;
 +----------------------+------------------+------------+------------+----------------+
 
 
@@ -135,6 +139,8 @@ quartus_map --read_settings_files=on --write_settings_files=off FourBitComparato
 quartus_fit --read_settings_files=off --write_settings_files=off FourBitComparator -c FourBitComparator
 quartus_asm --read_settings_files=off --write_settings_files=off FourBitComparator -c FourBitComparator
 quartus_sta FourBitComparator -c FourBitComparator
+quartus_eda --gen_testbench --tool=modelsim_oem --format=verilog --write_settings_files=off FourBitComparator -c FourBitComparator --vector_source="C:/Users/rnjsa/OneDrive/Desktop/2024/semester 2/LogicCircuitDesignAndExperimentation/FourBitComparator/Waveform.vwf" --testbench_file="C:/Users/rnjsa/OneDrive/Desktop/2024/semester 2/LogicCircuitDesignAndExperimentation/FourBitComparator/simulation/qsim/Waveform.vwf.vt"
+quartus_eda --write_settings_files=off --simulation=on --functional=on --flatten_buses=off --tool=modelsim_oem --format=verilog --output_directory="C:/Users/rnjsa/OneDrive/Desktop/2024/semester 2/LogicCircuitDesignAndExperimentation/FourBitComparator/simulation/qsim/" FourBitComparator -c FourBitComparator
 quartus_eda --gen_testbench --tool=modelsim_oem --format=verilog --write_settings_files=off FourBitComparator -c FourBitComparator --vector_source="C:/Users/rnjsa/OneDrive/Desktop/2024/semester 2/LogicCircuitDesignAndExperimentation/FourBitComparator/Waveform.vwf" --testbench_file="C:/Users/rnjsa/OneDrive/Desktop/2024/semester 2/LogicCircuitDesignAndExperimentation/FourBitComparator/simulation/qsim/Waveform.vwf.vt"
 quartus_eda --write_settings_files=off --simulation=on --functional=on --flatten_buses=off --tool=modelsim_oem --format=verilog --output_directory="C:/Users/rnjsa/OneDrive/Desktop/2024/semester 2/LogicCircuitDesignAndExperimentation/FourBitComparator/simulation/qsim/" FourBitComparator -c FourBitComparator
 quartus_eda --gen_testbench --tool=modelsim_oem --format=verilog --write_settings_files=off FourBitComparator -c FourBitComparator --vector_source="C:/Users/rnjsa/OneDrive/Desktop/2024/semester 2/LogicCircuitDesignAndExperimentation/FourBitComparator/Waveform.vwf" --testbench_file="C:/Users/rnjsa/OneDrive/Desktop/2024/semester 2/LogicCircuitDesignAndExperimentation/FourBitComparator/simulation/qsim/Waveform.vwf.vt"

@@ -10,28 +10,28 @@ z2
 cModel Technology
 Z0 dC:/Users/rnjsa/OneDrive/Desktop/2024/semester 2/LogicCircuitDesignAndExperimentation/HalfAdder/simulation/qsim
 vHalfAdder
-Z1 !s110 1727075667
+Z1 !s110 1727385549
 !i10b 1
 !s100 mgJ]8cGEU>6VnP3DWGT4z3
 Z2 !s11b Dg1SIo80bB@j0V0VzS_@n1
 IV5H8678iDP:jP[Vheh<BQ2
 Z3 VDg1SIo80bB@j0V0VzS_@n1
 R0
-w1727075666
-8HalfAdder.vo
-FHalfAdder.vo
-!i122 0
-L0 32 161
-Z4 OV;L;2020.1;71
+w1727385548
+Z4 8HalfAdder.vo
+Z5 FHalfAdder.vo
+!i122 14
+Z6 L0 32 161
+Z7 OV;L;2020.1;71
 r1
 !s85 0
 31
-Z5 !s108 1727075667.000000
-!s107 HalfAdder.vo|
-!s90 -work|work|HalfAdder.vo|
+Z8 !s108 1727385549.000000
+Z9 !s107 HalfAdder.vo|
+Z10 !s90 -work|work|HalfAdder.vo|
 !i113 1
-Z6 o-work work
-Z7 tCvgOpt 0
+Z11 o-work work
+Z12 tCvgOpt 0
 n@half@adder
 vHalfAdder_vlg_vec_tst
 R1
@@ -41,19 +41,67 @@ R2
 I>8<XkkzDK^BiWYDzP`FZF0
 R3
 R0
-w1727075664
-8Waveform.vwf.vt
-FWaveform.vwf.vt
-!i122 1
+w1727385547
+Z13 8Waveform.vwf.vt
+Z14 FWaveform.vwf.vt
+!i122 15
 L0 30 40
-R4
+R7
 r1
 !s85 0
 31
-R5
-!s107 Waveform.vwf.vt|
-!s90 -work|work|Waveform.vwf.vt|
+R8
+Z15 !s107 Waveform.vwf.vt|
+Z16 !s90 -work|work|Waveform.vwf.vt|
 !i113 1
+R11
+R12
+n@half@adder_vlg_vec_tst
+vHalfAdderSymbol
+Z17 !s110 1727385413
+!i10b 1
+!s100 o8:d=4zG:Zi3hE6`fK0]I1
+R2
+IRkCXIig6hel`>;QYI1Yi<0
+R3
+R0
+w1727385412
+R4
+R5
+!i122 8
 R6
 R7
-n@half@adder_vlg_vec_tst
+r1
+!s85 0
+31
+Z18 !s108 1727385413.000000
+R9
+R10
+!i113 1
+R11
+R12
+n@half@adder@symbol
+vHalfAdderSymbol_vlg_vec_tst
+R17
+!i10b 1
+!s100 GU?b6JAhPXm[U[LS7P8O40
+R2
+IAC:kH:VaN4oH4C?OZ[VMM1
+R3
+R0
+w1727385411
+R13
+R14
+!i122 9
+L0 30 22
+R7
+r1
+!s85 0
+31
+R18
+R15
+R16
+!i113 1
+R11
+R12
+n@half@adder@symbol_vlg_vec_tst

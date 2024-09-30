@@ -3,7 +3,7 @@ $comment
 		vcd file FourBitComparator.msim.vcd -direction
 $end
 $date
-	Thu Sep 26 00:31:36 2024
+	Fri Sep 27 06:24:08 2024
 $end
 $version
 	ModelSim Version 2020.1

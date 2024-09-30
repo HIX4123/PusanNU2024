@@ -26,7 +26,7 @@ Info: Running Quartus Prime EDA Netlist Writer
     Info: Intel and sold by Intel or its authorized distributors.  Please
     Info: refer to the applicable agreement for further details, at
     Info: https://fpgasoftware.intel.com/eula.
-    Info: Processing started: Wed Sep 25 22:00:20 2024
+    Info: Processing started: Fri Sep 27 06:21:42 2024
 Info: Command: quartus_eda --gen_testbench --tool=modelsim_oem --format=verilog --write_settings_files=off Adder -c Adder --vector_source="C:/Users/rnjsa/OneDrive/Desktop/2024/semester 2/LogicCircuitDesignAndExperimentation/Adder/Waveform.vwf" --testbench_file="C:/Users/rnjsa/OneDrive/Desktop/2024/semester 2/LogicCircuitDesignAndExperimentation/Adder/simulation/qsim/Waveform.vwf.vt"
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 
@@ -55,13 +55,13 @@ Info: Running Quartus Prime EDA Netlist Writer
     Info: Intel and sold by Intel or its authorized distributors.  Please
     Info: refer to the applicable agreement for further details, at
     Info: https://fpgasoftware.intel.com/eula.
-    Info: Processing started: Wed Sep 25 22:00:21 2024
+    Info: Processing started: Fri Sep 27 06:21:43 2024
 Info: Command: quartus_eda --write_settings_files=off --simulation=on --functional=on --flatten_buses=off --tool=modelsim_oem --format=verilog --output_directory="C:/Users/rnjsa/OneDrive/Desktop/2024/semester 2/LogicCircuitDesignAndExperimentation/Adder/simulation/qsim/" Adder -c Adder
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (204019): Generated file Adder.vo in folder "C:/Users/rnjsa/OneDrive/Desktop/2024/semester 2/LogicCircuitDesignAndExperimentation/Adder/simulation/qsim//" for EDA simulation tool
 Info: Quartus Prime EDA Netlist Writer was successful. 0 errors, 1 warning
     Info: Peak virtual memory: 4723 megabytes
-    Info: Processing ended: Wed Sep 25 22:00:22 2024
+    Info: Processing ended: Fri Sep 27 06:21:44 2024
     Info: Elapsed time: 00:00:01
     Info: Total CPU time (on all processors): 00:00:01
 
@@ -81,32 +81,31 @@ Reading pref.tcl
 
 # 2020.1
 
-
 # do Adder.do
-# ** Warning: (vlib-34) Library already exists at "work".
 
+# ** Warning: (vlib-34) Library already exists at "work".
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 22:00:23 on Sep 25,2024
+# Start time: 06:21:45 on Sep 27,2024
 # vlog -work work Adder.vo 
 # -- Compiling module Adder
 # 
 # Top level modules:
 # 	Adder
-# End time: 22:00:23 on Sep 25,2024, Elapsed time: 0:00:00
+# End time: 06:21:45 on Sep 27,2024, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
-# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 22:00:23 on Sep 25,2024
-# vlog -work work Waveform.vwf.vt 
 
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 06:21:45 on Sep 27,2024
+# vlog -work work Waveform.vwf.vt 
 # -- Compiling module Adder_vlg_vec_tst
 # 
 # Top level modules:
 # 	Adder_vlg_vec_tst
-# End time: 22:00:23 on Sep 25,2024, Elapsed time: 0:00:00
+# End time: 06:21:45 on Sep 27,2024, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 
 # vsim -c -t 1ps -L cyclonev_ver -L altera_ver -L altera_mf_ver -L 220model_ver -L sgate_ver -L altera_lnsim_ver work.Adder_vlg_vec_tst 
-# Start time: 22:00:23 on Sep 25,2024
+# Start time: 06:21:45 on Sep 27,2024
 # Loading work.Adder_vlg_vec_tst
 # Loading work.Adder
 # Loading cyclonev_ver.cyclonev_io_obuf
@@ -115,7 +114,7 @@ Reading pref.tcl
 # after#25
 # ** Note: $finish    : Waveform.vwf.vt(47)
 #    Time: 1 us  Iteration: 0  Instance: /Adder_vlg_vec_tst
-# End time: 22:00:24 on Sep 25,2024, Elapsed time: 0:00:01
+# End time: 06:21:45 on Sep 27,2024, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 
 Completed successfully. 
@@ -128,7 +127,7 @@ Reading C:/Users/rnjsa/OneDrive/Desktop/2024/semester 2/LogicCircuitDesignAndExp
 
 Processing channel transitions... 
 
-Writing the resulting VWF to C:/Users/rnjsa/OneDrive/Desktop/2024/semester 2/LogicCircuitDesignAndExperimentation/Adder/simulation/qsim/Adder_20240925220024.sim.vwf
+Writing the resulting VWF to C:/Users/rnjsa/OneDrive/Desktop/2024/semester 2/LogicCircuitDesignAndExperimentation/Adder/simulation/qsim/Adder_20240927062145.sim.vwf
 
 Finished VCD to VWF conversion.
 

@@ -10,23 +10,23 @@ z2
 cModel Technology
 Z0 dC:/Users/rnjsa/OneDrive/Desktop/2024/semester 2/LogicCircuitDesignAndExperimentation/Adder/simulation/qsim
 vAdder
-Z1 !s110 1727269223
+Z1 !s110 1727385705
 !i10b 1
 !s100 TA0h:CYENDnGaKES<VXJJ0
 Z2 !s11b Dg1SIo80bB@j0V0VzS_@n1
 I]F;l`9YJjg[gRJ<zWjVL^1
 Z3 VDg1SIo80bB@j0V0VzS_@n1
 R0
-w1727269222
+w1727385704
 8Adder.vo
 FAdder.vo
-!i122 4
+!i122 6
 L0 32 801
 Z4 OV;L;2020.1;71
 r1
 !s85 0
 31
-Z5 !s108 1727269223.000000
+Z5 !s108 1727385705.000000
 !s107 Adder.vo|
 !s90 -work|work|Adder.vo|
 !i113 1
@@ -41,10 +41,10 @@ R2
 I@HzSOfHJCF<zD7RYU]AoX3
 R3
 R0
-w1727269221
+w1727385703
 8Waveform.vwf.vt
 FWaveform.vwf.vt
-!i122 5
+!i122 7
 L0 30 152
 R4
 r1

@@ -1,5 +1,5 @@
 Flow report for TwoBitComparator
-Mon Sep 23 16:06:07 2024
+Fri Sep 27 06:03:29 2024
 Quartus Prime Version 20.1.1 Build 720 11/11/2020 SJ Lite Edition
 
 
@@ -41,7 +41,7 @@ https://fpgasoftware.intel.com/eula.
 +-------------------------------------------------------------------------------+
 ; Flow Summary                                                                  ;
 +---------------------------------+---------------------------------------------+
-; Flow Status                     ; Successful - Mon Sep 23 16:06:02 2024       ;
+; Flow Status                     ; Successful - Fri Sep 27 06:03:29 2024       ;
 ; Quartus Prime Version           ; 20.1.1 Build 720 11/11/2020 SJ Lite Edition ;
 ; Revision Name                   ; TwoBitComparator                            ;
 ; Top-level Entity Name           ; TwoBitComparatorSymbol                      ;
@@ -99,7 +99,13 @@ https://fpgasoftware.intel.com/eula.
 ; Fitter               ; 00:00:24     ; 1.0                     ; 6647 MB             ; 00:00:43                           ;
 ; Assembler            ; 00:00:07     ; 1.0                     ; 4822 MB             ; 00:00:06                           ;
 ; Timing Analyzer      ; 00:00:04     ; 1.0                     ; 5134 MB             ; 00:00:04                           ;
-; Total                ; 00:00:43     ; --                      ; --                  ; 00:01:12                           ;
+; EDA Netlist Writer   ; 00:00:01     ; 1.0                     ; 4714 MB             ; 00:00:01                           ;
+; EDA Netlist Writer   ; 00:00:01     ; 1.0                     ; 4724 MB             ; 00:00:01                           ;
+; EDA Netlist Writer   ; 00:00:01     ; 1.0                     ; 4716 MB             ; 00:00:01                           ;
+; EDA Netlist Writer   ; 00:00:01     ; 1.0                     ; 4724 MB             ; 00:00:01                           ;
+; EDA Netlist Writer   ; 00:00:01     ; 1.0                     ; 4716 MB             ; 00:00:01                           ;
+; EDA Netlist Writer   ; 00:00:01     ; 1.0                     ; 4722 MB             ; 00:00:01                           ;
+; Total                ; 00:00:49     ; --                      ; --                  ; 00:01:18                           ;
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
 
 
@@ -112,6 +118,12 @@ https://fpgasoftware.intel.com/eula.
 ; Fitter               ; SeworL           ; Windows 10 ; 10.0       ; x86_64         ;
 ; Assembler            ; SeworL           ; Windows 10 ; 10.0       ; x86_64         ;
 ; Timing Analyzer      ; SeworL           ; Windows 10 ; 10.0       ; x86_64         ;
+; EDA Netlist Writer   ; SeworL           ; Windows 10 ; 10.0       ; x86_64         ;
+; EDA Netlist Writer   ; SeworL           ; Windows 10 ; 10.0       ; x86_64         ;
+; EDA Netlist Writer   ; SeworL           ; Windows 10 ; 10.0       ; x86_64         ;
+; EDA Netlist Writer   ; SeworL           ; Windows 10 ; 10.0       ; x86_64         ;
+; EDA Netlist Writer   ; SeworL           ; Windows 10 ; 10.0       ; x86_64         ;
+; EDA Netlist Writer   ; SeworL           ; Windows 10 ; 10.0       ; x86_64         ;
 +----------------------+------------------+------------+------------+----------------+
 
 
@@ -122,6 +134,12 @@ quartus_map --read_settings_files=on --write_settings_files=off TwoBitComparator
 quartus_fit --read_settings_files=off --write_settings_files=off TwoBitComparator -c TwoBitComparator
 quartus_asm --read_settings_files=off --write_settings_files=off TwoBitComparator -c TwoBitComparator
 quartus_sta TwoBitComparator -c TwoBitComparator
+quartus_eda --gen_testbench --tool=modelsim_oem --format=verilog --write_settings_files=off TwoBitComparator -c TwoBitComparator --vector_source="C:/Users/rnjsa/OneDrive/Desktop/2024/semester 2/LogicCircuitDesignAndExperimentation/TwoBitComparator/Waveform.vwf" --testbench_file="C:/Users/rnjsa/OneDrive/Desktop/2024/semester 2/LogicCircuitDesignAndExperimentation/TwoBitComparator/simulation/qsim/Waveform.vwf.vt"
+quartus_eda --write_settings_files=off --simulation=on --functional=on --flatten_buses=off --tool=modelsim_oem --format=verilog --output_directory="C:/Users/rnjsa/OneDrive/Desktop/2024/semester 2/LogicCircuitDesignAndExperimentation/TwoBitComparator/simulation/qsim/" TwoBitComparator -c TwoBitComparator
+quartus_eda --gen_testbench --tool=modelsim_oem --format=verilog --write_settings_files=off TwoBitComparator -c TwoBitComparator --vector_source="C:/Users/rnjsa/OneDrive/Desktop/2024/semester 2/LogicCircuitDesignAndExperimentation/TwoBitComparator/Waveform.vwf" --testbench_file="C:/Users/rnjsa/OneDrive/Desktop/2024/semester 2/LogicCircuitDesignAndExperimentation/TwoBitComparator/simulation/qsim/Waveform.vwf.vt"
+quartus_eda --write_settings_files=off --simulation=on --functional=on --flatten_buses=off --tool=modelsim_oem --format=verilog --output_directory="C:/Users/rnjsa/OneDrive/Desktop/2024/semester 2/LogicCircuitDesignAndExperimentation/TwoBitComparator/simulation/qsim/" TwoBitComparator -c TwoBitComparator
+quartus_eda --gen_testbench --tool=modelsim_oem --format=verilog --write_settings_files=off TwoBitComparator -c TwoBitComparator --vector_source="C:/Users/rnjsa/OneDrive/Desktop/2024/semester 2/LogicCircuitDesignAndExperimentation/TwoBitComparator/Waveform.vwf" --testbench_file="C:/Users/rnjsa/OneDrive/Desktop/2024/semester 2/LogicCircuitDesignAndExperimentation/TwoBitComparator/simulation/qsim/Waveform.vwf.vt"
+quartus_eda --write_settings_files=off --simulation=on --functional=on --flatten_buses=off --tool=modelsim_oem --format=verilog --output_directory="C:/Users/rnjsa/OneDrive/Desktop/2024/semester 2/LogicCircuitDesignAndExperimentation/TwoBitComparator/simulation/qsim/" TwoBitComparator -c TwoBitComparator
 
 
 

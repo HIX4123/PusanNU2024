@@ -1,0 +1,59 @@
+m255
+K4
+z2
+!s11f vlog 2020.1 2020.02, Feb 28 2020
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dC:/Users/rnjsa/OneDrive/Desktop/2024/semester 2/LogicCircuitDesignAndExperimentation/FourBitShiftRegister/simulation/qsim
+vFourBitShiftRegister
+Z1 !s110 1727386631
+!i10b 1
+!s100 UFXD@od^3jI>?Q@O_ZD]Q2
+Z2 !s11b Dg1SIo80bB@j0V0VzS_@n1
+IUIDjiAMMmTGzH2Z?1oSjF3
+Z3 VDg1SIo80bB@j0V0VzS_@n1
+R0
+w1727386630
+8FourBitShiftRegister.vo
+FFourBitShiftRegister.vo
+!i122 2
+L0 32 374
+Z4 OV;L;2020.1;71
+r1
+!s85 0
+31
+Z5 !s108 1727386631.000000
+!s107 FourBitShiftRegister.vo|
+!s90 -work|work|FourBitShiftRegister.vo|
+!i113 1
+Z6 o-work work
+Z7 tCvgOpt 0
+n@four@bit@shift@register
+vFourBitShiftRegister_vlg_vec_tst
+R1
+!i10b 1
+!s100 GVfcD]287=E:TzkUG8<g;3
+R2
+IAk4Y@5X6W<3zAJO0WAQmF1
+R3
+R0
+w1727386629
+8Waveform.vwf.vt
+FWaveform.vwf.vt
+!i122 3
+L0 30 55
+R4
+r1
+!s85 0
+31
+R5
+!s107 Waveform.vwf.vt|
+!s90 -work|work|Waveform.vwf.vt|
+!i113 1
+R6
+R7
+n@four@bit@shift@register_vlg_vec_tst

@@ -26,7 +26,7 @@ Info: Running Quartus Prime EDA Netlist Writer
     Info: Intel and sold by Intel or its authorized distributors.  Please
     Info: refer to the applicable agreement for further details, at
     Info: https://fpgasoftware.intel.com/eula.
-    Info: Processing started: Mon Sep 23 18:25:08 2024
+    Info: Processing started: Fri Sep 27 06:20:50 2024
 Info: Command: quartus_eda --gen_testbench --tool=modelsim_oem --format=verilog --write_settings_files=off FourBitsRippleCarryAdder -c FourBitsRippleCarryAdder --vector_source="C:/Users/rnjsa/OneDrive/Desktop/2024/semester 2/LogicCircuitDesignAndExperimentation/FourBitsRippleCarryAdder/Waveform.vwf" --testbench_file="C:/Users/rnjsa/OneDrive/Desktop/2024/semester 2/LogicCircuitDesignAndExperimentation/FourBitsRippleCarryAdder/simulation/qsim/Waveform.vwf.vt"
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 
@@ -55,14 +55,14 @@ Info: Running Quartus Prime EDA Netlist Writer
     Info: Intel and sold by Intel or its authorized distributors.  Please
     Info: refer to the applicable agreement for further details, at
     Info: https://fpgasoftware.intel.com/eula.
-    Info: Processing started: Mon Sep 23 18:25:10 2024
+    Info: Processing started: Fri Sep 27 06:20:51 2024
 Info: Command: quartus_eda --write_settings_files=off --simulation=on --functional=on --flatten_buses=off --tool=modelsim_oem --format=verilog --output_directory="C:/Users/rnjsa/OneDrive/Desktop/2024/semester 2/LogicCircuitDesignAndExperimentation/FourBitsRippleCarryAdder/simulation/qsim/" FourBitsRippleCarryAdder -c FourBitsRippleCarryAdder
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (204019): Generated file FourBitsRippleCarryAdder.vo in folder "C:/Users/rnjsa/OneDrive/Desktop/2024/semester 2/LogicCircuitDesignAndExperimentation/FourBitsRippleCarryAdder/simulation/qsim//" for EDA simulation tool
 Info: Quartus Prime EDA Netlist Writer was successful. 0 errors, 1 warning
-    Info: Peak virtual memory: 4724 megabytes
-    Info: Processing ended: Mon Sep 23 18:25:10 2024
-    Info: Elapsed time: 00:00:00
+    Info: Peak virtual memory: 4722 megabytes
+    Info: Processing ended: Fri Sep 27 06:20:52 2024
+    Info: Elapsed time: 00:00:01
     Info: Total CPU time (on all processors): 00:00:01
 
 Completed successfully. 
@@ -83,38 +83,38 @@ Reading pref.tcl
 
 
 # do FourBitsRippleCarryAdder.do
-
+# ** Warning: (vlib-34) Library already exists at "work".
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 18:25:11 on Sep 23,2024
+# Start time: 06:20:53 on Sep 27,2024
 # vlog -work work FourBitsRippleCarryAdder.vo 
+
 # -- Compiling module FourBitsRippleCarryAdder
 # 
 # Top level modules:
 # 	FourBitsRippleCarryAdder
-# End time: 18:25:11 on Sep 23,2024, Elapsed time: 0:00:00
+# End time: 06:20:53 on Sep 27,2024, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
-
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 18:25:11 on Sep 23,2024
+# Start time: 06:20:53 on Sep 27,2024
 # vlog -work work Waveform.vwf.vt 
 # -- Compiling module FourBitsRippleCarryAdder_vlg_vec_tst
 # 
 # Top level modules:
 # 	FourBitsRippleCarryAdder_vlg_vec_tst
-# End time: 18:25:12 on Sep 23,2024, Elapsed time: 0:00:01
+# End time: 06:20:53 on Sep 27,2024, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 
 # vsim -c -t 1ps -L cyclonev_ver -L altera_ver -L altera_mf_ver -L 220model_ver -L sgate_ver -L altera_lnsim_ver work.FourBitsRippleCarryAdder_vlg_vec_tst 
-# Start time: 18:25:12 on Sep 23,2024
+# Start time: 06:20:53 on Sep 27,2024
 # Loading work.FourBitsRippleCarryAdder_vlg_vec_tst
 # Loading work.FourBitsRippleCarryAdder
 # Loading cyclonev_ver.cyclonev_io_obuf
 # Loading cyclonev_ver.cyclonev_io_ibuf
 # Loading cyclonev_ver.cyclonev_lcell_comb
-# after#23
+# after#25
 # ** Note: $finish    : Waveform.vwf.vt(67)
 #    Time: 1 us  Iteration: 0  Instance: /FourBitsRippleCarryAdder_vlg_vec_tst
-# End time: 18:25:12 on Sep 23,2024, Elapsed time: 0:00:00
+# End time: 06:20:54 on Sep 27,2024, Elapsed time: 0:00:01
 # Errors: 0, Warnings: 0
 
 Completed successfully. 
@@ -127,7 +127,7 @@ Reading C:/Users/rnjsa/OneDrive/Desktop/2024/semester 2/LogicCircuitDesignAndExp
 
 Processing channel transitions... 
 
-Writing the resulting VWF to C:/Users/rnjsa/OneDrive/Desktop/2024/semester 2/LogicCircuitDesignAndExperimentation/FourBitsRippleCarryAdder/simulation/qsim/FourBitsRippleCarryAdder_20240923182512.sim.vwf
+Writing the resulting VWF to C:/Users/rnjsa/OneDrive/Desktop/2024/semester 2/LogicCircuitDesignAndExperimentation/FourBitsRippleCarryAdder/simulation/qsim/FourBitsRippleCarryAdder_20240927062054.sim.vwf
 
 Finished VCD to VWF conversion.
 

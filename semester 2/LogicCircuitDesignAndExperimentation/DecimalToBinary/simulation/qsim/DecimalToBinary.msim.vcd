@@ -3,7 +3,7 @@ $comment
 		vcd file DecimalToBinary.msim.vcd -direction
 $end
 $date
-	Mon Sep 23 15:31:23 2024
+	Fri Sep 27 06:00:21 2024
 $end
 $version
 	ModelSim Version 2020.1

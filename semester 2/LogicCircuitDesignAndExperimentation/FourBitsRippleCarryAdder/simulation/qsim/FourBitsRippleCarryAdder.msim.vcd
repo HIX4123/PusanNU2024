@@ -3,7 +3,7 @@ $comment
 		vcd file FourBitsRippleCarryAdder.msim.vcd -direction
 $end
 $date
-	Mon Sep 23 18:25:12 2024
+	Fri Sep 27 06:20:54 2024
 $end
 $version
 	ModelSim Version 2020.1

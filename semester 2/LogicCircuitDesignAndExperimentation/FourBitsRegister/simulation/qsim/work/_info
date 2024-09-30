@@ -66,23 +66,23 @@ R17
 R18
 R19
 vFourBitsRegister
-Z20 !s110 1727092578
+Z20 !s110 1727386813
 !i10b 1
 !s100 [9cFd0jV9R@QocR4VS4lg1
 Z21 !s11b Dg1SIo80bB@j0V0VzS_@n1
 IF_8k=]G[O0nKebGhG=^0T2
 Z22 VDg1SIo80bB@j0V0VzS_@n1
 R0
-w1727092577
+w1727386812
 8FourBitsRegister.vo
 FFourBitsRegister.vo
-!i122 34
+!i122 36
 L0 32 354
 Z23 OV;L;2020.1;71
 r1
 !s85 0
 31
-Z24 !s108 1727092578.000000
+Z24 !s108 1727386813.000000
 !s107 FourBitsRegister.vo|
 !s90 -work|work|FourBitsRegister.vo|
 !i113 1
@@ -138,10 +138,10 @@ R21
 I?EmbOAR[VaKh<99H439gC0
 R22
 R0
-w1727092576
+w1727386811
 8Waveform1.vwf.vt
 FWaveform1.vwf.vt
-!i122 35
+!i122 37
 L0 30 92
 R23
 r1

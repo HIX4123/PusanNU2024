@@ -3,7 +3,7 @@ $comment
 		vcd file TwoBitComparator.msim.vcd -direction
 $end
 $date
-	Mon Sep 23 16:01:20 2024
+	Fri Sep 27 06:03:30 2024
 $end
 $version
 	ModelSim Version 2020.1
@@ -12,7 +12,7 @@ $timescale
 	1ps
 $end
 
-$scope module TwoBitComparator_vlg_vec_tst $end
+$scope module TwoBitComparatorSymbol_vlg_vec_tst $end
 $var reg 1 ! a0 $end
 $var reg 1 " a1 $end
 $var reg 1 # b0 $end
@@ -34,10 +34,10 @@ $var wire 1 0 a0~input_o $end
 $var wire 1 1 a1~input_o $end
 $var wire 1 2 b0~input_o $end
 $var wire 1 3 b1~input_o $end
-$var wire 1 4 inst2~combout $end
-$var wire 1 5 inst6~combout $end
-$var wire 1 6 inst15~0_combout $end
-$var wire 1 7 inst23~0_combout $end
+$var wire 1 4 inst|inst2~combout $end
+$var wire 1 5 inst|inst6~combout $end
+$var wire 1 6 inst|inst15~0_combout $end
+$var wire 1 7 inst|inst23~0_combout $end
 $upscope $end
 $upscope $end
 $enddefinitions $end

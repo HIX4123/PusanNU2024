@@ -1,5 +1,6 @@
 vendor_name = ModelSim
 source_file = 1, C:/Users/rnjsa/OneDrive/Desktop/2024/semester 2/LogicCircuitDesignAndExperimentation/FourBitsRegister/FourBitsRegister.bdf
+source_file = 1, C:/Users/rnjsa/OneDrive/Desktop/2024/semester 2/LogicCircuitDesignAndExperimentation/FourBitsRegister/Waveform1.vwf
 source_file = 1, C:/Users/rnjsa/OneDrive/Desktop/2024/semester 2/LogicCircuitDesignAndExperimentation/FourBitsRegister/db/FourBitsRegister.cbx.xml
 design_name = FourBitsRegister
 instance = comp, \q1~output , q1~output, FourBitsRegister, 1
