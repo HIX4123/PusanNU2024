@@ -1,0 +1,44 @@
+|HundredCounter
+CNT103 <= CNT[3].DB_MAX_OUTPUT_PORT_TYPE
+CLK => DecimalCounter:inst.CLK
+RST => DecimalCounter:inst.RST
+RST => DecimalCounter:inst1.RST
+CNT102 <= CNT[2].DB_MAX_OUTPUT_PORT_TYPE
+CNT101 <= CNT[1].DB_MAX_OUTPUT_PORT_TYPE
+CNT100 <= CNT[0].DB_MAX_OUTPUT_PORT_TYPE
+CNT1003 <= DecimalCounter:inst1.CNT[3]
+CNT1002 <= DecimalCounter:inst1.CNT[2]
+CNT1001 <= DecimalCounter:inst1.CNT[1]
+CNT1000 <= DecimalCounter:inst1.CNT[0]
+
+
+|HundredCounter|DecimalCounter:inst
+CNT[0] <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+CNT[1] <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+CNT[2] <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+CNT[3] <= inst.DB_MAX_OUTPUT_PORT_TYPE
+RST => inst.ACLR
+RST => inst1.ACLR
+RST => inst2.ACLR
+RST => inst3.ACLR
+CLK => inst.CLK
+CLK => inst1.CLK
+CLK => inst2.CLK
+CLK => inst3.CLK
+
+
+|HundredCounter|DecimalCounter:inst1
+CNT[0] <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+CNT[1] <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+CNT[2] <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+CNT[3] <= inst.DB_MAX_OUTPUT_PORT_TYPE
+RST => inst.ACLR
+RST => inst1.ACLR
+RST => inst2.ACLR
+RST => inst3.ACLR
+CLK => inst.CLK
+CLK => inst1.CLK
+CLK => inst2.CLK
+CLK => inst3.CLK
+
+

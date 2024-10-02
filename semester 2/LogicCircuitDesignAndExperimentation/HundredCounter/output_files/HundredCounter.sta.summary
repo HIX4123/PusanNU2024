@@ -1,0 +1,101 @@
+------------------------------------------------------------
+Timing Analyzer Summary
+------------------------------------------------------------
+
+Type  : Slow 1100mV 85C Model Setup 'CLK'
+Slack : -2.770
+TNS   : -6.765
+
+Type  : Slow 1100mV 85C Model Setup 'DecimalCounter:inst|inst'
+Slack : -1.752
+TNS   : -12.292
+
+Type  : Slow 1100mV 85C Model Hold 'CLK'
+Slack : 0.548
+TNS   : 0.000
+
+Type  : Slow 1100mV 85C Model Hold 'DecimalCounter:inst|inst'
+Slack : 0.876
+TNS   : 0.000
+
+Type  : Slow 1100mV 85C Model Minimum Pulse Width 'DecimalCounter:inst|inst'
+Slack : -0.724
+TNS   : -9.010
+
+Type  : Slow 1100mV 85C Model Minimum Pulse Width 'CLK'
+Slack : -0.724
+TNS   : -4.427
+
+Type  : Slow 1100mV 0C Model Setup 'CLK'
+Slack : -2.490
+TNS   : -6.301
+
+Type  : Slow 1100mV 0C Model Setup 'DecimalCounter:inst|inst'
+Slack : -1.890
+TNS   : -12.718
+
+Type  : Slow 1100mV 0C Model Hold 'CLK'
+Slack : 0.254
+TNS   : 0.000
+
+Type  : Slow 1100mV 0C Model Hold 'DecimalCounter:inst|inst'
+Slack : 0.818
+TNS   : 0.000
+
+Type  : Slow 1100mV 0C Model Minimum Pulse Width 'DecimalCounter:inst|inst'
+Slack : -0.724
+TNS   : -9.132
+
+Type  : Slow 1100mV 0C Model Minimum Pulse Width 'CLK'
+Slack : -0.724
+TNS   : -4.522
+
+Type  : Fast 1100mV 85C Model Setup 'CLK'
+Slack : -1.838
+TNS   : -3.583
+
+Type  : Fast 1100mV 85C Model Setup 'DecimalCounter:inst|inst'
+Slack : -0.324
+TNS   : -1.703
+
+Type  : Fast 1100mV 85C Model Hold 'CLK'
+Slack : 0.182
+TNS   : 0.000
+
+Type  : Fast 1100mV 85C Model Hold 'DecimalCounter:inst|inst'
+Slack : 0.309
+TNS   : 0.000
+
+Type  : Fast 1100mV 85C Model Minimum Pulse Width 'CLK'
+Slack : -0.076
+TNS   : -0.302
+
+Type  : Fast 1100mV 85C Model Minimum Pulse Width 'DecimalCounter:inst|inst'
+Slack : 0.161
+TNS   : 0.000
+
+Type  : Fast 1100mV 0C Model Setup 'CLK'
+Slack : -1.402
+TNS   : -2.758
+
+Type  : Fast 1100mV 0C Model Setup 'DecimalCounter:inst|inst'
+Slack : -0.264
+TNS   : -1.303
+
+Type  : Fast 1100mV 0C Model Hold 'CLK'
+Slack : 0.173
+TNS   : 0.000
+
+Type  : Fast 1100mV 0C Model Hold 'DecimalCounter:inst|inst'
+Slack : 0.264
+TNS   : 0.000
+
+Type  : Fast 1100mV 0C Model Minimum Pulse Width 'CLK'
+Slack : -0.078
+TNS   : -0.310
+
+Type  : Fast 1100mV 0C Model Minimum Pulse Width 'DecimalCounter:inst|inst'
+Slack : 0.161
+TNS   : 0.000
+
+------------------------------------------------------------

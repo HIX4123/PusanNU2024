@@ -1,0 +1,107 @@
+m255
+K4
+z2
+!s11f vlog 2020.1 2020.02, Feb 28 2020
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dC:/Users/rnjsa/OneDrive/Desktop/2024/semester 2/LogicCircuitDesignAndExperimentation/HundredCounter/simulation/qsim
+vDecimalCounter
+Z1 !s110 1727663370
+!i10b 1
+!s100 ;I3Yz2];K@^a2J[mKJ>N41
+Z2 !s11b Dg1SIo80bB@j0V0VzS_@n1
+I8nIjBlenkP1oUUa>LoCkM1
+Z3 VDg1SIo80bB@j0V0VzS_@n1
+R0
+w1727663369
+Z4 8HundredCounter.vo
+Z5 FHundredCounter.vo
+!i122 2
+L0 32 419
+Z6 OV;L;2020.1;71
+r1
+!s85 0
+31
+!s108 1727663369.000000
+Z7 !s107 HundredCounter.vo|
+Z8 !s90 -work|work|HundredCounter.vo|
+!i113 1
+Z9 o-work work
+Z10 tCvgOpt 0
+n@decimal@counter
+vDecimalCounter_vlg_vec_tst
+R1
+!i10b 1
+!s100 <e^ffPle9e2V4Ln`2kUME3
+R2
+I8ZfY_i0gPeUD4:]1TgL=c2
+R3
+R0
+w1727663368
+Z11 8Waveform.vwf.vt
+Z12 FWaveform.vwf.vt
+!i122 3
+L0 30 40
+R6
+r1
+!s85 0
+31
+!s108 1727663370.000000
+!s107 Waveform.vwf.vt|
+Z13 !s90 -work|work|Waveform.vwf.vt|
+!i113 1
+R9
+R10
+n@decimal@counter_vlg_vec_tst
+vHundredCounter
+Z14 !s110 1727689842
+!i10b 1
+!s100 H=8XRTPak1Uf^0ld]URgQ2
+R2
+I_=GSobR>V4V5@B`;A2XVP0
+R3
+R0
+w1727689841
+R4
+R5
+!i122 16
+L0 32 781
+R6
+r1
+!s85 0
+31
+Z15 !s108 1727689842.000000
+R7
+R8
+!i113 1
+R9
+R10
+n@hundred@counter
+vHundredCounter_vlg_vec_tst
+R14
+!i10b 1
+!s100 Tal63SUDhO;d^j36U2<2_3
+R2
+ISgiIZDV_a9T2RKA<Oaaga1
+R3
+R0
+w1727689840
+R11
+R12
+!i122 17
+L0 30 54
+R6
+r1
+!s85 0
+31
+R15
+Z16 !s107 Waveform.vwf.vt|
+R13
+!i113 1
+R9
+R10
+n@hundred@counter_vlg_vec_tst
