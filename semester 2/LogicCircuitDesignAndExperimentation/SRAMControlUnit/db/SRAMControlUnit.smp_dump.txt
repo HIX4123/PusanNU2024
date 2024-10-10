@@ -1,0 +1,8 @@
+
+State Machine - |SRAMControlUnit|fstate
+Name fstate.state4 fstate.state3 fstate.state2 fstate.state1 fstate.state5 
+fstate.state1 0 0 0 0 0 
+fstate.state2 0 0 1 1 0 
+fstate.state3 0 1 0 1 0 
+fstate.state4 1 0 0 1 0 
+fstate.state5 0 0 0 1 1 

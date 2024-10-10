@@ -1,10 +1,13 @@
+import java.util.Scanner;
+
+
 public class StaticTest {
     public static void main(String[] args) {
 
         Scanner sc = new Scanner(System.in);
         Employee employee1 = new Employee(sc.next(), sc.nextDouble());
         Employee employee2 = new Employee(sc.next(), sc.nextDouble());
-        Employee employee3 = new Employee(sc.next(), sc.nextDouble());
+        Employee employee3  = new Employee(sc.next(), sc.nextDouble());
         sc.close();
 
         EmployeeRepository repository = EmployeeRepository.getInstance();

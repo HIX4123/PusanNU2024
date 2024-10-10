@@ -1,12 +1,22 @@
-public class Professor extends Student {
+public class Professor extends Person {
 
 
-    String departments;
+    String schoolName;
+    String major;
 
 
-    public Professor(String name, int age, String hometown, String university, String departments) {
-        super(name, age, hometown, university);
-        this.departments = departments;
+    public Professor(String name, int age, String hometown, String schoolName, String major) {
+        super(name, age, hometown);
+        this.schoolName = schoolName;
+        this.major = major;
+    }
+
+    public String schoolName() {
+        return schoolName   ;
+    }
+
+    public String major() {
+        return major;
     }
 
 

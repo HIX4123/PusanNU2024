@@ -1,11 +1,21 @@
 public class Student extends Person {
 
 
-    private String university;
+    private String schoolName;
 
-    public Student(String name, int age, String hometown, String university) {
+    public Student(String name, int age, String hometown, String schoolName) {
         super(name, age, hometown);
-        this.university = university;
+        this.schoolName = schoolName;
+    }
+
+
+    public String getSchoolName() {
+        return schoolName;
+    }
+
+
+    public int getGrade() {
+        return 1;
     }
 
 

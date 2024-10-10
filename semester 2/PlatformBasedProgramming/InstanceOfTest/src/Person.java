@@ -5,12 +5,24 @@ public class Person {
 
     private String name;
     private int age;
-    private String hometown;
+    private String address;
 
-    public Person(String name, int age, String hometown) {
+    public Person(String name, int age, String address) {
         this.name = name;
         this.age = age;
-        this.hometown = hometown;
+        this.address = address;
+    }
+
+    public String getName() {
+        return name;
+    }
+
+    public int getAge() {
+        return age;
+    }
+
+    public String getAddress() {
+        return address;
     }
 
     @Override
@@ -22,12 +34,12 @@ public class Person {
             return false;
         }
         Person person = (Person) o;
-        return name.equals(person.name) && age == person.age && hometown.equals(person.hometown);
+        return name.equals(person.name) && age == person.age && address.equals(person.address);
     }
 
     @Override
     public int hashCode() {
-        return Objects.hash(name, age, hometown);
+        return Objects.hash(name, age, address);
     }
 
 

@@ -1,11 +1,21 @@
+import java.util.HashMap;
+import java.util.Map;
+
+
 public class EmployeeRepository {
+
+
+    private static final EmployeeRepository INSTANCE = new EmployeeRepository();
+
+
     //your code here
     private Map<String, Employee> employees = new HashMap<String, Employee>();
 
-    private EmployeeRepository(){}
+    private EmployeeRepository() {
+    }
 
     public static EmployeeRepository getInstance() {
-        //your code here
+        return INSTANCE;
     }
 
     public void add(Employee employee) {
@@ -19,4 +29,6 @@ public class EmployeeRepository {
     public Employee get(Employee employee) {
         return employees.get(employee.getName());
     }
+
+
 }

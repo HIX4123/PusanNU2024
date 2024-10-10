@@ -27,29 +27,29 @@ def createList(in_list: List[int]) -> ListNode:
 
 
 def printNodes(node: ListNode):
-    crnt_node = node
-    while crnt_node is not None:
-        print(crnt_node.val, end=' ')
-        crnt_node = crnt_node.next
+    current_node = node
+    while current_node is not None:
+        print(current_node.val, end=' ')
+        current_node = current_node.next
     print()
 
 
-class Partitioner:
+class Partition:
     def partition(self, head: ListNode, x: int) -> ListNode:
         before = before_head = ListNode(-1)
         after = after_head = ListNode(-1)
 
-        crnt_node = head
-        while crnt_node:
-            val = crnt_node.val
+        current_node = head
+        while current_node:
+            val = current_node.val
             if x <= val:
-                after.next = crnt_node
+                after.next = current_node
                 after = after.next
-                crnt_node = crnt_node.next
+                current_node = current_node.next
             else:
-                before.next = crnt_node
+                before.next = current_node
                 before = before.next
-                crnt_node = crnt_node.next
+                current_node = current_node.next
 
         after.next = None
         before.next = after_head.next
@@ -57,7 +57,7 @@ class Partitioner:
         return before_head.next
 
 
-partitioner = Partitioner()
+partitioner = Partition()
 
 head = createList([1, 4, 3, 2, 5, 2])
 partition_head = partitioner.partition(head, 3)
