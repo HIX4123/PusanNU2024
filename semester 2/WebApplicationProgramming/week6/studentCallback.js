@@ -21,9 +21,8 @@
 
 // 위 단계를 바탕으로, 모든 함수를 사용하여 학생 데이터를 출력하도록 하는 코드도 작성합니다.
 
-
 // 1. Callback 방식 구현
-const fs = require('fs');
+const fs = require("fs");
 
 class Student {
   constructor(name, age, studentId, year) {
@@ -42,7 +41,7 @@ function waitForSecond(callback) {
 }
 
 function readDataFile(callback) {
-  fs.readFile('student.json', 'utf-8', (err, data) => {
+  fs.readFile("student.json", "utf-8", (err, data) => {
     // 파일 읽기, 에러 처리
     if (err) {
       handleError(err);
@@ -57,7 +56,12 @@ function createInstanceFromData(data, callback) {
   try {
     const parsedData = JSON.parse(data);
     // Student instance 생성
-    const student = new Student(parsedData.name, parsedData.age, parsedData.studentId, parsedData.year);
+    const student = new Student(
+      parsedData.name,
+      parsedData.age,
+      parsedData.studentId,
+      parsedData.year
+    );
     // 조건문에 따라 저학년, 고학년 handling
     if (student.year <= 2) {
       handleLowYear(student, callback);
@@ -71,13 +75,13 @@ function createInstanceFromData(data, callback) {
 }
 
 function handleLowYear(student, callback) {
-  console.log('저는 저학년입니다.');
+  console.log("저는 저학년입니다.");
   // 처리 작성
   printStudentData(student);
 }
 
 function handleHighYear(student, callback) {
-  console.log('저는 고학년입니다.');
+  console.log("저는 고학년입니다.");
   // 처리 작성
 }
 
