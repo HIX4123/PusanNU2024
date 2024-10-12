@@ -18,7 +18,7 @@ const { parse } = require("path")
 const fs = require("fs").promises;
 
 class Student {
-  constructor(name, age, studentId, year) {
+  constructor(name, age, studentId, year) { 
     this.name = name;
     this.age = age;
     this.studentId = studentId;
