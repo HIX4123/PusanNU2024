@@ -1,5 +1,5 @@
 Flow report for FourFourBitSRAM
-Mon Sep 30 21:24:59 2024
+Mon Oct 14 21:08:02 2024
 Quartus Prime Version 20.1.1 Build 720 11/11/2020 SJ Lite Edition
 
 
@@ -41,7 +41,7 @@ https://fpgasoftware.intel.com/eula.
 +-------------------------------------------------------------------------------+
 ; Flow Summary                                                                  ;
 +---------------------------------+---------------------------------------------+
-; Flow Status                     ; Successful - Mon Sep 30 21:24:59 2024       ;
+; Flow Status                     ; Successful - Mon Oct 14 21:08:02 2024       ;
 ; Quartus Prime Version           ; 20.1.1 Build 720 11/11/2020 SJ Lite Edition ;
 ; Revision Name                   ; FourFourBitSRAM                             ;
 ; Top-level Entity Name           ; FourFourBitSRAM                             ;
@@ -98,7 +98,10 @@ https://fpgasoftware.intel.com/eula.
 ; Timing Analyzer      ; 00:00:04     ; 1.0                     ; 5192 MB             ; 00:00:04                           ;
 ; EDA Netlist Writer   ; 00:00:01     ; 1.0                     ; 4715 MB             ; 00:00:01                           ;
 ; EDA Netlist Writer   ; 00:00:01     ; 1.0                     ; 4723 MB             ; 00:00:01                           ;
-; Total                ; 00:00:46     ; --                      ; --                  ; 00:01:18                           ;
+; EDA Netlist Writer   ; 00:00:00     ; 1.0                     ; 4715 MB             ; 00:00:01                           ;
+; EDA Netlist Writer   ; 00:00:00     ; 1.0                     ; 4715 MB             ; 00:00:01                           ;
+; EDA Netlist Writer   ; 00:00:01     ; 1.0                     ; 4723 MB             ; 00:00:01                           ;
+; Total                ; 00:00:47     ; --                      ; --                  ; 00:01:21                           ;
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
 
 
@@ -113,6 +116,9 @@ https://fpgasoftware.intel.com/eula.
 ; Timing Analyzer      ; SeworL           ; Windows 10 ; 10.0       ; x86_64         ;
 ; EDA Netlist Writer   ; SeworL           ; Windows 10 ; 10.0       ; x86_64         ;
 ; EDA Netlist Writer   ; SeworL           ; Windows 10 ; 10.0       ; x86_64         ;
+; EDA Netlist Writer   ; LAPTOP-8AH0OSCL  ; Windows 10 ; 10.0       ; x86_64         ;
+; EDA Netlist Writer   ; LAPTOP-8AH0OSCL  ; Windows 10 ; 10.0       ; x86_64         ;
+; EDA Netlist Writer   ; LAPTOP-8AH0OSCL  ; Windows 10 ; 10.0       ; x86_64         ;
 +----------------------+------------------+------------+------------+----------------+
 
 
@@ -125,6 +131,9 @@ quartus_asm --read_settings_files=off --write_settings_files=off FourFourBitSRAM
 quartus_sta FourFourBitSRAM -c FourFourBitSRAM
 quartus_eda --gen_testbench --tool=modelsim_oem --format=verilog --write_settings_files=off FourFourBitSRAM -c FourFourBitSRAM --vector_source="C:/Users/rnjsa/OneDrive/Desktop/2024/semester 2/LogicCircuitDesignAndExperimentation/FourFourBitSRAM/Waveform.vwf" --testbench_file="C:/Users/rnjsa/OneDrive/Desktop/2024/semester 2/LogicCircuitDesignAndExperimentation/FourFourBitSRAM/simulation/qsim/Waveform.vwf.vt"
 quartus_eda --write_settings_files=off --simulation=on --functional=on --flatten_buses=off --tool=modelsim_oem --format=verilog --output_directory="C:/Users/rnjsa/OneDrive/Desktop/2024/semester 2/LogicCircuitDesignAndExperimentation/FourFourBitSRAM/simulation/qsim/" FourFourBitSRAM -c FourFourBitSRAM
+quartus_eda --gen_testbench --tool=modelsim_oem --format=verilog --write_settings_files=off FourFourBitSRAM -c FourFourBitSRAM --vector_source="C:/Users/rnjsa/OneDrive/Desktop/2024/semester 2/LogicCircuitDesignAndExperimentation/FourFourBitSRAM/Waveform.vwf" --testbench_file="C:/Users/rnjsa/OneDrive/Desktop/2024/semester 2/LogicCircuitDesignAndExperimentation/FourFourBitSRAM/simulation/qsim/Waveform.vwf.vt"
+quartus_eda --gen_testbench --tool=modelsim_oem --format=verilog --write_settings_files=off FourFourBitSRAM -c FourFourBitSRAM --vector_source="C:/Users/rnjsa/Desktop/PusanNU2024/semester 2/LogicCircuitDesignAndExperimentation/FourFourBitSRAM/Waveform.vwf" --testbench_file="C:/Users/rnjsa/Desktop/PusanNU2024/semester 2/LogicCircuitDesignAndExperimentation/FourFourBitSRAM/simulation/qsim/Waveform.vwf.vt"
+quartus_eda --write_settings_files=off --simulation=on --functional=on --flatten_buses=off --tool=modelsim_oem --format=verilog --output_directory="C:/Users/rnjsa/Desktop/PusanNU2024/semester 2/LogicCircuitDesignAndExperimentation/FourFourBitSRAM/simulation/qsim/" FourFourBitSRAM -c FourFourBitSRAM
 
 
 

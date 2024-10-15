@@ -1,0 +1,57 @@
+|FPGAKeypadBinaryLED
+Bin[0] <= Decimal_to_binary:inst.bin[0]
+Bin[1] <= Decimal_to_binary:inst.bin[1]
+Bin[2] <= Decimal_to_binary:inst.bin[2]
+Bin[3] <= Decimal_to_binary:inst.bin[3]
+Keypad[0] => Decimal_to_binary:inst.Keypad[0]
+Keypad[1] => Decimal_to_binary:inst.Keypad[1]
+Keypad[2] => Decimal_to_binary:inst.Keypad[2]
+Keypad[3] => Decimal_to_binary:inst.Keypad[3]
+Keypad[4] => Decimal_to_binary:inst.Keypad[4]
+Keypad[5] => Decimal_to_binary:inst.Keypad[5]
+Keypad[6] => Decimal_to_binary:inst.Keypad[6]
+Keypad[7] => Decimal_to_binary:inst.Keypad[7]
+Keypad[8] => Decimal_to_binary:inst.Keypad[8]
+Keypad[9] => Decimal_to_binary:inst.Keypad[9]
+Keypad[10] => Decimal_to_binary:inst.Keypad[10]
+Keypad[11] => Decimal_to_binary:inst.Keypad[11]
+
+
+|FPGAKeypadBinaryLED|Decimal_to_binary:inst
+chk <= inst12121.DB_MAX_OUTPUT_PORT_TYPE
+Keypad[0] => inst111.IN0
+Keypad[0] => inst3.IN0
+Keypad[1] => inst111.IN2
+Keypad[1] => inst12.IN0
+Keypad[2] => inst111.IN1
+Keypad[2] => inst10.IN0
+Keypad[3] => inst111.IN3
+Keypad[3] => inst10.IN3
+Keypad[3] => inst12.IN3
+Keypad[4] => inst111.IN5
+Keypad[4] => inst1.IN0
+Keypad[5] => inst111.IN4
+Keypad[5] => inst1.IN3
+Keypad[5] => inst12.IN1
+Keypad[6] => inst111.IN6
+Keypad[6] => inst10.IN1
+Keypad[6] => inst1.IN1
+Keypad[7] => inst111.IN7
+Keypad[7] => inst10.IN2
+Keypad[7] => inst1.IN2
+Keypad[7] => inst12.IN2
+Keypad[8] => inst13.IN1
+Keypad[8] => inst22.IN1
+Keypad[9] => inst13.IN0
+Keypad[9] => inst22.IN0
+Keypad[9] => inst9.IN0
+Keypad[10] => star.DATAIN
+Keypad[11] => sharp.DATAIN
+star <= Keypad[10].DB_MAX_OUTPUT_PORT_TYPE
+sharp <= Keypad[11].DB_MAX_OUTPUT_PORT_TYPE
+bin[0] <= inst4.DB_MAX_OUTPUT_PORT_TYPE
+bin[1] <= inst5.DB_MAX_OUTPUT_PORT_TYPE
+bin[2] <= inst6.DB_MAX_OUTPUT_PORT_TYPE
+bin[3] <= inst7.DB_MAX_OUTPUT_PORT_TYPE
+
+

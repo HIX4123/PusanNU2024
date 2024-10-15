@@ -66,23 +66,23 @@ R17
 R18
 R19
 vFourBitsRegister
-Z20 !s110 1727386813
+Z20 !s110 1728905959
 !i10b 1
-!s100 [9cFd0jV9R@QocR4VS4lg1
+!s100 d^G>H8AWgPa[jgHBmRO:W3
 Z21 !s11b Dg1SIo80bB@j0V0VzS_@n1
-IF_8k=]G[O0nKebGhG=^0T2
+IDmPO78[GVfRM<TeG2NiYi0
 Z22 VDg1SIo80bB@j0V0VzS_@n1
-R0
-w1727386812
+Z23 dC:/Users/rnjsa/Desktop/PusanNU2024/semester 2/LogicCircuitDesignAndExperimentation/FourBitsRegister/simulation/qsim
+w1728905956
 8FourBitsRegister.vo
 FFourBitsRegister.vo
-!i122 36
-L0 32 354
-Z23 OV;L;2020.1;71
+!i122 38
+L0 32 342
+Z24 OV;L;2020.1;71
 r1
 !s85 0
 31
-Z24 !s108 1727386813.000000
+!s108 1728905958.000000
 !s107 FourBitsRegister.vo|
 !s90 -work|work|FourBitsRegister.vo|
 !i113 1
@@ -133,21 +133,21 @@ R19
 vFourBitsRegister_vlg_vec_tst
 R20
 !i10b 1
-!s100 aJUc^lKk>?n@XWLo_7<XH2
+!s100 fjGRfdUTDI6Y]jhPX^db`0
 R21
-I?EmbOAR[VaKh<99H439gC0
+ITAVWfLjJ@=E9c2EUBR9b:1
 R22
-R0
-w1727386811
+R23
+w1728905955
 8Waveform1.vwf.vt
 FWaveform1.vwf.vt
-!i122 37
-L0 30 92
-R23
+!i122 39
+L0 30 76
+R24
 r1
 !s85 0
 31
-R24
+!s108 1728905959.000000
 !s107 Waveform1.vwf.vt|
 !s90 -work|work|Waveform1.vwf.vt|
 !i113 1

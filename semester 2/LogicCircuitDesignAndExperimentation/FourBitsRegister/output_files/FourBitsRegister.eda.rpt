@@ -1,5 +1,5 @@
 EDA Netlist Writer report for FourBitsRegister
-Fri Sep 27 06:40:12 2024
+Mon Oct 14 20:39:16 2024
 Quartus Prime Version 20.1.1 Build 720 11/11/2020 SJ Lite Edition
 
 
@@ -37,7 +37,7 @@ https://fpgasoftware.intel.com/eula.
 +-------------------------------------------------------------------+
 ; EDA Netlist Writer Summary                                        ;
 +---------------------------+---------------------------------------+
-; EDA Netlist Writer Status ; Successful - Fri Sep 27 06:40:12 2024 ;
+; EDA Netlist Writer Status ; Successful - Mon Oct 14 20:39:16 2024 ;
 ; Revision Name             ; FourBitsRegister                      ;
 ; Top-level Entity Name     ; FourBitsRegister                      ;
 ; Family                    ; Cyclone V                             ;
@@ -66,13 +66,13 @@ https://fpgasoftware.intel.com/eula.
 +---------------------------------------------------------------------------------------------------+---------------------------+
 
 
-+--------------------------------------------------------------------------------------------------------------------------------------------+
-; Simulation Generated Files                                                                                                                 ;
-+--------------------------------------------------------------------------------------------------------------------------------------------+
-; Generated Files                                                                                                                            ;
-+--------------------------------------------------------------------------------------------------------------------------------------------+
-; C:/Users/rnjsa/OneDrive/Desktop/2024/semester 2/LogicCircuitDesignAndExperimentation/FourBitsRegister/simulation/qsim//FourBitsRegister.vo ;
-+--------------------------------------------------------------------------------------------------------------------------------------------+
++------------------------------------------------------------------------------------------------------------------------------------------+
+; Simulation Generated Files                                                                                                               ;
++------------------------------------------------------------------------------------------------------------------------------------------+
+; Generated Files                                                                                                                          ;
++------------------------------------------------------------------------------------------------------------------------------------------+
+; C:/Users/rnjsa/Desktop/PusanNU2024/semester 2/LogicCircuitDesignAndExperimentation/FourBitsRegister/simulation/qsim//FourBitsRegister.vo ;
++------------------------------------------------------------------------------------------------------------------------------------------+
 
 
 +-----------------------------+
@@ -95,13 +95,13 @@ Info: Running Quartus Prime EDA Netlist Writer
     Info: Intel and sold by Intel or its authorized distributors.  Please
     Info: refer to the applicable agreement for further details, at
     Info: https://fpgasoftware.intel.com/eula.
-    Info: Processing started: Fri Sep 27 06:40:11 2024
-Info: Command: quartus_eda --write_settings_files=off --simulation=on --functional=on --flatten_buses=off --tool=modelsim_oem --format=verilog --output_directory="C:/Users/rnjsa/OneDrive/Desktop/2024/semester 2/LogicCircuitDesignAndExperimentation/FourBitsRegister/simulation/qsim/" FourBitsRegister -c FourBitsRegister
+    Info: Processing started: Mon Oct 14 20:39:15 2024
+Info: Command: quartus_eda --write_settings_files=off --simulation=on --functional=on --flatten_buses=off --tool=modelsim_oem --format=verilog --output_directory="C:/Users/rnjsa/Desktop/PusanNU2024/semester 2/LogicCircuitDesignAndExperimentation/FourBitsRegister/simulation/qsim/" FourBitsRegister -c FourBitsRegister
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
-Info (204019): Generated file FourBitsRegister.vo in folder "C:/Users/rnjsa/OneDrive/Desktop/2024/semester 2/LogicCircuitDesignAndExperimentation/FourBitsRegister/simulation/qsim//" for EDA simulation tool
+Info (204019): Generated file FourBitsRegister.vo in folder "C:/Users/rnjsa/Desktop/PusanNU2024/semester 2/LogicCircuitDesignAndExperimentation/FourBitsRegister/simulation/qsim//" for EDA simulation tool
 Info: Quartus Prime EDA Netlist Writer was successful. 0 errors, 1 warning
     Info: Peak virtual memory: 4724 megabytes
-    Info: Processing ended: Fri Sep 27 06:40:12 2024
+    Info: Processing ended: Mon Oct 14 20:39:16 2024
     Info: Elapsed time: 00:00:01
     Info: Total CPU time (on all processors): 00:00:01
 

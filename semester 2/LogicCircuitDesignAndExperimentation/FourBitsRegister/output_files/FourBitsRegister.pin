@@ -333,7 +333,7 @@ VCC                          : K13       : power  :                   : 1.1V    
 GND                          : K14       : gnd    :                   :         :           :                
 VCC                          : K15       : power  :                   : 1.1V    :           :                
 RESERVED_INPUT_WITH_WEAK_PULLUP : K16       :        :                   :         : 7A        :                
-d1                           : K17       : input  : 2.5 V             :         : 5B        : N              
+bin[3]                       : K17       : input  : 2.5 V             :         : 5B        : N              
 VCCIO5B                      : K18       : power  :                   : 2.5V    : 5B        :                
 RESERVED_INPUT_WITH_WEAK_PULLUP : K19       :        :                   :         : 7A        :                
 RESERVED_INPUT_WITH_WEAK_PULLUP : K20       :        :                   :         : 7A        :                
@@ -355,9 +355,9 @@ GND                          : L13       : gnd    :                   :         
 VCC                          : L14       : power  :                   : 1.1V    :           :                
 GND                          : L15       : gnd    :                   :         :           :                
 VCC                          : L16       : power  :                   : 1.1V    :           :                
-d4                           : L17       : input  : 2.5 V             :         : 5B        : N              
+bin[0]                       : L17       : input  : 2.5 V             :         : 5B        : N              
 Ce                           : L18       : input  : 2.5 V             :         : 5B        : N              
-d2                           : L19       : input  : 2.5 V             :         : 5B        : N              
+bin[2]                       : L19       : input  : 2.5 V             :         : 5B        : N              
 VREFB5BN0                    : L20       : power  :                   :         : 5B        :                
 GND                          : L21       : gnd    :                   :         :           :                
 RESERVED_INPUT_WITH_WEAK_PULLUP : L22       :        :                   :         : 5B        :                
@@ -376,13 +376,13 @@ GND                          : M12       : gnd    :                   :         
 VCC                          : M13       : power  :                   : 1.1V    :           :                
 GND                          : M14       : gnd    :                   :         :           :                
 VCC                          : M15       : power  :                   : 1.1V    :           :                
-q3                           : M16       : output : 2.5 V             :         : 5B        : N              
+bout[1]                      : M16       : output : 2.5 V             :         : 5B        : N              
 VCCPD5B                      : M17       : power  :                   : 2.5V    : 5B        :                
-q2                           : M18       : output : 2.5 V             :         : 5B        : N              
+bout[2]                      : M18       : output : 2.5 V             :         : 5B        : N              
 VCCIO5B                      : M19       : power  :                   : 2.5V    : 5B        :                
 CLK                          : M20       : input  : 2.5 V             :         : 5B        : N              
-d3                           : M21       : input  : 2.5 V             :         : 5B        : N              
-q1                           : M22       : output : 2.5 V             :         : 5B        : N              
+bin[1]                       : M21       : input  : 2.5 V             :         : 5B        : N              
+bout[3]                      : M22       : output : 2.5 V             :         : 5B        : N              
 GXB_NC                       : N1        :        :                   :         : B0L       :                
 GXB_NC                       : N2        :        :                   :         : B0L       :                
 GND                          : N3        : gnd    :                   :         :           :                
@@ -403,7 +403,7 @@ GND                          : N17       : gnd    :                   :         
 VCCPD5B                      : N18       : power  :                   : 2.5V    : 5B        :                
 RESERVED_INPUT_WITH_WEAK_PULLUP : N19       :        :                   :         : 5B        :                
 RESERVED_INPUT_WITH_WEAK_PULLUP : N20       :        :                   :         : 5B        :                
-q4                           : N21       : output : 2.5 V             :         : 5B        : N              
+bout[0]                      : N21       : output : 2.5 V             :         : 5B        : N              
 GND                          : N22       : gnd    :                   :         :           :                
 GND                          : P1        : gnd    :                   :         :           :                
 GND                          : P2        : gnd    :                   :         :           :                

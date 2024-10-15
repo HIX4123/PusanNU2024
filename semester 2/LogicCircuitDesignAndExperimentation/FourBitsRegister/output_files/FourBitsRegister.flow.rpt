@@ -1,5 +1,5 @@
 Flow report for FourBitsRegister
-Fri Sep 27 06:40:12 2024
+Mon Oct 14 20:39:16 2024
 Quartus Prime Version 20.1.1 Build 720 11/11/2020 SJ Lite Edition
 
 
@@ -41,7 +41,7 @@ https://fpgasoftware.intel.com/eula.
 +-------------------------------------------------------------------------------+
 ; Flow Summary                                                                  ;
 +---------------------------------+---------------------------------------------+
-; Flow Status                     ; Successful - Fri Sep 27 06:40:12 2024       ;
+; Flow Status                     ; Successful - Mon Oct 14 20:39:16 2024       ;
 ; Quartus Prime Version           ; 20.1.1 Build 720 11/11/2020 SJ Lite Edition ;
 ; Revision Name                   ; FourBitsRegister                            ;
 ; Top-level Entity Name           ; FourBitsRegister                            ;
@@ -68,7 +68,7 @@ https://fpgasoftware.intel.com/eula.
 +-------------------+---------------------+
 ; Option            ; Setting             ;
 +-------------------+---------------------+
-; Start date & time ; 09/23/2024 20:53:50 ;
+; Start date & time ; 10/14/2024 20:37:14 ;
 ; Main task         ; Compilation         ;
 ; Revision Name     ; FourBitsRegister    ;
 +-------------------+---------------------+
@@ -79,7 +79,7 @@ https://fpgasoftware.intel.com/eula.
 +-------------------------------------+----------------------------------------+---------------+-------------+------------+
 ; Assignment Name                     ; Value                                  ; Default Value ; Entity Name ; Section Id ;
 +-------------------------------------+----------------------------------------+---------------+-------------+------------+
-; COMPILER_SIGNATURE_ID               ; 91761467151.172709243001588            ; --            ; --          ; --         ;
+; COMPILER_SIGNATURE_ID               ; 10995770589193.172890583411104         ; --            ; --          ; --         ;
 ; MAX_CORE_JUNCTION_TEMP              ; 85                                     ; --            ; --          ; --         ;
 ; MIN_CORE_JUNCTION_TEMP              ; 0                                      ; --            ; --          ; --         ;
 ; PARTITION_COLOR                     ; -- (Not supported for targeted family) ; --            ; --          ; Top        ;
@@ -96,15 +96,14 @@ https://fpgasoftware.intel.com/eula.
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
 ; Module Name          ; Elapsed Time ; Average Processors Used ; Peak Virtual Memory ; Total CPU Time (on all processors) ;
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
-; Analysis & Synthesis ; 00:00:07     ; 1.0                     ; 4810 MB             ; 00:00:17                           ;
-; Fitter               ; 00:00:21     ; 1.0                     ; 6689 MB             ; 00:00:43                           ;
-; Assembler            ; 00:00:06     ; 1.0                     ; 4828 MB             ; 00:00:06                           ;
-; Timing Analyzer      ; 00:00:04     ; 1.0                     ; 5187 MB             ; 00:00:04                           ;
+; Analysis & Synthesis ; 00:00:08     ; 1.0                     ; 4811 MB             ; 00:00:17                           ;
+; Fitter               ; 00:00:24     ; 1.0                     ; 6686 MB             ; 00:00:46                           ;
+; Assembler            ; 00:00:06     ; 1.0                     ; 4832 MB             ; 00:00:06                           ;
+; Timing Analyzer      ; 00:00:04     ; 1.0                     ; 5188 MB             ; 00:00:04                           ;
+; EDA Netlist Writer   ; 00:00:00     ; 1.0                     ; 4716 MB             ; 00:00:01                           ;
 ; EDA Netlist Writer   ; 00:00:01     ; 1.0                     ; 4716 MB             ; 00:00:01                           ;
 ; EDA Netlist Writer   ; 00:00:01     ; 1.0                     ; 4724 MB             ; 00:00:01                           ;
-; EDA Netlist Writer   ; 00:00:01     ; 1.0                     ; 4716 MB             ; 00:00:01                           ;
-; EDA Netlist Writer   ; 00:00:01     ; 1.0                     ; 4724 MB             ; 00:00:01                           ;
-; Total                ; 00:00:42     ; --                      ; --                  ; 00:01:14                           ;
+; Total                ; 00:00:44     ; --                      ; --                  ; 00:01:16                           ;
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
 
 
@@ -113,14 +112,13 @@ https://fpgasoftware.intel.com/eula.
 +----------------------+------------------+------------+------------+----------------+
 ; Module Name          ; Machine Hostname ; OS Name    ; OS Version ; Processor type ;
 +----------------------+------------------+------------+------------+----------------+
-; Analysis & Synthesis ; SeworL           ; Windows 10 ; 10.0       ; x86_64         ;
-; Fitter               ; SeworL           ; Windows 10 ; 10.0       ; x86_64         ;
-; Assembler            ; SeworL           ; Windows 10 ; 10.0       ; x86_64         ;
-; Timing Analyzer      ; SeworL           ; Windows 10 ; 10.0       ; x86_64         ;
-; EDA Netlist Writer   ; SeworL           ; Windows 10 ; 10.0       ; x86_64         ;
-; EDA Netlist Writer   ; SeworL           ; Windows 10 ; 10.0       ; x86_64         ;
-; EDA Netlist Writer   ; SeworL           ; Windows 10 ; 10.0       ; x86_64         ;
-; EDA Netlist Writer   ; SeworL           ; Windows 10 ; 10.0       ; x86_64         ;
+; Analysis & Synthesis ; LAPTOP-8AH0OSCL  ; Windows 10 ; 10.0       ; x86_64         ;
+; Fitter               ; LAPTOP-8AH0OSCL  ; Windows 10 ; 10.0       ; x86_64         ;
+; Assembler            ; LAPTOP-8AH0OSCL  ; Windows 10 ; 10.0       ; x86_64         ;
+; Timing Analyzer      ; LAPTOP-8AH0OSCL  ; Windows 10 ; 10.0       ; x86_64         ;
+; EDA Netlist Writer   ; LAPTOP-8AH0OSCL  ; Windows 10 ; 10.0       ; x86_64         ;
+; EDA Netlist Writer   ; LAPTOP-8AH0OSCL  ; Windows 10 ; 10.0       ; x86_64         ;
+; EDA Netlist Writer   ; LAPTOP-8AH0OSCL  ; Windows 10 ; 10.0       ; x86_64         ;
 +----------------------+------------------+------------+------------+----------------+
 
 
@@ -132,9 +130,8 @@ quartus_fit --read_settings_files=off --write_settings_files=off FourBitsRegiste
 quartus_asm --read_settings_files=off --write_settings_files=off FourBitsRegister -c FourBitsRegister
 quartus_sta FourBitsRegister -c FourBitsRegister
 quartus_eda --gen_testbench --tool=modelsim_oem --format=verilog --write_settings_files=off FourBitsRegister -c FourBitsRegister --vector_source="C:/Users/rnjsa/OneDrive/Desktop/2024/semester 2/LogicCircuitDesignAndExperimentation/FourBitsRegister/Waveform1.vwf" --testbench_file="C:/Users/rnjsa/OneDrive/Desktop/2024/semester 2/LogicCircuitDesignAndExperimentation/FourBitsRegister/simulation/qsim/Waveform1.vwf.vt"
-quartus_eda --write_settings_files=off --simulation=on --functional=on --flatten_buses=off --tool=modelsim_oem --format=verilog --output_directory="C:/Users/rnjsa/OneDrive/Desktop/2024/semester 2/LogicCircuitDesignAndExperimentation/FourBitsRegister/simulation/qsim/" FourBitsRegister -c FourBitsRegister
-quartus_eda --gen_testbench --tool=modelsim_oem --format=verilog --write_settings_files=off FourBitsRegister -c FourBitsRegister --vector_source="C:/Users/rnjsa/OneDrive/Desktop/2024/semester 2/LogicCircuitDesignAndExperimentation/FourBitsRegister/Waveform1.vwf" --testbench_file="C:/Users/rnjsa/OneDrive/Desktop/2024/semester 2/LogicCircuitDesignAndExperimentation/FourBitsRegister/simulation/qsim/Waveform1.vwf.vt"
-quartus_eda --write_settings_files=off --simulation=on --functional=on --flatten_buses=off --tool=modelsim_oem --format=verilog --output_directory="C:/Users/rnjsa/OneDrive/Desktop/2024/semester 2/LogicCircuitDesignAndExperimentation/FourBitsRegister/simulation/qsim/" FourBitsRegister -c FourBitsRegister
+quartus_eda --gen_testbench --tool=modelsim_oem --format=verilog --write_settings_files=off FourBitsRegister -c FourBitsRegister --vector_source="C:/Users/rnjsa/Desktop/PusanNU2024/semester 2/LogicCircuitDesignAndExperimentation/FourBitsRegister/Waveform1.vwf" --testbench_file="C:/Users/rnjsa/Desktop/PusanNU2024/semester 2/LogicCircuitDesignAndExperimentation/FourBitsRegister/simulation/qsim/Waveform1.vwf.vt"
+quartus_eda --write_settings_files=off --simulation=on --functional=on --flatten_buses=off --tool=modelsim_oem --format=verilog --output_directory="C:/Users/rnjsa/Desktop/PusanNU2024/semester 2/LogicCircuitDesignAndExperimentation/FourBitsRegister/simulation/qsim/" FourBitsRegister -c FourBitsRegister
 
 
 

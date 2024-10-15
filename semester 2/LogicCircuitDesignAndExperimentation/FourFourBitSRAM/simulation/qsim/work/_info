@@ -10,28 +10,28 @@ z2
 cModel Technology
 Z0 dC:/Users/rnjsa/OneDrive/Desktop/2024/semester 2/LogicCircuitDesignAndExperimentation/FourFourBitSRAM/simulation/qsim
 vFourFourBitSRAM
-Z1 !s110 1727699100
+Z1 !s110 1728907682
 !i10b 1
 !s100 ifo40j`JDSK>:;91:8]7f1
 Z2 !s11b Dg1SIo80bB@j0V0VzS_@n1
 InAa=GS23O6?cU1jA3k71z0
 Z3 VDg1SIo80bB@j0V0VzS_@n1
-R0
-w1727699099
-Z4 8FourFourBitSRAM.vo
-Z5 FFourFourBitSRAM.vo
-!i122 16
+Z4 dC:/Users/rnjsa/Desktop/PusanNU2024/semester 2/LogicCircuitDesignAndExperimentation/FourFourBitSRAM/simulation/qsim
+w1728907682
+Z5 8FourFourBitSRAM.vo
+Z6 FFourFourBitSRAM.vo
+!i122 18
 L0 32 939
-Z6 OV;L;2020.1;71
+Z7 OV;L;2020.1;71
 r1
 !s85 0
 31
-Z7 !s108 1727699100.000000
-Z8 !s107 FourFourBitSRAM.vo|
-Z9 !s90 -work|work|FourFourBitSRAM.vo|
+Z8 !s108 1728907682.000000
+Z9 !s107 FourFourBitSRAM.vo|
+Z10 !s90 -work|work|FourFourBitSRAM.vo|
 !i113 1
-Z10 o-work work
-Z11 tCvgOpt 0
+Z11 o-work work
+Z12 tCvgOpt 0
 n@four@four@bit@s@r@a@m
 vFourFourBitSRAM_vlg_vec_tst
 R1
@@ -40,25 +40,25 @@ R1
 R2
 I]hQ2@W2_@c5h:]>;SF<dD2
 R3
-R0
-w1727699098
-Z12 8Waveform.vwf.vt
-Z13 FWaveform.vwf.vt
-!i122 17
+R4
+w1728907681
+Z13 8Waveform.vwf.vt
+Z14 FWaveform.vwf.vt
+!i122 19
 L0 30 104
-R6
+R7
 r1
 !s85 0
 31
-R7
-Z14 !s107 Waveform.vwf.vt|
-Z15 !s90 -work|work|Waveform.vwf.vt|
+R8
+Z15 !s107 Waveform.vwf.vt|
+Z16 !s90 -work|work|Waveform.vwf.vt|
 !i113 1
-R10
 R11
+R12
 n@four@four@bit@s@r@a@m_vlg_vec_tst
 vSelector
-Z16 !s110 1727689549
+Z17 !s110 1727689549
 !i10b 1
 !s100 =Sbn790?Y<NX`VZfjXPgF0
 R2
@@ -66,23 +66,23 @@ IDZ_CIfjo3P]z1kNWY9z4i3
 R3
 R0
 w1727689548
-R4
 R5
+R6
 !i122 12
 L0 32 426
-R6
+R7
 r1
 !s85 0
 31
-Z17 !s108 1727689549.000000
-R8
+Z18 !s108 1727689549.000000
 R9
-!i113 1
 R10
+!i113 1
 R11
+R12
 n@selector
 vSelector_vlg_vec_tst
-R16
+R17
 !i10b 1
 !s100 0o28mn2K;gDIeIXUXk<1^0
 R2
@@ -90,18 +90,18 @@ I;cQHQa6^J:@c]NFknI1UH0
 R3
 R0
 w1727689547
-R12
 R13
+R14
 !i122 13
 L0 30 52
-R6
+R7
 r1
 !s85 0
 31
-R17
-R14
+R18
 R15
+R16
 !i113 1
-R10
 R11
+R12
 n@selector_vlg_vec_tst

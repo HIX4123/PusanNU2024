@@ -1,6 +1,7 @@
 vendor_name = ModelSim
-source_file = 1, C:/Users/rnjsa/OneDrive/Desktop/2024/semester 2/LogicCircuitDesignAndExperimentation/DoubleFourBitsRegister/DoubleFourBitsRegister.bdf
-source_file = 1, C:/Users/rnjsa/OneDrive/Desktop/2024/semester 2/LogicCircuitDesignAndExperimentation/DoubleFourBitsRegister/fourbitsregister.bdf
+source_file = 1, C:/Users/rnjsa/Desktop/PusanNU2024/semester 2/LogicCircuitDesignAndExperimentation/DoubleFourBitsRegister/DoubleFourBitsRegister.bdf
+source_file = 1, C:/Users/rnjsa/Desktop/PusanNU2024/semester 2/LogicCircuitDesignAndExperimentation/DoubleFourBitsRegister/Waveform2.vwf
+source_file = 1, C:/Users/rnjsa/Desktop/PusanNU2024/semester 2/LogicCircuitDesignAndExperimentation/DoubleFourBitsRegister/fourbitsregister.bdf
 design_name = DoubleFourBitsRegister
 instance = comp, \a1~output , a1~output, DoubleFourBitsRegister, 1
 instance = comp, \a2~output , a2~output, DoubleFourBitsRegister, 1

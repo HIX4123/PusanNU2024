@@ -1,8 +1,8 @@
 vendor_name = ModelSim
-source_file = 1, C:/Users/rnjsa/OneDrive/Desktop/2024/semester 2/LogicCircuitDesignAndExperimentation/FourFourBitSRAM/FourFourBitSRAM.bdf
-source_file = 1, C:/Users/rnjsa/OneDrive/Desktop/2024/semester 2/LogicCircuitDesignAndExperimentation/FourFourBitSRAM/Selector.bdf
-source_file = 1, C:/Users/rnjsa/OneDrive/Desktop/2024/semester 2/LogicCircuitDesignAndExperimentation/FourFourBitSRAM/Waveform.vwf
-source_file = 1, C:/Users/rnjsa/OneDrive/Desktop/2024/semester 2/LogicCircuitDesignAndExperimentation/FourFourBitSRAM/fourbitsregister.bdf
+source_file = 1, C:/Users/rnjsa/Desktop/PusanNU2024/semester 2/LogicCircuitDesignAndExperimentation/FourFourBitSRAM/FourFourBitSRAM.bdf
+source_file = 1, C:/Users/rnjsa/Desktop/PusanNU2024/semester 2/LogicCircuitDesignAndExperimentation/FourFourBitSRAM/Selector.bdf
+source_file = 1, C:/Users/rnjsa/Desktop/PusanNU2024/semester 2/LogicCircuitDesignAndExperimentation/FourFourBitSRAM/Waveform.vwf
+source_file = 1, C:/Users/rnjsa/Desktop/PusanNU2024/semester 2/LogicCircuitDesignAndExperimentation/FourFourBitSRAM/fourbitsregister.bdf
 design_name = FourFourBitSRAM
 instance = comp, \DataOut[3]~output , DataOut[3]~output, FourFourBitSRAM, 1
 instance = comp, \DataOut[2]~output , DataOut[2]~output, FourFourBitSRAM, 1

@@ -19,7 +19,7 @@
 // the top level entity of the current Quartus project .The user can use this   
 // testbench to simulate his design using a third-party simulation tool .       
 // *****************************************************************************
-// Generated on "09/27/2024 06:40:11"
+// Generated on "10/14/2024 20:39:15"
                                                                                 
 // Verilog Test Bench (with test vectors) for design :                          FourBitsRegister
 // 
@@ -30,32 +30,20 @@
 module FourBitsRegister_vlg_vec_tst();
 // constants                                           
 // general purpose registers
+reg [3:0] bin;
 reg Ce;
 reg CLK;
-reg d1;
-reg d2;
-reg d3;
-reg d4;
 reg RST;
 // wires                                               
-wire q1;
-wire q2;
-wire q3;
-wire q4;
+wire [3:0] bout;
 
 // assign statements (if any)                          
 FourBitsRegister i1 (
 // port map - connection between master ports and signals/registers   
+	.bin(bin),
+	.bout(bout),
 	.Ce(Ce),
 	.CLK(CLK),
-	.d1(d1),
-	.d2(d2),
-	.d3(d3),
-	.d4(d4),
-	.q1(q1),
-	.q2(q2),
-	.q3(q3),
-	.q4(q4),
 	.RST(RST)
 );
 initial 
@@ -80,37 +68,33 @@ begin
 	CLK = #5000 1'b1;
 	#5000;
 end 
-
-// d1
+// bin[ 3 ]
 initial
 begin
-	d1 = 1'b0;
-	d1 = #70000 1'b1;
-	d1 = #20000 1'b0;
+	bin[3] = 1'b0;
+	bin[3] = #70000 1'b1;
+	bin[3] = #20000 1'b0;
 end 
-
-// d2
+// bin[ 2 ]
 initial
 begin
-	d2 = 1'b0;
-	d2 = #130000 1'b1;
-	d2 = #30000 1'b0;
+	bin[2] = 1'b0;
+	bin[2] = #130000 1'b1;
+	bin[2] = #30000 1'b0;
 end 
-
-// d3
+// bin[ 1 ]
 initial
 begin
-	d3 = 1'b0;
-	d3 = #70000 1'b1;
-	d3 = #20000 1'b0;
+	bin[1] = 1'b0;
+	bin[1] = #70000 1'b1;
+	bin[1] = #20000 1'b0;
 end 
-
-// d4
+// bin[ 0 ]
 initial
 begin
-	d4 = 1'b0;
-	d4 = #130000 1'b1;
-	d4 = #30000 1'b0;
+	bin[0] = 1'b0;
+	bin[0] = #130000 1'b1;
+	bin[0] = #30000 1'b0;
 end 
 
 // RST

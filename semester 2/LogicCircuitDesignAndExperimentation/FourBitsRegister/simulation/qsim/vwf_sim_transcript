@@ -1,13 +1,13 @@
 Determining the location of the ModelSim executable...
 
-Using: c:/intelfpga_lite/20.1/modelsim_ase/win32aloem/
+Using: d:/intelfpga_lite/20.1/modelsim_ase/win32aloem/
 
 To specify a ModelSim executable directory, select: Tools -> Options -> EDA Tool Options
 Note: if both ModelSim-Altera and ModelSim executables are available, ModelSim-Altera will be used.
 
 **** Generating the ModelSim Testbench ****
 
-quartus_eda --gen_testbench --tool=modelsim_oem --format=verilog --write_settings_files=off FourBitsRegister -c FourBitsRegister --vector_source="C:/Users/rnjsa/OneDrive/Desktop/2024/semester 2/LogicCircuitDesignAndExperimentation/FourBitsRegister/Waveform1.vwf" --testbench_file="C:/Users/rnjsa/OneDrive/Desktop/2024/semester 2/LogicCircuitDesignAndExperimentation/FourBitsRegister/simulation/qsim/Waveform1.vwf.vt"
+quartus_eda --gen_testbench --tool=modelsim_oem --format=verilog --write_settings_files=off FourBitsRegister -c FourBitsRegister --vector_source="C:/Users/rnjsa/Desktop/PusanNU2024/semester 2/LogicCircuitDesignAndExperimentation/FourBitsRegister/Waveform1.vwf" --testbench_file="C:/Users/rnjsa/Desktop/PusanNU2024/semester 2/LogicCircuitDesignAndExperimentation/FourBitsRegister/simulation/qsim/Waveform1.vwf.vt"
 
 Info: *******************************************************************
 Info: Running Quartus Prime EDA Netlist Writer
@@ -26,8 +26,8 @@ Info: Running Quartus Prime EDA Netlist Writer
     Info: Intel and sold by Intel or its authorized distributors.  Please
     Info: refer to the applicable agreement for further details, at
     Info: https://fpgasoftware.intel.com/eula.
-    Info: Processing started: Fri Sep 27 06:40:10 2024
-Info: Command: quartus_eda --gen_testbench --tool=modelsim_oem --format=verilog --write_settings_files=off FourBitsRegister -c FourBitsRegister --vector_source="C:/Users/rnjsa/OneDrive/Desktop/2024/semester 2/LogicCircuitDesignAndExperimentation/FourBitsRegister/Waveform1.vwf" --testbench_file="C:/Users/rnjsa/OneDrive/Desktop/2024/semester 2/LogicCircuitDesignAndExperimentation/FourBitsRegister/simulation/qsim/Waveform1.vwf.vt"
+    Info: Processing started: Mon Oct 14 20:39:14 2024
+Info: Command: quartus_eda --gen_testbench --tool=modelsim_oem --format=verilog --write_settings_files=off FourBitsRegister -c FourBitsRegister --vector_source="C:/Users/rnjsa/Desktop/PusanNU2024/semester 2/LogicCircuitDesignAndExperimentation/FourBitsRegister/Waveform1.vwf" --testbench_file="C:/Users/rnjsa/Desktop/PusanNU2024/semester 2/LogicCircuitDesignAndExperimentation/FourBitsRegister/simulation/qsim/Waveform1.vwf.vt"
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 
 Completed successfully. 
@@ -36,7 +36,7 @@ Completed successfully.
 
 **** Generating the functional simulation netlist ****
 
-quartus_eda --write_settings_files=off --simulation --functional=on --flatten_buses=off --tool=modelsim_oem --format=verilog --output_directory="C:/Users/rnjsa/OneDrive/Desktop/2024/semester 2/LogicCircuitDesignAndExperimentation/FourBitsRegister/simulation/qsim/" FourBitsRegister -c FourBitsRegister
+quartus_eda --write_settings_files=off --simulation --functional=on --flatten_buses=off --tool=modelsim_oem --format=verilog --output_directory="C:/Users/rnjsa/Desktop/PusanNU2024/semester 2/LogicCircuitDesignAndExperimentation/FourBitsRegister/simulation/qsim/" FourBitsRegister -c FourBitsRegister
 
 Info: *******************************************************************
 Info: Running Quartus Prime EDA Netlist Writer
@@ -55,13 +55,13 @@ Info: Running Quartus Prime EDA Netlist Writer
     Info: Intel and sold by Intel or its authorized distributors.  Please
     Info: refer to the applicable agreement for further details, at
     Info: https://fpgasoftware.intel.com/eula.
-    Info: Processing started: Fri Sep 27 06:40:11 2024
-Info: Command: quartus_eda --write_settings_files=off --simulation=on --functional=on --flatten_buses=off --tool=modelsim_oem --format=verilog --output_directory="C:/Users/rnjsa/OneDrive/Desktop/2024/semester 2/LogicCircuitDesignAndExperimentation/FourBitsRegister/simulation/qsim/" FourBitsRegister -c FourBitsRegister
+    Info: Processing started: Mon Oct 14 20:39:15 2024
+Info: Command: quartus_eda --write_settings_files=off --simulation=on --functional=on --flatten_buses=off --tool=modelsim_oem --format=verilog --output_directory="C:/Users/rnjsa/Desktop/PusanNU2024/semester 2/LogicCircuitDesignAndExperimentation/FourBitsRegister/simulation/qsim/" FourBitsRegister -c FourBitsRegister
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
-Info (204019): Generated file FourBitsRegister.vo in folder "C:/Users/rnjsa/OneDrive/Desktop/2024/semester 2/LogicCircuitDesignAndExperimentation/FourBitsRegister/simulation/qsim//" for EDA simulation tool
+Info (204019): Generated file FourBitsRegister.vo in folder "C:/Users/rnjsa/Desktop/PusanNU2024/semester 2/LogicCircuitDesignAndExperimentation/FourBitsRegister/simulation/qsim//" for EDA simulation tool
 Info: Quartus Prime EDA Netlist Writer was successful. 0 errors, 1 warning
     Info: Peak virtual memory: 4724 megabytes
-    Info: Processing ended: Fri Sep 27 06:40:12 2024
+    Info: Processing ended: Mon Oct 14 20:39:16 2024
     Info: Elapsed time: 00:00:01
     Info: Total CPU time (on all processors): 00:00:01
 
@@ -69,43 +69,46 @@ Completed successfully.
 
 **** Generating the ModelSim .do script ****
 
-C:/Users/rnjsa/OneDrive/Desktop/2024/semester 2/LogicCircuitDesignAndExperimentation/FourBitsRegister/simulation/qsim/FourBitsRegister.do generated.
+C:/Users/rnjsa/Desktop/PusanNU2024/semester 2/LogicCircuitDesignAndExperimentation/FourBitsRegister/simulation/qsim/FourBitsRegister.do generated.
 
 Completed successfully. 
 
 **** Running the ModelSim simulation ****
 
-c:/intelfpga_lite/20.1/modelsim_ase/win32aloem//vsim -c -do FourBitsRegister.do
+d:/intelfpga_lite/20.1/modelsim_ase/win32aloem//vsim -c -do FourBitsRegister.do
 
 Reading pref.tcl
 
 # 2020.1
 
+
 # do FourBitsRegister.do
 
 # ** Warning: (vlib-34) Library already exists at "work".
+
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 06:40:13 on Sep 27,2024
+# Start time: 20:39:18 on Oct 14,2024
 # vlog -work work FourBitsRegister.vo 
+
 # -- Compiling module FourBitsRegister
 # 
 # Top level modules:
 # 	FourBitsRegister
-# End time: 06:40:13 on Sep 27,2024, Elapsed time: 0:00:00
+# End time: 20:39:19 on Oct 14,2024, Elapsed time: 0:00:01
 # Errors: 0, Warnings: 0
 
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 06:40:13 on Sep 27,2024
+# Start time: 20:39:19 on Oct 14,2024
 # vlog -work work Waveform1.vwf.vt 
 # -- Compiling module FourBitsRegister_vlg_vec_tst
 # 
 # Top level modules:
 # 	FourBitsRegister_vlg_vec_tst
-# End time: 06:40:13 on Sep 27,2024, Elapsed time: 0:00:00
+# End time: 20:39:19 on Oct 14,2024, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 
 # vsim -c -t 1ps -L cyclonev_ver -L altera_ver -L altera_mf_ver -L 220model_ver -L sgate_ver -L altera_lnsim_ver work.FourBitsRegister_vlg_vec_tst 
-# Start time: 06:40:13 on Sep 27,2024
+# Start time: 20:39:19 on Oct 14,2024
 # Loading work.FourBitsRegister_vlg_vec_tst
 # Loading work.FourBitsRegister
 # Loading cyclonev_ver.cyclonev_io_obuf
@@ -114,22 +117,22 @@ Reading pref.tcl
 # Loading altera_ver.dffeas
 # Loading altera_ver.PRIM_GDFF_LOW
 # after#25
-# ** Note: $finish    : Waveform1.vwf.vt(63)
+# ** Note: $finish    : Waveform1.vwf.vt(51)
 #    Time: 1 us  Iteration: 0  Instance: /FourBitsRegister_vlg_vec_tst
-# End time: 06:40:13 on Sep 27,2024, Elapsed time: 0:00:00
+# End time: 20:39:19 on Oct 14,2024, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 
 Completed successfully. 
 
 **** Converting ModelSim VCD to vector waveform ****
 
-Reading C:/Users/rnjsa/OneDrive/Desktop/2024/semester 2/LogicCircuitDesignAndExperimentation/FourBitsRegister/Waveform1.vwf...
+Reading C:/Users/rnjsa/Desktop/PusanNU2024/semester 2/LogicCircuitDesignAndExperimentation/FourBitsRegister/Waveform1.vwf...
 
-Reading C:/Users/rnjsa/OneDrive/Desktop/2024/semester 2/LogicCircuitDesignAndExperimentation/FourBitsRegister/simulation/qsim/FourBitsRegister.msim.vcd...
+Reading C:/Users/rnjsa/Desktop/PusanNU2024/semester 2/LogicCircuitDesignAndExperimentation/FourBitsRegister/simulation/qsim/FourBitsRegister.msim.vcd...
 
 Processing channel transitions... 
 
-Writing the resulting VWF to C:/Users/rnjsa/OneDrive/Desktop/2024/semester 2/LogicCircuitDesignAndExperimentation/FourBitsRegister/simulation/qsim/FourBitsRegister_20240927064013.sim.vwf
+Writing the resulting VWF to C:/Users/rnjsa/Desktop/PusanNU2024/semester 2/LogicCircuitDesignAndExperimentation/FourBitsRegister/simulation/qsim/FourBitsRegister_20241014203920.sim.vwf
 
 Finished VCD to VWF conversion.
 
