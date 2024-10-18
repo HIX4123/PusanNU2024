@@ -19,7 +19,7 @@
 // the top level entity of the current Quartus project .The user can use this   
 // testbench to simulate his design using a third-party simulation tool .       
 // *****************************************************************************
-// Generated on "10/14/2024 21:49:23"
+// Generated on "10/18/2024 19:30:32"
                                                                                 
 // Verilog Test Bench (with test vectors) for design :                          DoubleFourBitsRegister
 // 
@@ -72,28 +72,11 @@ begin
 end 
 
 // CLK
-initial
+always
 begin
-	CLK = 1'b1;
-	# 10000;
-	repeat(2)
-	begin
-		CLK = 1'b0;
-		CLK = #10000 1'b1;
-		# 10000;
-	end
 	CLK = 1'b0;
-	CLK = #50000 1'b1;
-	CLK = #10000 1'b0;
-	CLK = #70000 1'b1;
-	# 10000;
-	repeat(40)
-	begin
-		CLK = 1'b0;
-		CLK = #10000 1'b1;
-		# 10000;
-	end
-	CLK = 1'b0;
+	CLK = #5000 1'b1;
+	#5000;
 end 
 
 // Ce

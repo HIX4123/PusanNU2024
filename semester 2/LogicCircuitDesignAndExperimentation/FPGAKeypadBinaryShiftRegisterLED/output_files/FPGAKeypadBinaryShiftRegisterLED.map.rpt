@@ -1,5 +1,5 @@
 Analysis & Synthesis report for FPGAKeypadBinaryShiftRegisterLED
-Mon Oct 14 21:46:15 2024
+Fri Oct 18 19:49:12 2024
 Quartus Prime Version 20.1.1 Build 720 11/11/2020 SJ Lite Edition
 
 
@@ -14,9 +14,17 @@ Quartus Prime Version 20.1.1 Build 720 11/11/2020 SJ Lite Edition
   6. Analysis & Synthesis Resource Usage Summary
   7. Analysis & Synthesis Resource Utilization by Entity
   8. General Register Statistics
-  9. Post-Synthesis Netlist Statistics for Top Partition
- 10. Elapsed Time Per Partition
- 11. Analysis & Synthesis Messages
+  9. Parameter Settings for User Entity Instance: DoubleFourBitsRegister:inst1|four_bit_register:inst|BUSMUX:inst4
+ 10. Parameter Settings for User Entity Instance: DoubleFourBitsRegister:inst1|four_bit_register:inst|BUSMUX:inst5
+ 11. Parameter Settings for User Entity Instance: DoubleFourBitsRegister:inst1|four_bit_register:inst|BUSMUX:inst6
+ 12. Parameter Settings for User Entity Instance: DoubleFourBitsRegister:inst1|four_bit_register:inst|BUSMUX:inst7
+ 13. Parameter Settings for User Entity Instance: DoubleFourBitsRegister:inst1|four_bit_register:inst1|BUSMUX:inst4
+ 14. Parameter Settings for User Entity Instance: DoubleFourBitsRegister:inst1|four_bit_register:inst1|BUSMUX:inst5
+ 15. Parameter Settings for User Entity Instance: DoubleFourBitsRegister:inst1|four_bit_register:inst1|BUSMUX:inst6
+ 16. Parameter Settings for User Entity Instance: DoubleFourBitsRegister:inst1|four_bit_register:inst1|BUSMUX:inst7
+ 17. Post-Synthesis Netlist Statistics for Top Partition
+ 18. Elapsed Time Per Partition
+ 19. Analysis & Synthesis Messages
 
 
 
@@ -43,13 +51,13 @@ https://fpgasoftware.intel.com/eula.
 +-------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                  ;
 +---------------------------------+---------------------------------------------+
-; Analysis & Synthesis Status     ; Successful - Mon Oct 14 21:46:15 2024       ;
+; Analysis & Synthesis Status     ; Successful - Fri Oct 18 19:49:12 2024       ;
 ; Quartus Prime Version           ; 20.1.1 Build 720 11/11/2020 SJ Lite Edition ;
 ; Revision Name                   ; FPGAKeypadBinaryShiftRegisterLED            ;
 ; Top-level Entity Name           ; FPGAKeypadBinaryShiftRegisterLED            ;
 ; Family                          ; Cyclone V                                   ;
 ; Logic utilization (in ALMs)     ; N/A                                         ;
-; Total registers                 ; 28                                          ;
+; Total registers                 ; 10                                          ;
 ; Total pins                      ; 22                                          ;
 ; Total virtual pins              ; 0                                           ;
 ; Total block memory bits         ; 0                                           ;
@@ -175,7 +183,15 @@ https://fpgasoftware.intel.com/eula.
 ; FPGAKeypadBinaryShiftRegisterLED.bdf ; yes             ; User Block Diagram/Schematic File        ; C:/Users/rnjsa/Desktop/PusanNU2024/semester 2/LogicCircuitDesignAndExperimentation/FPGAKeypadBinaryShiftRegisterLED/FPGAKeypadBinaryShiftRegisterLED.bdf ;         ;
 ; Trigger.bdf                          ; yes             ; User Block Diagram/Schematic File        ; C:/Users/rnjsa/Desktop/PusanNU2024/semester 2/LogicCircuitDesignAndExperimentation/FPGAKeypadBinaryShiftRegisterLED/Trigger.bdf                          ;         ;
 ; doublefourbitsregister.bdf           ; yes             ; Auto-Found Block Diagram/Schematic File  ; C:/Users/rnjsa/Desktop/PusanNU2024/semester 2/LogicCircuitDesignAndExperimentation/FPGAKeypadBinaryShiftRegisterLED/doublefourbitsregister.bdf           ;         ;
-; fourbitsregister.bdf                 ; yes             ; Auto-Found Block Diagram/Schematic File  ; C:/Users/rnjsa/Desktop/PusanNU2024/semester 2/LogicCircuitDesignAndExperimentation/FPGAKeypadBinaryShiftRegisterLED/fourbitsregister.bdf                 ;         ;
+; four_bit_register.bdf                ; yes             ; Auto-Found Block Diagram/Schematic File  ; C:/Users/rnjsa/Desktop/PusanNU2024/semester 2/LogicCircuitDesignAndExperimentation/FPGAKeypadBinaryShiftRegisterLED/four_bit_register.bdf                ;         ;
+; busmux.tdf                           ; yes             ; Megafunction                             ; d:/intelfpga_lite/20.1/quartus/libraries/megafunctions/busmux.tdf                                                                                        ;         ;
+; lpm_mux.inc                          ; yes             ; Megafunction                             ; d:/intelfpga_lite/20.1/quartus/libraries/megafunctions/lpm_mux.inc                                                                                       ;         ;
+; lpm_mux.tdf                          ; yes             ; Megafunction                             ; d:/intelfpga_lite/20.1/quartus/libraries/megafunctions/lpm_mux.tdf                                                                                       ;         ;
+; aglobal201.inc                       ; yes             ; Megafunction                             ; d:/intelfpga_lite/20.1/quartus/libraries/megafunctions/aglobal201.inc                                                                                    ;         ;
+; muxlut.inc                           ; yes             ; Megafunction                             ; d:/intelfpga_lite/20.1/quartus/libraries/megafunctions/muxlut.inc                                                                                        ;         ;
+; bypassff.inc                         ; yes             ; Megafunction                             ; d:/intelfpga_lite/20.1/quartus/libraries/megafunctions/bypassff.inc                                                                                      ;         ;
+; altshift.inc                         ; yes             ; Megafunction                             ; d:/intelfpga_lite/20.1/quartus/libraries/megafunctions/altshift.inc                                                                                      ;         ;
+; db/mux_pjc.tdf                       ; yes             ; Auto-Generated Megafunction              ; C:/Users/rnjsa/Desktop/PusanNU2024/semester 2/LogicCircuitDesignAndExperimentation/FPGAKeypadBinaryShiftRegisterLED/db/mux_pjc.tdf                       ;         ;
 ; decimal_to_binary.bdf                ; yes             ; Auto-Found Block Diagram/Schematic File  ; C:/Users/rnjsa/Desktop/PusanNU2024/semester 2/LogicCircuitDesignAndExperimentation/FPGAKeypadBinaryShiftRegisterLED/decimal_to_binary.bdf                ;         ;
 +--------------------------------------+-----------------+------------------------------------------+----------------------------------------------------------------------------------------------------------------------------------------------------------+---------+
 
@@ -185,49 +201,40 @@ https://fpgasoftware.intel.com/eula.
 +---------------------------------------------+-----------+
 ; Resource                                    ; Usage     ;
 +---------------------------------------------+-----------+
-; Estimate of Logic utilization (ALMs needed) ; 17        ;
+; Estimate of Logic utilization (ALMs needed) ; 6         ;
 ;                                             ;           ;
-; Combinational ALUT usage for logic          ; 12        ;
+; Combinational ALUT usage for logic          ; 7         ;
 ;     -- 7 input functions                    ; 0         ;
-;     -- 6 input functions                    ; 5         ;
-;     -- 5 input functions                    ; 2         ;
-;     -- 4 input functions                    ; 4         ;
-;     -- <=3 input functions                  ; 1         ;
+;     -- 6 input functions                    ; 2         ;
+;     -- 5 input functions                    ; 3         ;
+;     -- 4 input functions                    ; 0         ;
+;     -- <=3 input functions                  ; 2         ;
 ;                                             ;           ;
-; Dedicated logic registers                   ; 28        ;
+; Dedicated logic registers                   ; 10        ;
 ;                                             ;           ;
 ; I/O pins                                    ; 22        ;
 ;                                             ;           ;
 ; Total DSP Blocks                            ; 0         ;
 ;                                             ;           ;
-; Maximum fan-out node                        ; RST~input ;
-; Maximum fan-out                             ; 28        ;
-; Total fan-out                               ; 172       ;
-; Average fan-out                             ; 2.05      ;
+; Maximum fan-out node                        ; CLK~input ;
+; Maximum fan-out                             ; 10        ;
+; Total fan-out                               ; 100       ;
+; Average fan-out                             ; 1.64      ;
 +---------------------------------------------+-----------+
 
 
-+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Resource Utilization by Entity                                                                                                                                                                                                                                  ;
-+-----------------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+---------------------------------------------------------------------------------------+----------------------------------+--------------+
-; Compilation Hierarchy Node        ; Combinational ALUTs ; Dedicated Logic Registers ; Block Memory Bits ; DSP Blocks ; Pins ; Virtual Pins ; Full Hierarchy Name                                                                   ; Entity Name                      ; Library Name ;
-+-----------------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+---------------------------------------------------------------------------------------+----------------------------------+--------------+
-; |FPGAKeypadBinaryShiftRegisterLED ; 12 (0)              ; 28 (0)                    ; 0                 ; 0          ; 22   ; 0            ; |FPGAKeypadBinaryShiftRegisterLED                                                     ; FPGAKeypadBinaryShiftRegisterLED ; work         ;
-;    |Decimal_to_binary:inst|       ; 10 (9)              ; 20 (0)                    ; 0                 ; 0          ; 0    ; 0            ; |FPGAKeypadBinaryShiftRegisterLED|Decimal_to_binary:inst                              ; Decimal_to_binary                ; work         ;
-;       |Trigger:inst11|            ; 0 (0)               ; 2 (2)                     ; 0                 ; 0          ; 0    ; 0            ; |FPGAKeypadBinaryShiftRegisterLED|Decimal_to_binary:inst|Trigger:inst11               ; Trigger                          ; work         ;
-;       |Trigger:inst14|            ; 0 (0)               ; 2 (2)                     ; 0                 ; 0          ; 0    ; 0            ; |FPGAKeypadBinaryShiftRegisterLED|Decimal_to_binary:inst|Trigger:inst14               ; Trigger                          ; work         ;
-;       |Trigger:inst15|            ; 0 (0)               ; 2 (2)                     ; 0                 ; 0          ; 0    ; 0            ; |FPGAKeypadBinaryShiftRegisterLED|Decimal_to_binary:inst|Trigger:inst15               ; Trigger                          ; work         ;
-;       |Trigger:inst17|            ; 0 (0)               ; 2 (2)                     ; 0                 ; 0          ; 0    ; 0            ; |FPGAKeypadBinaryShiftRegisterLED|Decimal_to_binary:inst|Trigger:inst17               ; Trigger                          ; work         ;
-;       |Trigger:inst18|            ; 0 (0)               ; 2 (2)                     ; 0                 ; 0          ; 0    ; 0            ; |FPGAKeypadBinaryShiftRegisterLED|Decimal_to_binary:inst|Trigger:inst18               ; Trigger                          ; work         ;
-;       |Trigger:inst19|            ; 0 (0)               ; 2 (2)                     ; 0                 ; 0          ; 0    ; 0            ; |FPGAKeypadBinaryShiftRegisterLED|Decimal_to_binary:inst|Trigger:inst19               ; Trigger                          ; work         ;
-;       |Trigger:inst20|            ; 0 (0)               ; 2 (2)                     ; 0                 ; 0          ; 0    ; 0            ; |FPGAKeypadBinaryShiftRegisterLED|Decimal_to_binary:inst|Trigger:inst20               ; Trigger                          ; work         ;
-;       |Trigger:inst2|             ; 1 (1)               ; 2 (2)                     ; 0                 ; 0          ; 0    ; 0            ; |FPGAKeypadBinaryShiftRegisterLED|Decimal_to_binary:inst|Trigger:inst2                ; Trigger                          ; work         ;
-;       |Trigger:inst8|             ; 0 (0)               ; 2 (2)                     ; 0                 ; 0          ; 0    ; 0            ; |FPGAKeypadBinaryShiftRegisterLED|Decimal_to_binary:inst|Trigger:inst8                ; Trigger                          ; work         ;
-;       |Trigger:inst|              ; 0 (0)               ; 2 (2)                     ; 0                 ; 0          ; 0    ; 0            ; |FPGAKeypadBinaryShiftRegisterLED|Decimal_to_binary:inst|Trigger:inst                 ; Trigger                          ; work         ;
-;    |DoubleFourBitsRegister:inst1| ; 2 (0)               ; 8 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |FPGAKeypadBinaryShiftRegisterLED|DoubleFourBitsRegister:inst1                        ; DoubleFourBitsRegister           ; work         ;
-;       |FourBitsRegister:inst5|    ; 1 (1)               ; 4 (4)                     ; 0                 ; 0          ; 0    ; 0            ; |FPGAKeypadBinaryShiftRegisterLED|DoubleFourBitsRegister:inst1|FourBitsRegister:inst5 ; FourBitsRegister                 ; work         ;
-;       |FourBitsRegister:inst|     ; 1 (1)               ; 4 (4)                     ; 0                 ; 0          ; 0    ; 0            ; |FPGAKeypadBinaryShiftRegisterLED|DoubleFourBitsRegister:inst1|FourBitsRegister:inst  ; FourBitsRegister                 ; work         ;
-+-----------------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+---------------------------------------------------------------------------------------+----------------------------------+--------------+
++---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Resource Utilization by Entity                                                                                                                                                                                                                                   ;
++-----------------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+----------------------------------------------------------------------------------------+----------------------------------+--------------+
+; Compilation Hierarchy Node        ; Combinational ALUTs ; Dedicated Logic Registers ; Block Memory Bits ; DSP Blocks ; Pins ; Virtual Pins ; Full Hierarchy Name                                                                    ; Entity Name                      ; Library Name ;
++-----------------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+----------------------------------------------------------------------------------------+----------------------------------+--------------+
+; |FPGAKeypadBinaryShiftRegisterLED ; 7 (0)               ; 10 (0)                    ; 0                 ; 0          ; 22   ; 0            ; |FPGAKeypadBinaryShiftRegisterLED                                                      ; FPGAKeypadBinaryShiftRegisterLED ; work         ;
+;    |Decimal_to_binary:inst|       ; 6 (6)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |FPGAKeypadBinaryShiftRegisterLED|Decimal_to_binary:inst                               ; Decimal_to_binary                ; work         ;
+;    |DoubleFourBitsRegister:inst1| ; 0 (0)               ; 8 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |FPGAKeypadBinaryShiftRegisterLED|DoubleFourBitsRegister:inst1                         ; DoubleFourBitsRegister           ; work         ;
+;       |four_bit_register:inst1|   ; 0 (0)               ; 4 (4)                     ; 0                 ; 0          ; 0    ; 0            ; |FPGAKeypadBinaryShiftRegisterLED|DoubleFourBitsRegister:inst1|four_bit_register:inst1 ; four_bit_register                ; work         ;
+;       |four_bit_register:inst|    ; 0 (0)               ; 4 (4)                     ; 0                 ; 0          ; 0    ; 0            ; |FPGAKeypadBinaryShiftRegisterLED|DoubleFourBitsRegister:inst1|four_bit_register:inst  ; four_bit_register                ; work         ;
+;    |Trigger:inst2|                ; 1 (1)               ; 2 (2)                     ; 0                 ; 0          ; 0    ; 0            ; |FPGAKeypadBinaryShiftRegisterLED|Trigger:inst2                                        ; Trigger                          ; work         ;
++-----------------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+----------------------------------------------------------------------------------------+----------------------------------+--------------+
 Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
 
 
@@ -236,14 +243,94 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +----------------------------------------------+-------+
 ; Statistic                                    ; Value ;
 +----------------------------------------------+-------+
-; Total registers                              ; 28    ;
+; Total registers                              ; 10    ;
 ; Number of registers using Synchronous Clear  ; 0     ;
 ; Number of registers using Synchronous Load   ; 0     ;
-; Number of registers using Asynchronous Clear ; 28    ;
+; Number of registers using Asynchronous Clear ; 10    ;
 ; Number of registers using Asynchronous Load  ; 0     ;
-; Number of registers using Clock Enable       ; 0     ;
+; Number of registers using Clock Enable       ; 8     ;
 ; Number of registers using Preset             ; 0     ;
 +----------------------------------------------+-------+
+
+
++---------------------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: DoubleFourBitsRegister:inst1|four_bit_register:inst|BUSMUX:inst4 ;
++----------------+-------+--------------------------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                                 ;
++----------------+-------+--------------------------------------------------------------------------------------+
+; WIDTH          ; 1     ; Untyped                                                                              ;
++----------------+-------+--------------------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++---------------------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: DoubleFourBitsRegister:inst1|four_bit_register:inst|BUSMUX:inst5 ;
++----------------+-------+--------------------------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                                 ;
++----------------+-------+--------------------------------------------------------------------------------------+
+; WIDTH          ; 1     ; Untyped                                                                              ;
++----------------+-------+--------------------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++---------------------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: DoubleFourBitsRegister:inst1|four_bit_register:inst|BUSMUX:inst6 ;
++----------------+-------+--------------------------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                                 ;
++----------------+-------+--------------------------------------------------------------------------------------+
+; WIDTH          ; 1     ; Untyped                                                                              ;
++----------------+-------+--------------------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++---------------------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: DoubleFourBitsRegister:inst1|four_bit_register:inst|BUSMUX:inst7 ;
++----------------+-------+--------------------------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                                 ;
++----------------+-------+--------------------------------------------------------------------------------------+
+; WIDTH          ; 1     ; Untyped                                                                              ;
++----------------+-------+--------------------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++----------------------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: DoubleFourBitsRegister:inst1|four_bit_register:inst1|BUSMUX:inst4 ;
++----------------+-------+---------------------------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                                  ;
++----------------+-------+---------------------------------------------------------------------------------------+
+; WIDTH          ; 1     ; Untyped                                                                               ;
++----------------+-------+---------------------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++----------------------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: DoubleFourBitsRegister:inst1|four_bit_register:inst1|BUSMUX:inst5 ;
++----------------+-------+---------------------------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                                  ;
++----------------+-------+---------------------------------------------------------------------------------------+
+; WIDTH          ; 1     ; Untyped                                                                               ;
++----------------+-------+---------------------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++----------------------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: DoubleFourBitsRegister:inst1|four_bit_register:inst1|BUSMUX:inst6 ;
++----------------+-------+---------------------------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                                  ;
++----------------+-------+---------------------------------------------------------------------------------------+
+; WIDTH          ; 1     ; Untyped                                                                               ;
++----------------+-------+---------------------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++----------------------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: DoubleFourBitsRegister:inst1|four_bit_register:inst1|BUSMUX:inst7 ;
++----------------+-------+---------------------------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                                  ;
++----------------+-------+---------------------------------------------------------------------------------------+
+; WIDTH          ; 1     ; Untyped                                                                               ;
++----------------+-------+---------------------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
 
 
 +-----------------------------------------------------+
@@ -251,18 +338,19 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +-----------------------+-----------------------------+
 ; Type                  ; Count                       ;
 +-----------------------+-----------------------------+
-; arriav_ff             ; 28                          ;
-;     CLR               ; 28                          ;
-; arriav_lcell_comb     ; 12                          ;
-;     normal            ; 12                          ;
+; arriav_ff             ; 10                          ;
+;     CLR               ; 2                           ;
+;     ENA CLR           ; 8                           ;
+; arriav_lcell_comb     ; 7                           ;
+;     normal            ; 7                           ;
 ;         2 data inputs ; 1                           ;
-;         4 data inputs ; 4                           ;
-;         5 data inputs ; 2                           ;
-;         6 data inputs ; 5                           ;
+;         3 data inputs ; 1                           ;
+;         5 data inputs ; 3                           ;
+;         6 data inputs ; 2                           ;
 ; boundary_port         ; 22                          ;
 ;                       ;                             ;
 ; Max LUT depth         ; 2.00                        ;
-; Average LUT depth     ; 1.23                        ;
+; Average LUT depth     ; 0.90                        ;
 +-----------------------+-----------------------------+
 
 
@@ -281,7 +369,7 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 20.1.1 Build 720 11/11/2020 SJ Lite Edition
-    Info: Processing started: Mon Oct 14 21:46:07 2024
+    Info: Processing started: Fri Oct 18 19:49:04 2024
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off FPGAKeypadBinaryShiftRegisterLED -c FPGAKeypadBinaryShiftRegisterLED
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (20030): Parallel compilation is enabled and will use 4 of the 4 processors detected
@@ -289,31 +377,42 @@ Info (12021): Found 1 design units, including 1 entities, in source file fpgakey
     Info (12023): Found entity 1: FPGAKeypadBinaryShiftRegisterLED
 Info (12021): Found 1 design units, including 1 entities, in source file trigger.bdf
     Info (12023): Found entity 1: Trigger
+Info (12021): Found 1 design units, including 1 entities, in source file fourbitstrigger.bdf
+    Info (12023): Found entity 1: FourBitsTrigger
 Info (12127): Elaborating entity "FPGAKeypadBinaryShiftRegisterLED" for the top level hierarchy
 Warning (12125): Using design file doublefourbitsregister.bdf, which is not specified as a design file for the current project, but contains definitions for 1 design units and 1 entities in project
     Info (12023): Found entity 1: DoubleFourBitsRegister
-Info (12128): Elaborating entity "doublefourbitsregister" for hierarchy "doublefourbitsregister:inst1"
-Warning (12125): Using design file fourbitsregister.bdf, which is not specified as a design file for the current project, but contains definitions for 1 design units and 1 entities in project
-    Info (12023): Found entity 1: FourBitsRegister
-Info (12128): Elaborating entity "FourBitsRegister" for hierarchy "doublefourbitsregister:inst1|FourBitsRegister:inst"
+Info (12128): Elaborating entity "DoubleFourBitsRegister" for hierarchy "DoubleFourBitsRegister:inst1"
+Warning (12125): Using design file four_bit_register.bdf, which is not specified as a design file for the current project, but contains definitions for 1 design units and 1 entities in project
+    Info (12023): Found entity 1: four_bit_register
+Info (12128): Elaborating entity "four_bit_register" for hierarchy "DoubleFourBitsRegister:inst1|four_bit_register:inst"
+Info (12128): Elaborating entity "BUSMUX" for hierarchy "DoubleFourBitsRegister:inst1|four_bit_register:inst|BUSMUX:inst4"
+Info (12130): Elaborated megafunction instantiation "DoubleFourBitsRegister:inst1|four_bit_register:inst|BUSMUX:inst4"
+Info (12133): Instantiated megafunction "DoubleFourBitsRegister:inst1|four_bit_register:inst|BUSMUX:inst4" with the following parameter:
+    Info (12134): Parameter "WIDTH" = "1"
+Info (12128): Elaborating entity "lpm_mux" for hierarchy "DoubleFourBitsRegister:inst1|four_bit_register:inst|BUSMUX:inst4|lpm_mux:$00000" File: d:/intelfpga_lite/20.1/quartus/libraries/megafunctions/busmux.tdf Line: 44
+Info (12131): Elaborated megafunction instantiation "DoubleFourBitsRegister:inst1|four_bit_register:inst|BUSMUX:inst4|lpm_mux:$00000", which is child of megafunction instantiation "DoubleFourBitsRegister:inst1|four_bit_register:inst|BUSMUX:inst4" File: d:/intelfpga_lite/20.1/quartus/libraries/megafunctions/busmux.tdf Line: 44
+Info (12021): Found 1 design units, including 1 entities, in source file db/mux_pjc.tdf
+    Info (12023): Found entity 1: mux_pjc File: C:/Users/rnjsa/Desktop/PusanNU2024/semester 2/LogicCircuitDesignAndExperimentation/FPGAKeypadBinaryShiftRegisterLED/db/mux_pjc.tdf Line: 23
+Info (12128): Elaborating entity "mux_pjc" for hierarchy "DoubleFourBitsRegister:inst1|four_bit_register:inst|BUSMUX:inst4|lpm_mux:$00000|mux_pjc:auto_generated" File: d:/intelfpga_lite/20.1/quartus/libraries/megafunctions/lpm_mux.tdf Line: 87
+Info (12128): Elaborating entity "Trigger" for hierarchy "Trigger:inst2"
 Warning (12125): Using design file decimal_to_binary.bdf, which is not specified as a design file for the current project, but contains definitions for 1 design units and 1 entities in project
     Info (12023): Found entity 1: Decimal_to_binary
 Info (12128): Elaborating entity "Decimal_to_binary" for hierarchy "Decimal_to_binary:inst"
-Info (12128): Elaborating entity "Trigger" for hierarchy "Decimal_to_binary:inst|Trigger:inst20"
 Info (286030): Timing-Driven Synthesis is running
 Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
     Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
 Warning (21074): Design contains 2 input pin(s) that do not drive logic
     Warning (15610): No output dependent on input pin "Keypad[11]"
     Warning (15610): No output dependent on input pin "Keypad[10]"
-Info (21057): Implemented 58 device resources after synthesis - the final resource count might be different
+Info (21057): Implemented 34 device resources after synthesis - the final resource count might be different
     Info (21058): Implemented 14 input pins
     Info (21059): Implemented 8 output pins
-    Info (21061): Implemented 36 logic cells
+    Info (21061): Implemented 12 logic cells
 Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 7 warnings
-    Info: Peak virtual memory: 4821 megabytes
-    Info: Processing ended: Mon Oct 14 21:46:15 2024
+    Info: Peak virtual memory: 4824 megabytes
+    Info: Processing ended: Fri Oct 18 19:49:12 2024
     Info: Elapsed time: 00:00:08
-    Info: Total CPU time (on all processors): 00:00:17
+    Info: Total CPU time (on all processors): 00:00:18
 
 

@@ -45,7 +45,7 @@ w1727091634
 8Waveform.vwf.vt
 FWaveform.vwf.vt
 !i122 11
-Z11 L0 30 117
+L0 30 117
 R5
 r1
 !s85 0
@@ -58,23 +58,23 @@ R9
 R10
 n@block3_vlg_vec_tst
 vDoubleFourBitsRegister
-Z12 !s110 1728910165
+Z11 !s110 1729247434
 !i10b 1
 !s100 F<j;A;Q:N]]:9Ym=0^QQ>0
 R1
 I[i:48V@T`RPmZ:ZR0Hka=2
 R2
-Z13 dC:/Users/rnjsa/Desktop/PusanNU2024/semester 2/LogicCircuitDesignAndExperimentation/DoubleFourBitsRegister/simulation/qsim
-w1728910164
+Z12 dC:/Users/rnjsa/Desktop/PusanNU2024/semester 2/LogicCircuitDesignAndExperimentation/DoubleFourBitsRegister/simulation/qsim
+w1729247433
 R3
 R4
-!i122 30
+!i122 36
 L0 32 635
 R5
 r1
 !s85 0
 31
-Z14 !s108 1728910165.000000
+Z13 !s108 1729247434.000000
 R7
 R8
 !i113 1
@@ -82,23 +82,23 @@ R9
 R10
 n@double@four@bits@register
 vDoubleFourBitsRegister_vlg_vec_tst
-R12
+R11
 !i10b 1
-!s100 Z?QL5;jRec@b^k25ZJFF:2
+!s100 5_ZJZkNXg;EZW7NLoKG:d1
 R1
-I9oB:HPO>Gl615fkoNTjZR2
+I`0?<]TZD@Wk3:ddYe@iKN2
 R2
-R13
-w1728910163
+R12
+w1729247432
 8Waveform2.vwf.vt
 FWaveform2.vwf.vt
-!i122 31
-R11
+!i122 37
+L0 30 100
 R5
 r1
 !s85 0
 31
-R14
+R13
 !s107 Waveform2.vwf.vt|
 !s90 -work|work|Waveform2.vwf.vt|
 !i113 1

@@ -22,9 +22,9 @@ https://fpgasoftware.intel.com/eula.
 (header "graphic" (version "1.4"))
 (pin
 	(input)
-	(rect 240 176 416 192)
+	(rect 200 120 376 136)
 	(text "INPUT" (rect 133 0 161 10)(font "Arial" (font_size 6)))
-	(text "Keypad[11..0]" (rect 5 0 74 12)(font "Arial" ))
+	(text "Keypad[11..0]" (rect 5 0 75 12)(font "Arial" ))
 	(pt 176 8)
 	(drawing
 		(line (pt 92 12)(pt 117 12))
@@ -38,9 +38,9 @@ https://fpgasoftware.intel.com/eula.
 )
 (pin
 	(input)
-	(rect 200 288 368 304)
+	(rect 208 232 376 248)
 	(text "INPUT" (rect 125 0 153 10)(font "Arial" (font_size 6)))
-	(text "CLK" (rect 5 0 26 12)(font "Arial" ))
+	(text "CLK" (rect 5 0 26 17)(font "Intel Clear" ))
 	(pt 168 8)
 	(drawing
 		(line (pt 84 12)(pt 109 12))
@@ -54,9 +54,9 @@ https://fpgasoftware.intel.com/eula.
 )
 (pin
 	(input)
-	(rect 200 304 368 320)
+	(rect 208 248 376 264)
 	(text "INPUT" (rect 125 0 153 10)(font "Arial" (font_size 6)))
-	(text "RST" (rect 5 0 23 17)(font "Intel Clear" ))
+	(text "RST" (rect 5 0 24 17)(font "Intel Clear" ))
 	(pt 168 8)
 	(drawing
 		(line (pt 84 12)(pt 109 12))
@@ -70,9 +70,9 @@ https://fpgasoftware.intel.com/eula.
 )
 (pin
 	(output)
-	(rect 832 176 1008 192)
+	(rect 1024 120 1200 136)
 	(text "OUTPUT" (rect 1 0 39 10)(font "Arial" (font_size 6)))
-	(text "LED1[3..0]" (rect 90 0 138 17)(font "Intel Clear" ))
+	(text "Aout[3..0]" (rect 90 0 138 12)(font "Arial" ))
 	(pt 0 8)
 	(drawing
 		(line (pt 0 8)(pt 52 8))
@@ -86,9 +86,9 @@ https://fpgasoftware.intel.com/eula.
 )
 (pin
 	(output)
-	(rect 832 192 1008 208)
+	(rect 1024 136 1200 152)
 	(text "OUTPUT" (rect 1 0 39 10)(font "Arial" (font_size 6)))
-	(text "LED2[3..0]" (rect 90 0 138 17)(font "Intel Clear" ))
+	(text "Bout[3..0]" (rect 90 0 136 17)(font "Intel Clear" ))
 	(pt 0 8)
 	(drawing
 		(line (pt 0 8)(pt 52 8))
@@ -101,7 +101,7 @@ https://fpgasoftware.intel.com/eula.
 	)
 )
 (symbol
-	(rect 416 152 600 280)
+	(rect 384 96 568 224)
 	(text "Decimal_to_binary" (rect 5 0 117 19)(font "Intel Clear" (font_size 8)))
 	(text "inst" (rect 8 107 24 124)(font "Intel Clear" ))
 	(port
@@ -110,20 +110,6 @@ https://fpgasoftware.intel.com/eula.
 		(text "Keypad[11..0]" (rect 0 0 84 19)(font "Intel Clear" (font_size 8)))
 		(text "Keypad[11..0]" (rect 21 27 105 46)(font "Intel Clear" (font_size 8)))
 		(line (pt 0 32)(pt 16 32)(line_width 3))
-	)
-	(port
-		(pt 0 48)
-		(input)
-		(text "CLK" (rect 0 0 23 19)(font "Intel Clear" (font_size 8)))
-		(text "CLK" (rect 21 43 44 62)(font "Intel Clear" (font_size 8)))
-		(line (pt 0 48)(pt 16 48))
-	)
-	(port
-		(pt 0 64)
-		(input)
-		(text "RST" (rect 0 0 24 19)(font "Intel Clear" (font_size 8)))
-		(text "RST" (rect 21 59 45 78)(font "Intel Clear" (font_size 8)))
-		(line (pt 0 64)(pt 16 64))
 	)
 	(port
 		(pt 184 32)
@@ -158,7 +144,7 @@ https://fpgasoftware.intel.com/eula.
 	)
 )
 (symbol
-	(rect 656 152 816 280)
+	(rect 856 96 1008 224)
 	(text "DoubleFourBitsRegister" (rect 5 0 144 19)(font "Intel Clear" (font_size 8)))
 	(text "inst1" (rect 8 107 30 124)(font "Intel Clear" ))
 	(port
@@ -190,97 +176,142 @@ https://fpgasoftware.intel.com/eula.
 		(line (pt 0 80)(pt 16 80))
 	)
 	(port
-		(pt 160 32)
+		(pt 152 32)
 		(output)
-		(text "Aout[3..0]" (rect 0 0 57 19)(font "Intel Clear" (font_size 8)))
-		(text "Aout[3..0]" (rect 82 27 139 46)(font "Intel Clear" (font_size 8)))
-		(line (pt 160 32)(pt 144 32)(line_width 3))
+		(text "Ain[3..0]" (rect 0 0 49 19)(font "Intel Clear" (font_size 8)))
+		(text "Ain[3..0]" (rect 82 27 131 46)(font "Intel Clear" (font_size 8)))
+		(line (pt 152 32)(pt 136 32)(line_width 3))
 	)
 	(port
-		(pt 160 48)
+		(pt 152 48)
 		(output)
-		(text "Bout[3..0]" (rect 0 0 57 19)(font "Intel Clear" (font_size 8)))
-		(text "Bout[3..0]" (rect 82 43 139 62)(font "Intel Clear" (font_size 8)))
-		(line (pt 160 48)(pt 144 48)(line_width 3))
+		(text "Bin[3..0]" (rect 0 0 49 19)(font "Intel Clear" (font_size 8)))
+		(text "Bin[3..0]" (rect 82 43 131 62)(font "Intel Clear" (font_size 8)))
+		(line (pt 152 48)(pt 136 48)(line_width 3))
 	)
 	(drawing
-		(rectangle (rect 16 16 144 112))
+		(rectangle (rect 16 16 136 112))
+	)
+)
+(symbol
+	(rect 640 128 736 224)
+	(text "Trigger" (rect 5 0 47 19)(font "Intel Clear" (font_size 8)))
+	(text "inst2" (rect 8 75 30 92)(font "Intel Clear" ))
+	(port
+		(pt 0 32)
+		(input)
+		(text "Din" (rect 0 0 20 19)(font "Intel Clear" (font_size 8)))
+		(text "Din" (rect 21 27 41 46)(font "Intel Clear" (font_size 8)))
+		(line (pt 0 32)(pt 16 32))
+	)
+	(port
+		(pt 0 48)
+		(input)
+		(text "CLK" (rect 0 0 23 19)(font "Intel Clear" (font_size 8)))
+		(text "CLK" (rect 21 43 44 62)(font "Intel Clear" (font_size 8)))
+		(line (pt 0 48)(pt 16 48))
+	)
+	(port
+		(pt 0 64)
+		(input)
+		(text "RST" (rect 0 0 24 19)(font "Intel Clear" (font_size 8)))
+		(text "RST" (rect 21 59 45 78)(font "Intel Clear" (font_size 8)))
+		(line (pt 0 64)(pt 16 64))
+	)
+	(port
+		(pt 96 32)
+		(output)
+		(text "Dout" (rect 0 0 28 19)(font "Intel Clear" (font_size 8)))
+		(text "Dout" (rect 47 27 75 46)(font "Intel Clear" (font_size 8)))
+		(line (pt 96 32)(pt 80 32))
+	)
+	(drawing
+		(rectangle (rect 16 16 80 80))
 	)
 )
 (connector
-	(pt 416 200)
-	(pt 384 200)
-)
-(connector
-	(pt 416 216)
-	(pt 400 216)
-)
-(connector
-	(pt 400 216)
-	(pt 400 312)
-)
-(connector
-	(pt 384 296)
-	(pt 384 200)
-)
-(connector
-	(pt 600 184)
-	(pt 656 184)
+	(pt 384 128)
+	(pt 376 128)
 	(bus)
 )
 (connector
-	(pt 816 184)
-	(pt 832 184)
+	(pt 808 144)
+	(pt 856 144)
+)
+(connector
+	(pt 1008 128)
+	(pt 1024 128)
 	(bus)
 )
 (connector
-	(pt 816 200)
-	(pt 832 200)
+	(pt 1008 144)
+	(pt 1024 144)
 	(bus)
 )
 (connector
-	(pt 656 232)
-	(pt 648 232)
+	(pt 568 128)
+	(pt 856 128)
+	(bus)
 )
 (connector
-	(pt 648 312)
-	(pt 648 232)
+	(pt 808 144)
+	(pt 808 160)
 )
 (connector
-	(pt 368 312)
-	(pt 400 312)
+	(pt 824 160)
+	(pt 824 240)
 )
 (connector
-	(pt 400 312)
-	(pt 648 312)
+	(pt 840 176)
+	(pt 840 256)
 )
 (connector
-	(pt 656 216)
-	(pt 632 216)
+	(pt 856 160)
+	(pt 824 160)
 )
 (connector
-	(pt 632 216)
-	(pt 632 296)
+	(pt 856 176)
+	(pt 840 176)
 )
 (connector
-	(pt 368 296)
-	(pt 384 296)
+	(pt 568 160)
+	(pt 640 160)
 )
 (connector
-	(pt 384 296)
-	(pt 632 296)
+	(pt 736 160)
+	(pt 808 160)
 )
 (connector
-	(pt 656 200)
-	(pt 616 200)
+	(pt 640 176)
+	(pt 608 176)
 )
 (connector
-	(pt 600 216)
-	(pt 616 216)
+	(pt 608 176)
+	(pt 608 240)
 )
 (connector
-	(pt 616 200)
-	(pt 616 216)
+	(pt 376 240)
+	(pt 608 240)
 )
-(junction (pt 384 296))
-(junction (pt 400 312))
+(connector
+	(pt 608 240)
+	(pt 824 240)
+)
+(connector
+	(pt 640 192)
+	(pt 624 192)
+)
+(connector
+	(pt 624 192)
+	(pt 624 256)
+)
+(connector
+	(pt 376 256)
+	(pt 624 256)
+)
+(connector
+	(pt 624 256)
+	(pt 840 256)
+)
+(junction (pt 608 240))
+(junction (pt 624 256))

@@ -19,7 +19,7 @@
 // the top level entity of the current Quartus project .The user can use this   
 // testbench to simulate his design using a third-party simulation tool .       
 // *****************************************************************************
-// Generated on "10/14/2024 22:08:33"
+// Generated on "10/18/2024 19:51:04"
                                                                                 
 // Verilog Test Bench (with test vectors) for design :                          FPGAKeypadBinaryShiftRegisterLED
 // 
@@ -34,16 +34,16 @@ reg CLK;
 reg [11:0] Keypad;
 reg RST;
 // wires                                               
-wire [3:0] LED1;
-wire [3:0] LED2;
+wire [3:0] Aout;
+wire [3:0] Bout;
 
 // assign statements (if any)                          
 FPGAKeypadBinaryShiftRegisterLED i1 (
 // port map - connection between master ports and signals/registers   
+	.Aout(Aout),
+	.Bout(Bout),
 	.CLK(CLK),
 	.Keypad(Keypad),
-	.LED1(LED1),
-	.LED2(LED2),
 	.RST(RST)
 );
 initial 
@@ -55,8 +55,8 @@ end
 always
 begin
 	CLK = 1'b0;
-	CLK = #5000 1'b1;
-	#5000;
+	CLK = #500 1'b1;
+	#500;
 end 
 // Keypad[ 11 ]
 initial
@@ -77,29 +77,35 @@ end
 initial
 begin
 	Keypad[8] = 1'b0;
+	Keypad[8] = #390000 1'b1;
+	Keypad[8] = #40000 1'b0;
 end 
 // Keypad[ 7 ]
 initial
 begin
 	Keypad[7] = 1'b0;
+	Keypad[7] = #340000 1'b1;
+	Keypad[7] = #40000 1'b0;
 end 
 // Keypad[ 6 ]
 initial
 begin
 	Keypad[6] = 1'b0;
-	Keypad[6] = #150000 1'b1;
+	Keypad[6] = #290000 1'b1;
 	Keypad[6] = #40000 1'b0;
 end 
 // Keypad[ 5 ]
 initial
 begin
 	Keypad[5] = 1'b0;
+	Keypad[5] = #240000 1'b1;
+	Keypad[5] = #40000 1'b0;
 end 
 // Keypad[ 4 ]
 initial
 begin
 	Keypad[4] = 1'b0;
-	Keypad[4] = #110000 1'b1;
+	Keypad[4] = #190000 1'b1;
 	Keypad[4] = #40000 1'b0;
 end 
 // Keypad[ 3 ]
@@ -111,8 +117,6 @@ end
 initial
 begin
 	Keypad[2] = 1'b0;
-	Keypad[2] = #60000 1'b1;
-	Keypad[2] = #40000 1'b0;
 end 
 // Keypad[ 1 ]
 initial
@@ -123,8 +127,6 @@ end
 initial
 begin
 	Keypad[0] = 1'b0;
-	Keypad[0] = #20000 1'b1;
-	Keypad[0] = #40000 1'b0;
 end 
 
 // RST

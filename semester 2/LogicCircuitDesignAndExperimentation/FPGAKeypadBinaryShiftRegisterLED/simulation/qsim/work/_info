@@ -10,50 +10,98 @@ z2
 cModel Technology
 Z0 dC:/Users/rnjsa/Desktop/PusanNU2024/semester 2/LogicCircuitDesignAndExperimentation/FPGAKeypadBinaryShiftRegisterLED/simulation/qsim
 vFPGAKeypadBinaryShiftRegisterLED
-Z1 !s110 1728911315
+Z1 !s110 1729248666
 !i10b 1
-!s100 @JiO8F@I@l7cb6JH_oLSl3
+!s100 ci99[g15VYLB3;C;`@4f?1
 Z2 !s11b Dg1SIo80bB@j0V0VzS_@n1
-I;SXV=P5eFfQE`]YfIH<Qo3
+In6_jU9niHb^heAkE27MEj3
 Z3 VDg1SIo80bB@j0V0VzS_@n1
 R0
-w1728911314
-8FPGAKeypadBinaryShiftRegisterLED.vo
-FFPGAKeypadBinaryShiftRegisterLED.vo
-!i122 30
-L0 32 1428
-Z4 OV;L;2020.1;71
+w1729248665
+Z4 8FPGAKeypadBinaryShiftRegisterLED.vo
+Z5 FFPGAKeypadBinaryShiftRegisterLED.vo
+!i122 88
+L0 32 763
+Z6 OV;L;2020.1;71
 r1
 !s85 0
 31
-Z5 !s108 1728911315.000000
-!s107 FPGAKeypadBinaryShiftRegisterLED.vo|
-!s90 -work|work|FPGAKeypadBinaryShiftRegisterLED.vo|
+Z7 !s108 1729248666.000000
+Z8 !s107 FPGAKeypadBinaryShiftRegisterLED.vo|
+Z9 !s90 -work|work|FPGAKeypadBinaryShiftRegisterLED.vo|
 !i113 1
-Z6 o-work work
-Z7 tCvgOpt 0
+Z10 o-work work
+Z11 tCvgOpt 0
 n@f@p@g@a@keypad@binary@shift@register@l@e@d
 vFPGAKeypadBinaryShiftRegisterLED_vlg_vec_tst
 R1
 !i10b 1
-!s100 z=:f7Fi7AU4INEaFn=;g?0
+!s100 KZ:PnlCk4FB7I^b=@C7Il0
 R2
-Ij7bIzX1YmLlM2Q<>lmXQl3
+I5<?<CdPabJVA4^264O82E1
 R3
 R0
-w1728911313
+w1729248664
 8Waveform.vwf.vt
 FWaveform.vwf.vt
-!i122 31
-L0 30 106
-R4
+!i122 89
+L0 30 108
+R6
 r1
 !s85 0
 31
-R5
+R7
 !s107 Waveform.vwf.vt|
 !s90 -work|work|Waveform.vwf.vt|
 !i113 1
-R6
-R7
+R10
+R11
 n@f@p@g@a@keypad@binary@shift@register@l@e@d_vlg_vec_tst
+vTrigger
+Z12 !s110 1729244026
+!i10b 1
+!s100 RlO8PWze6R^NA0RLz51Gj3
+R2
+IE[D``nIKW58D21[3KF9jO1
+R3
+R0
+w1729244025
+R4
+R5
+!i122 56
+L0 32 187
+R6
+r1
+!s85 0
+31
+Z13 !s108 1729244026.000000
+R8
+R9
+!i113 1
+R10
+R11
+n@trigger
+vTrigger_vlg_vec_tst
+R12
+!i10b 1
+!s100 W<goRG]<P@eVEe<3NCVVz3
+R2
+IiA@Z>dB^AJVPHV^kmAFcb1
+R3
+R0
+w1729244024
+8Trigger.vwf.vt
+FTrigger.vwf.vt
+!i122 57
+L0 30 44
+R6
+r1
+!s85 0
+31
+R13
+!s107 Trigger.vwf.vt|
+!s90 -work|work|Trigger.vwf.vt|
+!i113 1
+R10
+R11
+n@trigger_vlg_vec_tst

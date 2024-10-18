@@ -21,7 +21,7 @@ https://fpgasoftware.intel.com/eula.
 */
 (header "symbol" (version "1.2"))
 (symbol
-	(rect 16 16 176 144)
+	(rect 16 16 168 144)
 	(text "DoubleFourBitsRegister" (rect 5 0 144 19)(font "Intel Clear" (font_size 8)))
 	(text "inst" (rect 8 107 24 124)(font "Intel Clear" ))
 	(port
@@ -53,20 +53,20 @@ https://fpgasoftware.intel.com/eula.
 		(line (pt 0 80)(pt 16 80))
 	)
 	(port
-		(pt 160 32)
+		(pt 152 32)
 		(output)
-		(text "Aout[3..0]" (rect 0 0 57 19)(font "Intel Clear" (font_size 8)))
-		(text "Aout[3..0]" (rect 82 27 139 46)(font "Intel Clear" (font_size 8)))
-		(line (pt 160 32)(pt 144 32)(line_width 3))
+		(text "Ain[3..0]" (rect 0 0 49 19)(font "Intel Clear" (font_size 8)))
+		(text "Ain[3..0]" (rect 82 27 131 46)(font "Intel Clear" (font_size 8)))
+		(line (pt 152 32)(pt 136 32)(line_width 3))
 	)
 	(port
-		(pt 160 48)
+		(pt 152 48)
 		(output)
-		(text "Bout[3..0]" (rect 0 0 57 19)(font "Intel Clear" (font_size 8)))
-		(text "Bout[3..0]" (rect 82 43 139 62)(font "Intel Clear" (font_size 8)))
-		(line (pt 160 48)(pt 144 48)(line_width 3))
+		(text "Bin[3..0]" (rect 0 0 49 19)(font "Intel Clear" (font_size 8)))
+		(text "Bin[3..0]" (rect 82 43 131 62)(font "Intel Clear" (font_size 8)))
+		(line (pt 152 48)(pt 136 48)(line_width 3))
 	)
 	(drawing
-		(rectangle (rect 16 16 144 112))
+		(rectangle (rect 16 16 136 112))
 	)
 )
